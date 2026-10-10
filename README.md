@@ -5,7 +5,7 @@ Asset-first real2sim for household objects, furniture, and industrial equipment.
 ## Linux setup
 
 ```bash
-git clone real2sim-toolkit.bundle real2sim-toolkit
+git clone https://github.com/pig27777/real2sim-toolkit.git
 cd real2sim-toolkit
 python3.11 -m venv .venv
 source .venv/bin/activate
