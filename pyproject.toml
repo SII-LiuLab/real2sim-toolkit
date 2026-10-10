@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robocasa-real2sim"
+version = "0.1.0"
+description = "Asset-first household and industrial real2sim workflows for RoboCasa and Isaac Sim"
+requires-python = ">=3.11"
+dependencies = ["numpy", "Pillow", "PyYAML"]
+
+[project.optional-dependencies]
+test = ["pytest", "mujoco>=3.3"]
+usd = ["usd-core", "trimesh"]
+
+[project.scripts]
+real2sim = "robocasa_real2sim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
