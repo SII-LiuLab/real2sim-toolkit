@@ -1,4 +1,4 @@
 interface:
-  display_name: "Real2Sim"
-  short_description: "Build simulation assets from real-world observations"
-  default_prompt: "Use $real2sim to prepare my real-world asset for simulation, preferring compatible existing assets and validating the required physical behavior."
+  display_name: "Real2Sim Agent"
+  short_description: "Reconstruct editable assets with a live simulation harness"
+  default_prompt: "Use $real2sim to inspect my reference, build an editable asset with native scene controls, and iterate with runtime and comparison evidence."

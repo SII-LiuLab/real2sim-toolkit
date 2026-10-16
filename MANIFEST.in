@@ -1,0 +1,9 @@
+include README.md AGENTS.md THIRD_PARTY_NOTICES.md
+recursive-include requirements *.txt
+graft skills/real2sim
+graft third_party/robosimstudio
+global-exclude __pycache__ *.py[cod]
+prune tests
+prune outputs
+prune .venv
+prune .github

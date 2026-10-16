@@ -1,23 +1,44 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "robocasa-real2sim"
 version = "0.1.0"
-description = "Asset-first household and industrial real2sim workflows for RoboCasa and Isaac Sim"
+description = "Real2sim reconstruction harness with flexible dynamics, video evidence and an interactive UI"
 requires-python = ">=3.11"
+license-files = ["third_party/robosimstudio/LICENSE", "third_party/robosimstudio/NOTICE"]
 dependencies = ["numpy", "Pillow", "PyYAML"]
 
 [project.optional-dependencies]
-test = ["pytest", "mujoco>=3.3"]
+studio = [
+    "newton[sim]>=1.6,<1.7",
+    "scipy>=1.11.0",
+    "imageio[ffmpeg]",
+    "viser>=1.0.30",
+    "coacd==1.0.11",
+    "fast_simplification",
+    "pyroki @ git+https://github.com/chungmin99/pyroki.git@95afccc22658c461ab1042a048ae4e9c24bc2a47",
+]
+rtx = ["ovrtx==0.4.0.*", "usd-core", "pyglet"]
 usd = ["usd-core", "trimesh"]
+deformable = ["newton>=1.6,<1.7", "trimesh"]
+tetra = ["tetgen>=0.6", "trimesh"]
 
 [project.scripts]
 real2sim = "robocasa_real2sim.cli:main"
 
+[project.urls]
+Repository = "https://github.com/pig27777/real2sim-toolkit"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+[tool.setuptools.package-data]
+robosimstudio = ["_real2sim_bundle.json"]
+
+[tool.setuptools.data-files]
+"share/real2sim/third_party/robosimstudio" = [
+    "third_party/robosimstudio/UPSTREAM.json",
+    "third_party/robosimstudio/CITATION.cff",
+]

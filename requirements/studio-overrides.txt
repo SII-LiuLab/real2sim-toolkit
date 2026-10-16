@@ -1,0 +1,3 @@
+# PyRoKi's own metadata names an unversioned jaxls Git URL. An override (rather
+# than a second competing direct requirement) fixes its source revision.
+jaxls @ git+https://github.com/brentyi/jaxls.git@50a58be88c5ef74532f09e3f55268b4f02c490e3

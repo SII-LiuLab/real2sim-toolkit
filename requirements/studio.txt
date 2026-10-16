@@ -1,0 +1,32 @@
+# Exercised Studio interfaces, CPython 3.12.x. This is a targeted compatibility
+# lock, not a freeze of the complete Python environment. Portable package copy:
+# robocasa_real2sim.studio_runtime_lock.STUDIO_RUNTIME_LOCK.
+# Install with uv to override PyRoKi's floating transitive jaxls URL:
+# From the repository root:
+# uv pip install -e . -r requirements/studio.txt --override requirements/studio-overrides.txt
+# Necessary scene/UI modules are included in the root real2sim distribution.
+# The upstream revision records their origin, not an unchanged upstream checkout.
+newton[sim]==1.6.1
+warp-lang==1.18.0
+mujoco==3.12.0
+mujoco-warp==3.12.0
+numpy==2.5.4
+scipy==1.18.1
+Pillow==12.3.0
+PyYAML==6.0.3
+imageio[ffmpeg]==2.38.1
+imageio-ffmpeg==0.6.0
+viser==1.1.1
+coacd==1.0.11
+fast-simplification==0.2.0
+pyroki @ git+https://github.com/chungmin99/pyroki.git@95afccc22658c461ab1042a048ae4e9c24bc2a47
+jaxls @ git+https://github.com/brentyi/jaxls.git@50a58be88c5ef74532f09e3f55268b4f02c490e3
+jax==0.11.2
+jaxlib==0.11.2
+jaxlie==1.5.0
+jax-dataclasses==1.6.3
+jaxtyping==0.3.11
+yourdfpy==0.0.60
+trimesh==5.1.1
+pycollada==0.9.3
+lxml==6.1.3

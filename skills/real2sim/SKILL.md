@@ -1,31 +1,26 @@
 ---
 name: real2sim
-description: Turn real photos, scans or existing assets into simulation assets for household objects, furniture and industrial equipment. Use for asset screening, multiview reconstruction, MJCF/USD authoring and RoboCasa or Isaac Sim experiments.
+description: Reconstruct or refine editable simulation assets from real photos, videos, scans or existing geometry with the real2sim harness. Use for asset inspection, native scene UI, Newton flexible dynamics and supported export workflows.
 ---
 
 # Real2Sim
 
-Use compatible existing assets first, reconstruct missing geometry when necessary, and author the behavior required by the task. Photographic similarity alone does not establish an interactive asset.
+Real2sim is the single installable harness with integrated native scene/UI modules in `src/robosimstudio*`; those compatibility imports are internal runtime code, not a separate RoboSimStudio project. Newton VBD handles flexible dynamics. The coding agent observes, authors and revises through these tools. Keep module responsibilities, source/license provenance and pinned Newton/RTX dependencies. The CLI does not embed an LLM or automatically recover arbitrary video geometry, materials and contact.
 
-Locate the checkout from the working directory or `REAL2SIM_REPO`. Use its installed `real2sim` CLI (or `python -m robocasa_real2sim`); run `doctor` to establish available providers. When this skill is installed outside the checkout, scripts remain in the repository, not inside the installed skill folder.
+Locate the checkout from the working directory or `REAL2SIM_REPO` and use its installed `real2sim` CLI. For an existing session, first restore `session-brief --session <session>` and reconcile it with the latest user request. Follow the [control loop](references/control-loop.md) for scope changes, memory, check selection and bounded retries. Reuse relevant evidence and a working live page. Prefer bounded briefs and `--compact` operation results; read full reports only to resolve a specific gap.
 
-## Route by interaction
+Match the deliverable to the current request. Asset mode prioritizes an inspectable, draggable target with necessary support and camera. Add a robot, complete environment or action sequence when requested; robot models are optional session assets, not an assumed bundled catalog. On a switch from a full scene to an asset, stop unrelated environment/material research and motion experiments, preserve that work, and expose the asset UI promptly. A temporary restriction such as “no tests for this change” applies to its stated scope, not all future work.
 
-- Static furniture and structures: metric visual mesh and suitable static collision.
-- Graspable objects: rigid body, mass and collision; preserve openings when containment matters.
-- Doors, drawers, windows and other mechanisms: separate moving links, authored axes, limits and clearance. Prefer verified articulated assets. Unknown joints need observation or authoring; label guessed parameters.
-- Conveyors and driven equipment: identify the actual driven surface/link and controls. Texture animation cannot substitute for object transport. The current backend covers straight contact transport on an authored kinematic surface; other mechanisms need behavior adapters.
+Use compatible existing assets first; preserve openings, moving parts and the required interaction. Record units, frames, scale/rest-state assumptions and measured/retrieved/fitted parameters. Sparse guides and prescribed robot motion must be labeled as authored mechanics.
 
-Read [inputs.md](references/inputs.md) when preparing captures, requests, dataset metadata or mesh exports. Read [isaac.md](references/isaac.md) for Isaac import, behavior configuration and verification.
+Read only the reference needed for the next action:
 
-## Execute and retain evidence
+- [agent.md](references/agent.md): ownership, runtime boundaries, UI entry and success levels.
+- [sessions.md](references/sessions.md): native scene/routine contract, manipulation UI, capture/compare, portable dependencies and evidence.
+- [deformable.md](references/deformable.md): Newton cloth triangle shells, soft-solid tetrahedra, rest states, loads and portable bundle/fitting commands.
+- [inputs.md](references/inputs.md): references, source/license metadata, screening and geometry preparation.
+- [isaac.md](references/isaac.md): explicitly requested Isaac import, supported export and runtime checks. Preserve the requested target and identify unsupported flexible conversion.
 
-1. Establish category, required interaction, simulator and measurements. Continue asset/geometry work while unknown mass/friction/speed are recorded as assumptions; obtain measurements when calibration requires them.
-2. Inspect captures and group by unchanged state and part. Screen local assets by explicit category/topology/behavior. If online search is needed and available, research authoritative source pages, check usable geometry and mechanisms, and record source/license metadata before indexing downloaded assets. The CLI has no online/image-embedding search.
-3. Review compatible candidates for scale, handles, interiors and materials. Reuse suitable assets. Otherwise reconstruct static groups with COLMAP and inspect nonempty geometry. Correct scale/frame, separate parts, and author collisions/mechanics before export.
-4. Export MJCF or USD with portable dependencies. Run `isaac-prepare` before MJCF import to preserve compiled inertia. Use `build-usd` for aligned metric meshes or `prepare-usd` for existing USD. Respect cup/bowl interiors and belt contact geometry.
-5. Verify the requested behavior in the target simulator. Separate compilation, structural inspection and actual physical motion. Keep reports/trajectories and investigate failed checks.
+For iterative reconstruction: inspect → author native scene → preview/manipulate → validate the requested level → revise or deliver. Create sessions with `session-init`; open/reuse their UI with `agent --session`. Use RTX for appearance review and `scene-render` for saved trajectories after appearance edits, without repeating physics. Narrow inspection, tooling and supported export tasks use only the relevant stages.
 
-Label measured, retrieved, assumed and fitted parameters. Mark an asset `prepared` until runtime checks execute. A synthetic/tooling test is not reconstruction of the user's photos; stable default physics is not real-world calibration.
-
-Produce the requested asset and concise run instructions. Include unfinished behavior/calibration steps that affect the experiment. This workflow needs no demonstration scene or example asset.
+Deliver the requested asset, working UI or tool change with portable dependencies and concise use instructions. Link relevant evidence and distinguish preparation, UI interaction, execution, visual agreement, dynamics checks and calibration. A draggable cloth, finite run or high silhouette IoU supports only its demonstrated claim. Export USD/MJCF only when requested and supported; preserve failed attempts and unresolved behavior affecting the result.

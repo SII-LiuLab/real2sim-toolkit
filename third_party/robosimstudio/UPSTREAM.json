@@ -1,0 +1,4028 @@
+{
+  "schema_version": 1,
+  "project": "RoboSimStudio",
+  "upstream_url": "https://github.com/robosimstudio/robosimstudio",
+  "upstream_revision": "73739abe212f963e8a9f5862b27bca370df091a7",
+  "imported_at": "2026-10-16T14:20:58.182173+00:00",
+  "layout": "monorepo Python package; no nested Git repository",
+  "upstream_license": "Apache-2.0; asset-specific licenses retained in assets/ and NOTICE",
+  "original_file_count": 803,
+  "original_source_digest": "cb5e2e291d484392bda5923a00b75158450e6f18feff166f49511f16eed5d2f7",
+  "files": [
+    {
+      "path": ".claude/skills/real-to-sim/SKILL.md",
+      "sha256": "8e6983556ed5ad6dd8862e96f8c64f6d599fc98ab2cc3e40f926b90c7e84ebd1",
+      "bytes": 6562
+    },
+    {
+      "path": ".github/media/logo.png",
+      "sha256": "499cc66438fc392c6531eb834f2c33b61a35d1a93ce2e17e11830848e7515aab",
+      "bytes": 44144
+    },
+    {
+      "path": ".github/media/splash.webp",
+      "sha256": "10955c85af60b03f4f9bec02efd1ad8c3b4e00d1c7dc5de55dae499427eeb537",
+      "bytes": 4715376
+    },
+    {
+      "path": ".github/workflows/formatting.yml",
+      "sha256": "314886e3d70c30b4ed90f10b07ccb2daf2087e5acb1d28021f0e80efc32a6fee",
+      "bytes": 515
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "sha256": "6fb9c6b64e0aad1c21760d0b6b1236bc694e55141869c34a4d427ca7bac3a2c0",
+      "bytes": 1850
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "8ce10364d56d3cc703526990539ebbf06e613770a562e834097b8941fd81eae3",
+      "bytes": 979
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d1792c58356c335221de284b0028cba59452979c592f60c0894c198ca9e7eeb4",
+      "bytes": 742
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "sha256": "1a0a4630ad88ba0f24992742a41d1ccf30bfdd274e3413f84ff2c9fb02a08441",
+      "bytes": 529
+    },
+    {
+      "path": ".python-version",
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+      "bytes": 5
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "37fee0334e800497589fab9971f6cde7ecb64d854db5b583f0297acdd62c4579",
+      "bytes": 3548
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "def04306091431f0554ec472ee671fb344a46e2e1f0dabe6a700d8fe4da638e6",
+      "bytes": 1960
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "bytes": 11
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "0e10c86206861fbedb3afb1e0f82f81bdc462df7d7d575a0761f7ff8c7495886",
+      "bytes": 5643
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "36e2e7aa675b7f77c1620e1f99980b08c06f671e2c8a67f35ff84306eaf30892",
+      "bytes": 2325
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "243b5de614a38e490ec5de01fce7bb73d84cd0bb1f8f32b0bca12cd1b58714a1",
+      "bytes": 11343
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "c1ae73a7d00715788a1e43728aa687d3f2c6930d9722eada429e28c704f132e5",
+      "bytes": 2195
+    },
+    {
+      "path": "README.md",
+      "sha256": "4ba3cf760c78e7048224cefa882ac1a24a94fe8e6f7dabd229b1e23eaa529470",
+      "bytes": 2407
+    },
+    {
+      "path": "assets/PROVENANCE.md",
+      "sha256": "19d18a082196b96f52ef27949b1518bd5453268b785adf749ede2389df65fc97",
+      "bytes": 13098
+    },
+    {
+      "path": "assets/embodiments/panda/LICENSE",
+      "sha256": "177978cbece0a4c454c2aaec5b3f145b39270814874c43109da9e829c39d9cba",
+      "bytes": 1474
+    },
+    {
+      "path": "assets/embodiments/panda/LICENSE.example-robot-data",
+      "sha256": "69d6aaa72d964c5eac9dfac36dd0955f2f62562cf7de9d879e80788c35b7363e",
+      "bytes": 1611
+    },
+    {
+      "path": "assets/embodiments/panda/README.md",
+      "sha256": "cda60833de5928d8af59c569728cd7382744ed515e38d4b434bd296907532a07",
+      "bytes": 5111
+    },
+    {
+      "path": "assets/embodiments/panda/assets/finger.stl",
+      "sha256": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8",
+      "bytes": 1684
+    },
+    {
+      "path": "assets/embodiments/panda/assets/finger_vis.stl",
+      "sha256": "e49613148a74f1ba9b5793813078e5becf15833e0296073dc1c523508be35ae4",
+      "bytes": 31284
+    },
+    {
+      "path": "assets/embodiments/panda/assets/hand.stl",
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "bytes": 10084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/hand_vis.stl",
+      "sha256": "fdeb1a924b8d0f1f997f47d6d8af102c7290a1d5144145efdc39501dc13f0fa1",
+      "bytes": 353984
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0.stl",
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "bytes": 10084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_0.obj",
+      "sha256": "6c4415add409c161a92dc7cccbecf6819a3a92aba3b0cf043cd513b58aa23257",
+      "bytes": 369249
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_1.obj",
+      "sha256": "ac248e0725c1eb29a0dd6490fc8d349dc57c5c3f51f15752266d4cc55753e1ee",
+      "bytes": 125712
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_10.obj",
+      "sha256": "b4b1a66f689dededc8c45cc2fc01aa3bdf8f2cf689ee83eb3db0f9400af9883f",
+      "bytes": 419789
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_11.obj",
+      "sha256": "3f22c57436629d8f1d06650f105a822cb3b85f071f3c268210561abf2812b809",
+      "bytes": 25564
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_2.obj",
+      "sha256": "e112cdf4c9071ae6c277ae9c92b165060d02bc8b954da7df24e67aaf11deede0",
+      "bytes": 752808
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_3.obj",
+      "sha256": "ba273f526f3b3d4e8489ddd89813f5d109f0e289ca993550c9a06beca5a83416",
+      "bytes": 59762
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_4.obj",
+      "sha256": "df932880c83025fdef4a8366926679c924adb395c3313aa445c151387c5a12b3",
+      "bytes": 263526
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_5.obj",
+      "sha256": "ae616a8d11339861af3b83d6bf1d0d1038c61984a7ddae5af93ffb96cc32a122",
+      "bytes": 22068
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_6.obj",
+      "sha256": "d9b40045d90e0202640437e66dc9b02c5c449b9169f97d70099dfc35a88f2eb4",
+      "bytes": 4640
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_7.obj",
+      "sha256": "c61618cad1396e6a134ba8b32ec754fc67bd576d411417142f1a36f4003c7017",
+      "bytes": 35031
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_8.obj",
+      "sha256": "82b9aedf8ff51ebde219529fa366c079311f5528203276cd1eedfcba90574d52",
+      "bytes": 3724190
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link0_vis_9.obj",
+      "sha256": "00b9daacb7c18b0ab071b089515b9e87a8785abafb36cf63355e3b8afdce8022",
+      "bytes": 128999
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link1.stl",
+      "sha256": "d24e332dffccf260b91d05dde17c5998bb9559d37da8608a8ee5213d9661f603",
+      "bytes": 625884
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link1_vis.obj",
+      "sha256": "912779814d93a7d2c6f0413f6eb5042291b08e11b3dae769019aaa0ddb64e23f",
+      "bytes": 3779935
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link2.stl",
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link2_vis.obj",
+      "sha256": "96c6ea002e2c6474ac1473014e3f0df1f90b7aa2beb5c6182671fda890a3cb74",
+      "bytes": 3818503
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link3.stl",
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link3_vis_0.obj",
+      "sha256": "b2119dee4b4a5e3a5bdac57b7fa04d379da8af502860496946a90c1b904db590",
+      "bytes": 3598907
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link3_vis_1.obj",
+      "sha256": "ebfed3850a693ac1a1b97a418742ec98355f7008de1e14037cdbdbc75a0d5fb9",
+      "bytes": 83763
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link3_vis_2.obj",
+      "sha256": "81e20d3187dcafcc4ce8bca69c74d6ad985491d263939a93b6aac8b478a4cc86",
+      "bytes": 100940
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link3_vis_3.obj",
+      "sha256": "53abcab5d93f13797f34450929dfe8c0ddbcd72266130611487d10be23cd736a",
+      "bytes": 588399
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link4.stl",
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link4_vis_0.obj",
+      "sha256": "591f8533b4020ebbaafc4a4cb62c7e0988f204879dd1cbd30a78c3bc197f380b",
+      "bytes": 102621
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link4_vis_1.obj",
+      "sha256": "3c1a7e83814a54522b91dc069e2448b6f0ca10149869fd68713e97e9f1dd5d05",
+      "bytes": 3711222
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link4_vis_2.obj",
+      "sha256": "931bdb58e44e8b328842708e00ef80c0e8e48f47949804b7c8b10dc8e9d8dbf2",
+      "bytes": 583535
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link4_vis_3.obj",
+      "sha256": "dd8ab577710fbe454ca463f0d69edf36f717d2868355288a76b77f586a384aa9",
+      "bytes": 82772
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link5.stl",
+      "sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link5_vis_0.obj",
+      "sha256": "65417fb042a34286b6aa5fee2e0a7ff60a567f1296738f985b666cd319fb3d7a",
+      "bytes": 933412
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link5_vis_1.obj",
+      "sha256": "f61bc98778d9e22a422ac2a339603d606b8e6af7727d8629a442cc04419a2789",
+      "bytes": 47149
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link5_vis_2.obj",
+      "sha256": "ebca16efc559c30fa812168764d0b4b353049965bdc6cbbf25708a945948b2b4",
+      "bytes": 4664101
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6.stl",
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "bytes": 10084
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_0.obj",
+      "sha256": "e66366f5bdd2a04b75d17abd251019bf59b57f3f74dcfdbefa870c437121b790",
+      "bytes": 187087
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_1.obj",
+      "sha256": "05fa8ccb4bc50585862c374a2c1e2a072c6422b6e3088404767d5bb7fc714500",
+      "bytes": 24011
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_10.obj",
+      "sha256": "a846ef010d109e6e66bfd67f995263c4cef5e2e0a56560c3ce6831e0abc8c07b",
+      "bytes": 475755
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_11.obj",
+      "sha256": "ffd2103606b3288c98c3c3f29cccb3e202dc12d92d58225e4fbf5ef023a8c28f",
+      "bytes": 31950
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_12.obj",
+      "sha256": "bc34f87c700531402a64cde7f7f9f25c4f5351ce6ec96f3b078e75a55b70bd42",
+      "bytes": 4345
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_13.obj",
+      "sha256": "a476a77077eeec8bdb0db07163dd20f8213e2106c6d88ac554346293434bd479",
+      "bytes": 4464
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_14.obj",
+      "sha256": "289cbb1e35b09f158dcaf7025d815d76f935e2d5ca956bb03d25c5f10748af51",
+      "bytes": 549206
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_15.obj",
+      "sha256": "f66985ec70db62eec18669848e53c1509ac4e68d6b97a58874fedc180c1cd85c",
+      "bytes": 843617
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_16.obj",
+      "sha256": "45af20fc788566fdc76053167264685792f20f22c683dfd0cc382d8c8bbb640a",
+      "bytes": 4406563
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_2.obj",
+      "sha256": "a7aaca55658be11af36f2388a1c674d6ce09973dd8b9f87c30bf00bb245b55e8",
+      "bytes": 10567
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_3.obj",
+      "sha256": "ad289bd24071568198d907b001ae659676637b6c868212ad1d49177a2352bb7b",
+      "bytes": 16467
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_4.obj",
+      "sha256": "606af8cc5fe30b63a2a28c0c78b423c780ca3b73cc88356570a92145941ffde8",
+      "bytes": 18942
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_5.obj",
+      "sha256": "06d573ce2e042a4ffbf080e79ae1cdc84e3a63e4d1bf72272d81410789bb61d6",
+      "bytes": 16175
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_6.obj",
+      "sha256": "4382b6e12dc5dbcc1ca3fdc595dd82e73e1dc4a6b8ceca545bfdd0338ca12d21",
+      "bytes": 17405
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_7.obj",
+      "sha256": "2777f33115993dec3af8eb6d614af6165ae2836ffd1ea4e41849ed32c5a60326",
+      "bytes": 2543
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_8.obj",
+      "sha256": "aef37fabd21f209461bdb9ed6873ebc3ded6807bb01ec88cf1a002499ae629d2",
+      "bytes": 6524
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link6_vis_9.obj",
+      "sha256": "c1a7246819060a248d61291ae3a9a629f7e11d866090f32729e6e434eda7cefd",
+      "bytes": 16869
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_0.obj",
+      "sha256": "2d35397b9d9289e3cfaa9de5cf689185b5d3b0bba7b204efffbc8443ea9c615d",
+      "bytes": 1885189
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_1.obj",
+      "sha256": "32ca565d7e3923a9b10a536043845d28911756de976f51c84e426aea3cc719ab",
+      "bytes": 167733
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_2.obj",
+      "sha256": "da959a052900a8d03914b03bf0cd79662a49c2462e1737cc177591be33be5951",
+      "bytes": 289135
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_3.obj",
+      "sha256": "6af51159175526f823c37a59fc22e78ebad90809662d30e154da8cbabf355bd2",
+      "bytes": 169848
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_4.obj",
+      "sha256": "b72d69f2da72512b48c0c418a7169b023d5bcddb12e894fe97bf8eeee57e5090",
+      "bytes": 117537
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_5.obj",
+      "sha256": "d91d2892366a36f82f5bfc7e0fe60b360faf5ace94f8ba1ef38b15d6d9c4ffac",
+      "bytes": 313356
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_6.obj",
+      "sha256": "6f8e94925a34c5e0fecae66c11460d7c4ff70dcf448a5da6de14e1badf0e71da",
+      "bytes": 137916
+    },
+    {
+      "path": "assets/embodiments/panda/assets/link7_vis_7.obj",
+      "sha256": "36957666d65f3bee84661c5d8276711b4958aae10c9a5192c0fdfd5a8b7f7770",
+      "bytes": 1089226
+    },
+    {
+      "path": "assets/embodiments/panda/panda_kinematics.urdf",
+      "sha256": "bcb205f638a4005a265e5f47c8f93f04d5dca3970a34dc12c75254cc89074522",
+      "bytes": 8757
+    },
+    {
+      "path": "assets/embodiments/panda/panda_nohand_standalone.xml",
+      "sha256": "0756d0a1234e5c2d96b740227e1327dca37c030de1bcd3f8c34f9d2fa6957688",
+      "bytes": 24371
+    },
+    {
+      "path": "assets/embodiments/panda/panda_standalone.xml",
+      "sha256": "9169e0345c06b27b52c5690d534fb834dab51a271aa880ab3d10eafa111cd236",
+      "bytes": 29060
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/2f85.xml",
+      "sha256": "36338ea38bc79fde049159ad77c73419e44d6020da118a00b35861bea6fd6779",
+      "bytes": 10545
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/LICENSE",
+      "sha256": "3d5edd18d1e22a17666e9bb84270171ed5ac90b192d24e0177fd171708ea2316",
+      "bytes": 1297
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/README.md",
+      "sha256": "4a82b5ffa4701f2d450e71fc49faefe92f6857d1c2cf5d47500b560c4f4ab819",
+      "bytes": 1590
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/base.stl",
+      "sha256": "1c7b9f2bd92d705fc4e897c94e905973a3c05f406845e942229433deb7041453",
+      "bytes": 1712484
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/base_mount.stl",
+      "sha256": "87971dfdd6e5311b5a723e7b73c4701ebf5c2364df671500f30dfc1c53c8e61a",
+      "bytes": 1091784
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/coupler.stl",
+      "sha256": "d5ee95e62f8415bf5b6e503c831a958f5fc1990bf9b2865329ec38a28932727c",
+      "bytes": 89084
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/driver.stl",
+      "sha256": "bbd6e868b1778bead60d2516c7ede581d7ad4e431744b1828757d6ea5129c112",
+      "bytes": 67084
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/follower.stl",
+      "sha256": "633793332c081641ce200df27a40643cc293b29956e3cb5cb29cb811c33ef1c7",
+      "bytes": 110484
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/pad.stl",
+      "sha256": "4af1fa8d9bb285abecbf5dfc88e74cb30f059a7a074c2030dc35e9ee4316019d",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/silicone_pad.stl",
+      "sha256": "ca20c0fa61e6d3ce7b04bed25360e048e31dfd88ace04187aa6d9e8f4ca3fd0f",
+      "bytes": 15084
+    },
+    {
+      "path": "assets/embodiments/robotiq_2f85/assets/spring_link.stl",
+      "sha256": "4fb74a8a0d76c0e471cf19fd48bc676fd5b19123798e7a39eb6aa56869354283",
+      "bytes": 84884
+    },
+    {
+      "path": "assets/embodiments/yam/LICENSE",
+      "sha256": "1296f601b312777d3aaaf3c36a9999f489a0e0d1dc5a341fedeccf25918366f1",
+      "bytes": 11370
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/LICENSE",
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891",
+      "bytes": 1073
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/d405.stl",
+      "sha256": "8a9a84dd9c9a67687e5ad0b37a7ed334dbfea6b0f995fef28524cc8da5f21ed2",
+      "bytes": 1242284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2.stl",
+      "sha256": "5ac61c0313ed00c38655e41681af1b8b307cf8d5ef57209a75f215cea02df754",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__10.stl",
+      "sha256": "b879cc07f547b7a2ac52e428dd206e80a0d4b0e805cb56b9a8230df04a690923",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__11.stl",
+      "sha256": "af220d2a51e8444392aef36e2fe4a6f69aed22bc292a7f38e54da3b4f5253434",
+      "bytes": 248584
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__12.stl",
+      "sha256": "e79614869bd2283f70fafa150ce748d5b6c03377a651448c6fe9893a22f6d1de",
+      "bytes": 68084
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__13.stl",
+      "sha256": "32b62f14f00ea82bfc79b935f7dac32c7cb276a3abc0aae8362cbba3fb1326de",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__14.stl",
+      "sha256": "72d2178789dd5e0358c2caf9dad90b8881e505f4c52a8d6d18c71b5e93e8c84b",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__15.stl",
+      "sha256": "ca8788184d54f30c18482cb9b48dffb010a93dbc029054b6cc515083a740d324",
+      "bytes": 183684
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__16.stl",
+      "sha256": "18bb99691eed524393e8f3a0ff29e79d97ab75689bc92144bbdfafa2cc79d37b",
+      "bytes": 183684
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__17.stl",
+      "sha256": "6513dbd192d2bf3a4f7016231f1ba5eca93916c9ebfdc334e9b435ca1d302ff6",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__2.stl",
+      "sha256": "30dab41f14bae95d737abca3c934eb5d570ab107dff0b40952fbdfb9d07eab79",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__3.stl",
+      "sha256": "9fd96f5ad387fe7dd96eaa65e386637800e2f5637b6167fbad4ecb37d8598f47",
+      "bytes": 80684
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__4.stl",
+      "sha256": "33c0e7ef538e2c4473efa9c4ef2a8441b6094b65090b4dec71abe82001d974df",
+      "bytes": 80684
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__5.stl",
+      "sha256": "09f08e7dead2d6363618471adadb1b94af39e8056676670f3fd21ec06c197b20",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__6.stl",
+      "sha256": "888b5919d10dbfb59b964c3cafc2ddbdac3b5426e20dd13bcaf4baedd5ee15c9",
+      "bytes": 86284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__7.stl",
+      "sha256": "2d64b18f1e70b0460eb53335d340b7c879976a3093ec67b07bcb7245e371a91d",
+      "bytes": 52084
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__8.stl",
+      "sha256": "db3708da6b14daf3fc9a1909a8325b68f65ff69146cdd20b69a9ddc4ce51f50d",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam/i2rt_yam/assets/model2__9.stl",
+      "sha256": "74969d09b8b7f75cc984c5c7e5526d2941c6724f48b3efa1fa8730cc7820f4f5",
+      "bytes": 52084
+    },
+    {
+      "path": "assets/embodiments/yam/yam_bimanual_arm.urdf",
+      "sha256": "ec555b3f3611099f3419356431232a833e528204c8bd052eb0a70c6450e294db",
+      "bytes": 2098
+    },
+    {
+      "path": "assets/embodiments/yam/yam_bimanual_arms.xml",
+      "sha256": "50bfa4630552f3bfea8430673e7c432e7e661e4eff0808dde6716523bb26dc15",
+      "bytes": 24788
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/LICENSE",
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891",
+      "bytes": 1073
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/base.stl",
+      "sha256": "7d57efce4cd31db5e461e1bc83362943a7dbe0e8e101cdb94c29de0a72f3ff0f",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/gripper.stl",
+      "sha256": "d949c401186197d842ca8f9b23bfcbf24bed8461b421df06093c65e4ead21f5d",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/link1.stl",
+      "sha256": "2283bab1300cfdd1a04aaf09503093d7d6d19bf2144abf3429d563b596920903",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/link2.stl",
+      "sha256": "4fd4df2916be71391c6c6ea6ffbdb3c270ce67c71c2bb7d42d44736c0be2af98",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/link3.stl",
+      "sha256": "5b51658509771514738d0f2271df5f271cd8ae0b6a4bf3787d8463d5ab582593",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/link4.stl",
+      "sha256": "f6e980b8064a1396b17e87065de50286abf616f94b55e1ccff92e889218de220",
+      "bytes": 232084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/link5.stl",
+      "sha256": "b32ece2e963cd028d68290a904223826070be52ce8f0988e3ad36bf75be3582f",
+      "bytes": 70484
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/tip_left.stl",
+      "sha256": "03d94f53d7b5e9e1871ea6f3925c68d7a2f894b08e0c575fa0b9ed4024684ff7",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/assets/tip_right.stl",
+      "sha256": "8f620aae9c15e00e2ea4e5bf5e9a49e7edb2d23128b8955cfacc0da8da45c72f",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/yam_i2rt_arm.urdf",
+      "sha256": "e8ea471e2c615f6e3f712bb83c786bd82637b8b115e874e1a2261bd021b3bb52",
+      "bytes": 1906
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/yam_i2rt_arms.xml",
+      "sha256": "6146bec6973fb9b450c233b9297c76d0951182aee4883d673573127ea951bf4c",
+      "bytes": 14227
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt/yam_i2rt_bimanual.xml",
+      "sha256": "e96c763f6360363a985ec3ea4f5ea3828849d4824d0d449139cbc7fe010139ba",
+      "bytes": 14244
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/LICENSE",
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891",
+      "bytes": 1073
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/base.stl",
+      "sha256": "7d57efce4cd31db5e461e1bc83362943a7dbe0e8e101cdb94c29de0a72f3ff0f",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/d405.stl",
+      "sha256": "8a9a84dd9c9a67687e5ad0b37a7ed334dbfea6b0f995fef28524cc8da5f21ed2",
+      "bytes": 1242284
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/link1.stl",
+      "sha256": "2283bab1300cfdd1a04aaf09503093d7d6d19bf2144abf3429d563b596920903",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/link2.stl",
+      "sha256": "4fd4df2916be71391c6c6ea6ffbdb3c270ce67c71c2bb7d42d44736c0be2af98",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/link3.stl",
+      "sha256": "5b51658509771514738d0f2271df5f271cd8ae0b6a4bf3787d8463d5ab582593",
+      "bytes": 400084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/link4.stl",
+      "sha256": "f6e980b8064a1396b17e87065de50286abf616f94b55e1ccff92e889218de220",
+      "bytes": 232084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/link5.stl",
+      "sha256": "b32ece2e963cd028d68290a904223826070be52ce8f0988e3ad36bf75be3582f",
+      "bytes": 70484
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__12.stl",
+      "sha256": "e79614869bd2283f70fafa150ce748d5b6c03377a651448c6fe9893a22f6d1de",
+      "bytes": 68084
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__13.stl",
+      "sha256": "32b62f14f00ea82bfc79b935f7dac32c7cb276a3abc0aae8362cbba3fb1326de",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__14.stl",
+      "sha256": "72d2178789dd5e0358c2caf9dad90b8881e505f4c52a8d6d18c71b5e93e8c84b",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__15.stl",
+      "sha256": "ca8788184d54f30c18482cb9b48dffb010a93dbc029054b6cc515083a740d324",
+      "bytes": 183684
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__16.stl",
+      "sha256": "18bb99691eed524393e8f3a0ff29e79d97ab75689bc92144bbdfafa2cc79d37b",
+      "bytes": 183684
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/assets/model2__17.stl",
+      "sha256": "6513dbd192d2bf3a4f7016231f1ba5eca93916c9ebfdc334e9b435ca1d302ff6",
+      "bytes": 524284
+    },
+    {
+      "path": "assets/embodiments/yam_i2rt_arena/yam_i2rt_arena_narrow_arms.xml",
+      "sha256": "3bdb266a2e9089d5820cb693a46f48e9066cee4fa4cfc8f652f71c661c5c74f9",
+      "bytes": 24083
+    },
+    {
+      "path": "examples/00_getting_started/00_hello_world.py",
+      "sha256": "62d6c92dea6606a6e40b35b5185314d0ebc4cb09787115bf7befb7d25e92576a",
+      "bytes": 1264
+    },
+    {
+      "path": "examples/00_getting_started/01_core_concepts.py",
+      "sha256": "1789dd662e10bde5500c5ba44baa005811735455c28af9e97014de8c268c07eb",
+      "bytes": 2281
+    },
+    {
+      "path": "examples/00_getting_started/README.md",
+      "sha256": "c36cb7ed91b70fb51f545e95e774de3cd9675827a90350d8fe21e29496fedc6c",
+      "bytes": 6258
+    },
+    {
+      "path": "examples/00_getting_started/media/00_hello_world.webp",
+      "sha256": "fa254ef25b34a1722dc62e2f1f4d18b3c39ec0cd46e3335a5d34310b892494d4",
+      "bytes": 809000
+    },
+    {
+      "path": "examples/00_getting_started/media/01_core_concepts.webp",
+      "sha256": "c61bacbc7d9d4521dce2f5ed1b14e5627475b3dfe39d061435fa0903813cf62c",
+      "bytes": 856832
+    },
+    {
+      "path": "examples/01_cloth/00_towel.py",
+      "sha256": "ba4c5e1ddfdf408f6ac89335d8b34d9e7a85cab152a0d11f8522d58ff481b710",
+      "bytes": 1918
+    },
+    {
+      "path": "examples/01_cloth/01_fabrics.py",
+      "sha256": "8449006df9555b1952955996633b898ba312a55b0e027e166a74ebe3252177da",
+      "bytes": 2139
+    },
+    {
+      "path": "examples/01_cloth/02_engines.py",
+      "sha256": "050e2e823e2b5acf6f693f26c4b9462e5600d493a1a23d4b17f73668e0fb6a50",
+      "bytes": 1503
+    },
+    {
+      "path": "examples/01_cloth/04_your_own_cloth.py",
+      "sha256": "61f8d8313e959e41adeb5927441814e0321ff3adc32a791dd44a24e01327c4b4",
+      "bytes": 5930
+    },
+    {
+      "path": "examples/01_cloth/README.md",
+      "sha256": "e8975f9a4bc7ce7e12d9ade516f93f01669db9730f33ef48339611b9a9310489",
+      "bytes": 3067
+    },
+    {
+      "path": "examples/01_cloth/cloth.py",
+      "sha256": "86cf6dfa6094cafb724135d03982361904d88da78c3afeed8641adb85875caf9",
+      "bytes": 72029
+    },
+    {
+      "path": "examples/01_cloth/media/00_towel.webp",
+      "sha256": "7aa75e31875dd58d24d8fa94060e9e257850569e52851cbecd974374f97508dc",
+      "bytes": 899580
+    },
+    {
+      "path": "examples/01_cloth/media/01_fabrics.webp",
+      "sha256": "2ab3fe5bb8d0da1d54e511dc547d976cb8b5035ee208577068405292c8065ce5",
+      "bytes": 869528
+    },
+    {
+      "path": "examples/01_cloth/media/02_engines.webp",
+      "sha256": "83ff260bd9442c2e0ceb6ee765a053fa937b5417281ca2cf0595d586b38c3478",
+      "bytes": 510574
+    },
+    {
+      "path": "examples/01_cloth/media/04_your_own_cloth.webp",
+      "sha256": "7dd8479f973dbd4b9063161f623e31a3a46804400523bb0be0514c45a7ef9910",
+      "bytes": 810322
+    },
+    {
+      "path": "examples/01_cloth/media/move_together.webp",
+      "sha256": "0f51f211b76dbf431aa83b9afadf58f2a93f3bdad79a3e905dacc24e1e6196be",
+      "bytes": 855068
+    },
+    {
+      "path": "examples/01_cloth/media/pinch_towel.webp",
+      "sha256": "d9a545b4a156fbd549674e20503e60798e24758bbcc171253a2ec6a9d3fed8f3",
+      "bytes": 868030
+    },
+    {
+      "path": "examples/02_soft/00_sponge.py",
+      "sha256": "e0340bb8fd63d4924ba1b021ed2367d52951e6dc6db289d9ed4f1b886c2bd13e",
+      "bytes": 2155
+    },
+    {
+      "path": "examples/02_soft/01_tet_mesh.py",
+      "sha256": "62f84bd5ce49594ee1d054536fda760461d3d8b790f597b67aa3f75d76470d12",
+      "bytes": 2978
+    },
+    {
+      "path": "examples/02_soft/02_your_own_soft.py",
+      "sha256": "8de245bb2b1026a2e4f749b9139ed5aadc959e448ea728486fc31f6f1b7f38f7",
+      "bytes": 5084
+    },
+    {
+      "path": "examples/02_soft/README.md",
+      "sha256": "d3d76275cf30f8ccef393b49f319d4a6a31eaadcf8956514613d48d1d9ee8e2b",
+      "bytes": 2287
+    },
+    {
+      "path": "examples/02_soft/media/00_sponge.webp",
+      "sha256": "23c6bf56dd4e2663a781729db61478d7ccfed6ef4e5cb2f1f64eba75338ee5ae",
+      "bytes": 748726
+    },
+    {
+      "path": "examples/02_soft/media/01_tet_mesh.webp",
+      "sha256": "bb91a10a0188c5fcbacdcc85d125c3c167f32c610496d8908d580ad970d71128",
+      "bytes": 259992
+    },
+    {
+      "path": "examples/02_soft/media/02_your_own_soft.webp",
+      "sha256": "46da684e05cf5773efef218898513b44aed5644b5373acae1044f1c0e924ccb4",
+      "bytes": 670494
+    },
+    {
+      "path": "examples/02_soft/media/press_sponge.webp",
+      "sha256": "c7a466a864eafc6906a4b90ffe21af6922ab08783abfa4e1ddddfaca7cc87a6d",
+      "bytes": 830864
+    },
+    {
+      "path": "examples/02_soft/soft.py",
+      "sha256": "ade77e66e54aeaa32369650ae8f48ce3bf9b3d70e4d9586ce1ca1350d7110d01",
+      "bytes": 29735
+    },
+    {
+      "path": "examples/03_rope/00_cable.py",
+      "sha256": "2b4d70a45bc3dd54828e1891a5761b1c928171c3965f5aa67a5a462c9a7579ca",
+      "bytes": 2503
+    },
+    {
+      "path": "examples/03_rope/01_between_posts.py",
+      "sha256": "3bb9a4ff2b1016589c058978b1d042cc0aff5fea5ccafa3805d1981bf52e12d5",
+      "bytes": 1326
+    },
+    {
+      "path": "examples/03_rope/02_superdex.py",
+      "sha256": "e4e1e08c5fcd57f688fe75fa24847109ef4c5acbb106807f61b62bdd4ade772e",
+      "bytes": 1554
+    },
+    {
+      "path": "examples/03_rope/README.md",
+      "sha256": "03790ff77d3baa0874cb08aaae69da72ef0c07ed74cddc8e3b4d8ff240447224",
+      "bytes": 2125
+    },
+    {
+      "path": "examples/03_rope/media/00_cable.webp",
+      "sha256": "a49f8270e3af2c2fa173acec624d7b325d1330905b3f0dbfb8f8a61634f1958a",
+      "bytes": 753872
+    },
+    {
+      "path": "examples/03_rope/media/01_between_posts.webp",
+      "sha256": "22124175130bcc97ceb614579e880ef0496db7437bb970a26b6591ab0307c36e",
+      "bytes": 835914
+    },
+    {
+      "path": "examples/03_rope/media/02_superdex.webp",
+      "sha256": "141589dedd87e3d5a980985692e1b959aa05653bca13ebb8433e5aaeb21425e3",
+      "bytes": 510470
+    },
+    {
+      "path": "examples/03_rope/rod/__init__.py",
+      "sha256": "26aeece111aa68312bea2bf78b39af34bfe1e2c12104861eb441a28abe5257f7",
+      "bytes": 4107
+    },
+    {
+      "path": "examples/03_rope/rod/actor.py",
+      "sha256": "85d38c496b09ee123626e2990f1c91190dd49897053618c84ceedbf56f0d6d94",
+      "bytes": 17249
+    },
+    {
+      "path": "examples/03_rope/rod/centerline.py",
+      "sha256": "cd199741ad6bbeba41510218a5478b888201174e994b5a6fc5216fa58a633c12",
+      "bytes": 6650
+    },
+    {
+      "path": "examples/03_rope/rod/declare.py",
+      "sha256": "0fc657556db24c73a8548b0d3f291fe4183847b754144938865441ae97ea1e11",
+      "bytes": 5111
+    },
+    {
+      "path": "examples/03_rope/rod/entity.py",
+      "sha256": "a3cde310257e0b384c253e412956e03d8bf91886dccd88d52c82740cc9a10517",
+      "bytes": 63340
+    },
+    {
+      "path": "examples/03_rope/rod/features.py",
+      "sha256": "69d64e06b9575182a7b6a6e06769959a555f3f05a34dbb078ea3386063d9ede1",
+      "bytes": 1798
+    },
+    {
+      "path": "examples/03_rope/rod/latch.py",
+      "sha256": "74a64f77a8c94722a70b41698bb9164dd365c02ff9ad3c4297b5f67364f55f97",
+      "bytes": 5327
+    },
+    {
+      "path": "examples/03_rope/rod/make.py",
+      "sha256": "aeb928f1455730ef88ae3856ebedd516240fbb7950a3a9e85cb063492e1f79db",
+      "bytes": 1865
+    },
+    {
+      "path": "examples/03_rope/rod/materials.py",
+      "sha256": "d7111bc925c26c0139a376632a0f876211904e311ce48ee3b6257ec04ca336a0",
+      "bytes": 908
+    },
+    {
+      "path": "examples/03_rope/rod/measures.py",
+      "sha256": "4ef6b2766fbcfec67639ed3fb5c9a85aed9bfcfc247083f69435be668fdd4caa",
+      "bytes": 11726
+    },
+    {
+      "path": "examples/03_rope/rod/spec.py",
+      "sha256": "3b988a80610ddb18d009e81c0a9a269fdccac0e78a6af770eafc2dce80da9fa1",
+      "bytes": 14384
+    },
+    {
+      "path": "examples/03_rope/rod/superdex.py",
+      "sha256": "a1af373bd993fea0c3210810b8cba26b868b92a9a5a84710082a07a15bcd1aaf",
+      "bytes": 15908
+    },
+    {
+      "path": "examples/04_extending/00_add_a_robot.py",
+      "sha256": "64ed0f32f975014af4fd1b1c89f2989b4e0d98ebc4ea90a1b902d3405570d3d9",
+      "bytes": 2248
+    },
+    {
+      "path": "examples/04_extending/01_new_kind.py",
+      "sha256": "24a9c0ed6d598330c6a2e54b8764d38ff91f468f98f68c7df996681e5b636c46",
+      "bytes": 5589
+    },
+    {
+      "path": "examples/04_extending/README.md",
+      "sha256": "a9c2197dae0238a0e61a7350ceb1cce1ef5a4f78f13dd9609d09a574f5b1eeac",
+      "bytes": 9795
+    },
+    {
+      "path": "examples/04_extending/media/00_add_a_robot.webp",
+      "sha256": "14480d4e65882b9360db62430cd9eb80ec8e8a7725d193daeac35b2e36ea1524",
+      "bytes": 804432
+    },
+    {
+      "path": "examples/04_extending/media/01_new_kind.webp",
+      "sha256": "ddb851bea1115dd14790e55a2482a486e4149193033aadf12fdeef5536421c6f",
+      "bytes": 617134
+    },
+    {
+      "path": "examples/05_studio/00_your_own_panel.py",
+      "sha256": "2e291a1ec6aa90c4a3291d8e9cc5a6349534aa5fad267c13d4cfceecdd60eeb8",
+      "bytes": 2629
+    },
+    {
+      "path": "examples/05_studio/01_render.py",
+      "sha256": "1e761e5f45164e5edc9227e54e59dab1948c708b5f3aec020dbeca137952d828",
+      "bytes": 1645
+    },
+    {
+      "path": "examples/05_studio/README.md",
+      "sha256": "1b8132c06bd3dc0b374698671ee2a9b9f36e4f5f0a00edccaa558af75a5a25a4",
+      "bytes": 8577
+    },
+    {
+      "path": "examples/05_studio/media/00_your_own_panel.webp",
+      "sha256": "509c593da39d716b5b0993bcd2043e97f8e7f7d915eb65b16f76fe170877e4c3",
+      "bytes": 858936
+    },
+    {
+      "path": "examples/05_studio/media/01_render.webp",
+      "sha256": "5d3002c3681794e5d557590b003f2124a3d4e68884affe73b071ea31c5381e3b",
+      "bytes": 111608
+    },
+    {
+      "path": "examples/05_studio/media/drag_cube.webp",
+      "sha256": "77050134f0aabc78bd31ac3c758d03f748688e6240ee413abad7f40208472347",
+      "bytes": 545358
+    },
+    {
+      "path": "examples/05_studio/media/drive_arm.webp",
+      "sha256": "05e96596859781343a3cd6b3b053de9e72da03071d910a897ce24186392023eb",
+      "bytes": 892538
+    },
+    {
+      "path": "examples/06_tasks/00_your_first_task.py",
+      "sha256": "3e794ef193cf04494d52ca128b57fad0c59e5f3d72ba439979f7d77fb8388704",
+      "bytes": 1125
+    },
+    {
+      "path": "examples/06_tasks/01_goals_and_rewards.py",
+      "sha256": "f3695dfc3c6eb2c20addc520298d62e7e81f260dffbfdd55d2af3fd83831049f",
+      "bytes": 1523
+    },
+    {
+      "path": "examples/06_tasks/02_episodes.py",
+      "sha256": "40c523641dbd16dfad1f439da2b0860e505b8a6d155cc74067f4cad23d2bcdcd",
+      "bytes": 1559
+    },
+    {
+      "path": "examples/06_tasks/README.md",
+      "sha256": "b1f652352245554b98f214db1125ddc47b7e6d1a4b17c4eb6556e0a1c2218ba9",
+      "bytes": 4414
+    },
+    {
+      "path": "examples/06_tasks/media/00_your_first_task.webp",
+      "sha256": "fe2b204588f4f5a6cf7cf9713177b7123d2a5864dd9b565b01d95426d986ebc9",
+      "bytes": 1175520
+    },
+    {
+      "path": "examples/06_tasks/media/01_goals_and_rewards.webp",
+      "sha256": "9e8c80f7f81007e83f38505abf0ce12e7a63d32d540b2dc7c9894e7f131c669f",
+      "bytes": 826756
+    },
+    {
+      "path": "examples/06_tasks/media/02_episodes.webp",
+      "sha256": "3fea9842fe148057c65a5c0a42e644c22c56fbbc8ea216add18bfd9d5896c333",
+      "bytes": 864086
+    },
+    {
+      "path": "examples/07_policies/00_pick_and_place.py",
+      "sha256": "14646fd248dadf4edd284cabe2af5b5550ba08c8645783026e434e43e25e5d84",
+      "bytes": 1554
+    },
+    {
+      "path": "examples/07_policies/01_check_and_retry.py",
+      "sha256": "08f5b4d06c5a4c34069cf4a4e827ead2f97072ef4937005e33de3073e18050a3",
+      "bytes": 1923
+    },
+    {
+      "path": "examples/07_policies/02_without_privilege.py",
+      "sha256": "c69ef21674906a083eb57a2637452e2ecee0706011b0e1b467e072ebc39bb40f",
+      "bytes": 2194
+    },
+    {
+      "path": "examples/07_policies/03_many_worlds.py",
+      "sha256": "7079b01c6019c7788ad9a6391e697025ff23706ef0cd493dba50f9f5cb42b0c2",
+      "bytes": 2205
+    },
+    {
+      "path": "examples/07_policies/README.md",
+      "sha256": "a8075a5d7a266b8926e11574845da2cdfe151b655bb49f13957e9112651115d3",
+      "bytes": 5311
+    },
+    {
+      "path": "examples/07_policies/media/00_pick_and_place.webp",
+      "sha256": "4cb1d9a4a0fd469bbb4799084dff6721d22b57fd5164f1516f2fe83c4f306932",
+      "bytes": 1063442
+    },
+    {
+      "path": "examples/07_policies/media/01_check_and_retry.webp",
+      "sha256": "feb1617405eb16350e898fd6ccebbc5e75a44c081a768f9804806fb30e31e0b7",
+      "bytes": 1049014
+    },
+    {
+      "path": "examples/07_policies/media/02_without_privilege.webp",
+      "sha256": "3052d48ae0d701e303d7d47674dd5751e94ed359b62884a5f38c336f6d512763",
+      "bytes": 1070170
+    },
+    {
+      "path": "examples/07_policies/media/03_many_worlds.webp",
+      "sha256": "5d06c1fbc280381cdcb1123764ed49392db6a096c107fca62d354095f427727e",
+      "bytes": 1358506
+    },
+    {
+      "path": "examples/07_policies/pick_place/scripts/plan.py",
+      "sha256": "6ed8fc8658a9fa83da3b5f38799c63d69d8f5886460cf70013617b98dcfae814",
+      "bytes": 864
+    },
+    {
+      "path": "examples/07_policies/pick_place/workflow.json",
+      "sha256": "01cd68be8fea495af26fae2664d7ce705b1695bf7561e6d756f6edda7f1ff112",
+      "bytes": 2571
+    },
+    {
+      "path": "examples/07_policies/pick_place_camera/scripts/check_grip.py",
+      "sha256": "c819841620421663cd92032add3b89fe5b6122773cccb11f659f2cab99835adf",
+      "bytes": 525
+    },
+    {
+      "path": "examples/07_policies/pick_place_camera/scripts/locate.py",
+      "sha256": "dbe7b04d12f30f9e00aa93e03c851f49682fcaa657566363984e7c19d4d06dcb",
+      "bytes": 2895
+    },
+    {
+      "path": "examples/07_policies/pick_place_camera/scripts/plan_pick.py",
+      "sha256": "0ede83d39589f3acda620557a527d79601691f369f9552962226c21f331399ad",
+      "bytes": 827
+    },
+    {
+      "path": "examples/07_policies/pick_place_camera/scripts/plan_place.py",
+      "sha256": "cb9db34b86e44c056f8ef966587956a1da3fb959ea1927d2b136293407625006",
+      "bytes": 516
+    },
+    {
+      "path": "examples/07_policies/pick_place_camera/workflow.json",
+      "sha256": "259ae51a42ae4ce1860d3745015ce8eb2f933c18735cee6b6971bc64bd461d7f",
+      "bytes": 3857
+    },
+    {
+      "path": "examples/07_policies/pick_place_retry/scripts/check_grip.py",
+      "sha256": "c819841620421663cd92032add3b89fe5b6122773cccb11f659f2cab99835adf",
+      "bytes": 525
+    },
+    {
+      "path": "examples/07_policies/pick_place_retry/scripts/plan_pick.py",
+      "sha256": "0ede83d39589f3acda620557a527d79601691f369f9552962226c21f331399ad",
+      "bytes": 827
+    },
+    {
+      "path": "examples/07_policies/pick_place_retry/scripts/plan_place.py",
+      "sha256": "cb9db34b86e44c056f8ef966587956a1da3fb959ea1927d2b136293407625006",
+      "bytes": 516
+    },
+    {
+      "path": "examples/07_policies/pick_place_retry/workflow.json",
+      "sha256": "e8110200ee4e9902cd83ad8b5f2bd9a0343dc6d8a099debdaec871030e6a2c23",
+      "bytes": 3450
+    },
+    {
+      "path": "examples/08_demos/README.md",
+      "sha256": "872595518e0bff57f29bc6815ce4033453d5672b0a8143a27947470d73022cc7",
+      "bytes": 1240
+    },
+    {
+      "path": "examples/08_demos/fold_the_towel/README.md",
+      "sha256": "6cc1cc696174b5cfcdcc2d73aac1f65c6f59084156182db781e5d9fca8fc9692",
+      "bytes": 4837
+    },
+    {
+      "path": "examples/08_demos/fold_the_towel/fold_the_towel.py",
+      "sha256": "7812983795a54e9eaa4bf13899df7b1a2f83a2b93dfa9789d1e447c41973dbbc",
+      "bytes": 11386
+    },
+    {
+      "path": "examples/08_demos/fold_the_towel/media/fold_the_towel.webp",
+      "sha256": "a68e06c91b699f22c3d89efb1f60b4d8b7071741902ee32665f95e5ea6372d3a",
+      "bytes": 1242360
+    },
+    {
+      "path": "examples/08_demos/route_the_cable/README.md",
+      "sha256": "f97e24e9ccc5e9c78319650af27a2a00a6dc7a213411f736d509a6aafb93b524",
+      "bytes": 4675
+    },
+    {
+      "path": "examples/08_demos/route_the_cable/board.py",
+      "sha256": "39313b04a984daa6222fa7564594211ad33f36fb78920fc2bfcdf52e5c4bb34d",
+      "bytes": 7680
+    },
+    {
+      "path": "examples/08_demos/route_the_cable/media/route_the_cable.webp",
+      "sha256": "5123e37d433b95bf808899cbeb738cfcb9e258d4eb4d3bafbfb0b5650f7f8f92",
+      "bytes": 1437900
+    },
+    {
+      "path": "examples/08_demos/route_the_cable/route_the_cable.py",
+      "sha256": "3f3683c6dada5a4dd9ace25e24b808e13b56fb316316791b1308259d894a902b",
+      "bytes": 10015
+    },
+    {
+      "path": "examples/08_demos/wipe_the_bar/README.md",
+      "sha256": "8c5384e3e9096e60a1f27927b45e2e69f78d8e01e0f9c4dad62bd13284cf0354",
+      "bytes": 6183
+    },
+    {
+      "path": "examples/08_demos/wipe_the_bar/bar.py",
+      "sha256": "f15baf305238bbb49443003cd6ec6cf446675fdb352d297f3d8a558c09c8c1f3",
+      "bytes": 27667
+    },
+    {
+      "path": "examples/08_demos/wipe_the_bar/media/wipe_the_bar.webp",
+      "sha256": "8908d12946cf93fda12d68566ad895baefbf7346365031152816009147dc68f1",
+      "bytes": 1899682
+    },
+    {
+      "path": "examples/08_demos/wipe_the_bar/routine.py",
+      "sha256": "677b85db1dd3f32a3ac40237f03c3b72ea5446de9f87595a7ea98bb019803146",
+      "bytes": 12117
+    },
+    {
+      "path": "examples/08_demos/wipe_the_bar/wipe_the_bar.py",
+      "sha256": "fffc877a0312dee205c509e2014494f00692520299256bb5bb091d1390b28672",
+      "bytes": 2006
+    },
+    {
+      "path": "examples/09_teleop/00_leader_arm.py",
+      "sha256": "86178f2a9587a1fe3f1002f016a909c105d6077cc57dabe3ee3c049b9afb942f",
+      "bytes": 3679
+    },
+    {
+      "path": "examples/09_teleop/01_force_feedback.py",
+      "sha256": "5861a01ca6fff107c44ca1141ee27a5a2e566ddcf6a928a90d3433d2e7ec1d1e",
+      "bytes": 4147
+    },
+    {
+      "path": "examples/09_teleop/README.md",
+      "sha256": "27d00576a2642e14011cff97239f1bbefe46e635166e159938ae1c9f1534b03e",
+      "bytes": 18909
+    },
+    {
+      "path": "examples/09_teleop/media/00_leader_arm.webp",
+      "sha256": "c6ab04e0a94920bd46073ede66e389760ca6d7421b93e59f88417f4a6a47e1ca",
+      "bytes": 863158
+    },
+    {
+      "path": "examples/09_teleop/media/01_force_feedback.webp",
+      "sha256": "e42d91d535aba6cff4c76fc47b4f05a4d51ce11b209af8deaafb258d409bd1d2",
+      "bytes": 863916
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "10255b2096d97279520c7bea7469c070787d126d1c42a8d49ad8ed2f1e455c37",
+      "bytes": 4003
+    },
+    {
+      "path": "examples/live/.gitignore",
+      "sha256": "ec439a9a9910a57da38141f9a12d9183ee1abfed1ea58fa97d7d31423ec53da0",
+      "bytes": 5
+    },
+    {
+      "path": "examples/live/README.md",
+      "sha256": "c7d472dbff54fd2b6256772c81302a772518ae46e44056bf0c65b44cec550536",
+      "bytes": 4226
+    },
+    {
+      "path": "examples/live/REFERENCE.md",
+      "sha256": "eeae1a30f8bbede654a3a7b4e0430c465a37d6c6f86a4588ce5dfc6f6d4e3c1d",
+      "bytes": 12602
+    },
+    {
+      "path": "examples/live/ctl",
+      "sha256": "e0b895d94d1319c8a71827b78bd90db7f0282b812581a9f184afde20c6ee86e6",
+      "bytes": 812
+    },
+    {
+      "path": "examples/live/media/live_page.webp",
+      "sha256": "b98f5ee42a18c4fd81646153558b54ef74aa774d2fdcf13913610f436e6c892d",
+      "bytes": 391190
+    },
+    {
+      "path": "examples/live/scene.py",
+      "sha256": "ec97024a7b1231317ecde5060038de612618e112d01483179f20583c1a168be2",
+      "bytes": 493
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "cb94f127cb84b75c3f85606a7574a9f1c514402d90b4107bd7b22af18fba21db",
+      "bytes": 11076
+    },
+    {
+      "path": "robosimstudio/__init__.py",
+      "sha256": "7baf6a44723dd856bd9bc94bb00a7d4ccbb72aca80077819a5375eecd50eb7da",
+      "bytes": 12518
+    },
+    {
+      "path": "robosimstudio/_version.py",
+      "sha256": "543b0fd4509ba2fae24c3922c8626f3767975513e87662baece72e7fa2e8c5d0",
+      "bytes": 110
+    },
+    {
+      "path": "robosimstudio/arms.py",
+      "sha256": "5f724543201ae1af0b8ffb8848aee228121e9fc0f0050ddf60835755d753c0ac",
+      "bytes": 5497
+    },
+    {
+      "path": "robosimstudio/assetlib/__init__.py",
+      "sha256": "02c66100d12dbc0d793e1869982deaa9b4b3a63283dd321f10cce05ab98d5ccd",
+      "bytes": 6210
+    },
+    {
+      "path": "robosimstudio/assetlib/interface.py",
+      "sha256": "405102bbb89b37542c8754fa84c3ab02097f4eddc4d6fb929c961b1b9b0ae9b3",
+      "bytes": 13238
+    },
+    {
+      "path": "robosimstudio/assetlib/lower.py",
+      "sha256": "03a892b5a878369ff9596fa4199b22ab403530dec7ce55bd3fbbf5aba939ff9d",
+      "bytes": 8418
+    },
+    {
+      "path": "robosimstudio/assetlib/materials.py",
+      "sha256": "182ddf123828225ca447594ad1c5e0903bf44817132fd7c2325ce52d2706aaf2",
+      "bytes": 11205
+    },
+    {
+      "path": "robosimstudio/assetlib/record.py",
+      "sha256": "47680da0c7353595e0931e7cbf637bdfd8dbfaef295cf72c39c4a5d61c8c73ae",
+      "bytes": 14643
+    },
+    {
+      "path": "robosimstudio/assetlib/registry.py",
+      "sha256": "525f77f9334a0ed4cb1b693e85c85f5670851feee51798b96eaf766aa18ee5b3",
+      "bytes": 11115
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/__init__.py",
+      "sha256": "02a36c521f708007efd22e4c341f7e030460fca3a4aedad8172d782ddbaefea8",
+      "bytes": 3871
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/atom.py",
+      "sha256": "0aaa69beb9e208a5cd04e60f4adaa1f5514ddd2763643f16f1a94b704aab48ea",
+      "bytes": 11710
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/atoms.py",
+      "sha256": "c136e49fca69d49ccd3ab812914ebade3c17f95b9608d82f8bce6aef61376844",
+      "bytes": 20018
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/features.py",
+      "sha256": "a18757831f46d9e7f7dfddb3eed1e09e13643eab131608402ef3bd0970025c88",
+      "bytes": 8471
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/handlers.py",
+      "sha256": "7150826f1b726325af83c7330ad1bacebad137df58e3b1fde9877b379d87560f",
+      "bytes": 12744
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/kinds.py",
+      "sha256": "fb3750a62f071713c885acf56150478191d2e5daa8205266c53727a6b8918ac1",
+      "bytes": 6771
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/library.py",
+      "sha256": "3532bdeeb6c4f860edcb01cc7f2d8a56c4fe8ea2827e0429c3136957d89dae1b",
+      "bytes": 14552
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/published.py",
+      "sha256": "530935848283b7fa1ad34bf7573775b0ef1702c2930bae87bf0fb5e4f858cdd0",
+      "bytes": 4997
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/resolve.py",
+      "sha256": "194b85167066ce482c5cb1ab12c224b3d5091f24a8d220e459728728e70baa0d",
+      "bytes": 2853
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/selectors.py",
+      "sha256": "9e817a0cc4731bbb1abc98e2f3a79d629604712e015a40c3ce14792844561f39",
+      "bytes": 16317
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/snapshot.py",
+      "sha256": "37913a3e23f1c0648d301dd4561919e4670b0dfd96da81125d3ad32138671d89",
+      "bytes": 6521
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/states.py",
+      "sha256": "ecfb22a6eda6dfcb072a0b60467893863b0827f4cdf6b55d2b60665db97ca33b",
+      "bytes": 4756
+    },
+    {
+      "path": "robosimstudio/assetlib/semantics/substrates.py",
+      "sha256": "eb7c19bf5d0d7bd3c060c1a0e2318cfbc56c46da0b8264e32016fb05656f9977",
+      "bytes": 6602
+    },
+    {
+      "path": "robosimstudio/assetlib/sim.py",
+      "sha256": "935c77c2cc295f0c49aa4dcbbfe47a8a472eea5b1ad523a34347b44a9b54e976",
+      "bytes": 1104
+    },
+    {
+      "path": "robosimstudio/assetlib/vocabulary/__init__.py",
+      "sha256": "9a72607be13c78a124857f4bd2120082c610eba322b4e7b52ca601b63caef1df",
+      "bytes": 1590
+    },
+    {
+      "path": "robosimstudio/assetlib/vocabulary/coverage.py",
+      "sha256": "18bf12db40123a2c5b0f394c46150c8e808f59cb71edaab56793e83df26011ef",
+      "bytes": 7448
+    },
+    {
+      "path": "robosimstudio/assetlib/vocabulary/measures.py",
+      "sha256": "0746cd7b54546335cbf7577235910d8868b9026400d95eeaeb12c1761e09720a",
+      "bytes": 13604
+    },
+    {
+      "path": "robosimstudio/assetlib/vocabulary/motion.py",
+      "sha256": "c24823927e34202443beffbe5c26fe4411380166d9620d6f30d0c929839b53e4",
+      "bytes": 3424
+    },
+    {
+      "path": "robosimstudio/assetlib/vocabulary/regions.py",
+      "sha256": "18d17c38ab7b8a976364dfccc0cdc31b2d87e62e0ed872eebc4625512a0684e5",
+      "bytes": 3874
+    },
+    {
+      "path": "robosimstudio/core/__init__.py",
+      "sha256": "3dbac0fcd4e7cb753f5fb74cf62009ab7d598a8a6a35066ce9ac008fbcd07f4b",
+      "bytes": 3111
+    },
+    {
+      "path": "robosimstudio/core/builder.py",
+      "sha256": "10eb5221994a9b941b81b3b4c97e77228236d42bd9fa57b1f90ed11b818be531",
+      "bytes": 8285
+    },
+    {
+      "path": "robosimstudio/core/bus.py",
+      "sha256": "2145e8f793eebef37e0004b3a55a988c582b09ba01ffc9a2d867fac8f99ae261",
+      "bytes": 11935
+    },
+    {
+      "path": "robosimstudio/core/cameras.py",
+      "sha256": "1ac003b377cb5d0b211cd1d5d1f802aa1d50b0e19c11f735c21cc45c41bafb9b",
+      "bytes": 10039
+    },
+    {
+      "path": "robosimstudio/core/draggers.py",
+      "sha256": "f227f623c90a9c71f98529c672c93921d4f6fa3ebeb411d23ff6323cfc8b2601",
+      "bytes": 19852
+    },
+    {
+      "path": "robosimstudio/core/env.py",
+      "sha256": "7677292de692a24ef337bf947e76646a1739bdbcad0c2d75c1932d4161e05ecb",
+      "bytes": 18515
+    },
+    {
+      "path": "robosimstudio/core/lifecycle.py",
+      "sha256": "88c7b2f4e809078e9185b7947a5cd03ca08f55f84c2aeafb2a3cb96f0cd7afcb",
+      "bytes": 7053
+    },
+    {
+      "path": "robosimstudio/core/math.py",
+      "sha256": "7e2c74886b539144d7bc55711289edc2757a1cf0332593342720400cb2efd5f6",
+      "bytes": 12034
+    },
+    {
+      "path": "robosimstudio/core/pipeline.py",
+      "sha256": "0f58dfd5e39cc7a937feda97694a0c21a65b06a01b097f27102036e7db649e55",
+      "bytes": 5870
+    },
+    {
+      "path": "robosimstudio/core/probes/__init__.py",
+      "sha256": "231794d8de1debb5c0d6250b99c69039386dcfdcd9fa27f2c0a6617f77e5d4f4",
+      "bytes": 626
+    },
+    {
+      "path": "robosimstudio/core/probes/clearance.py",
+      "sha256": "676e135dd314b3a9ab682acda8ccb32ca8e344cd975fe086b0040ccfca94969f",
+      "bytes": 15634
+    },
+    {
+      "path": "robosimstudio/core/probes/contact.py",
+      "sha256": "c2cfb27f3293c752f140170f280556131448f02a7c34047d6cc17f041ac1dc8f",
+      "bytes": 19070
+    },
+    {
+      "path": "robosimstudio/core/probes/particle.py",
+      "sha256": "9f38155a233543a6f03dbe16beae7cbca925706bbbf2d2d88155ffc3766dc21a",
+      "bytes": 16815
+    },
+    {
+      "path": "robosimstudio/core/profile.py",
+      "sha256": "5d5389b022ba2e18c8820088155689c234a41ef9467b91346f80a0a5a1455ad3",
+      "bytes": 21146
+    },
+    {
+      "path": "robosimstudio/core/readback.py",
+      "sha256": "64c17901709281d1c45929d94df1489352ca85b512c10c8af77f4ca8b3427b3d",
+      "bytes": 13968
+    },
+    {
+      "path": "robosimstudio/core/render/__init__.py",
+      "sha256": "1e60dec7b1874a3de2acc46ea68d13f7c3241b9ae7f82f6865e5d79630f1c783",
+      "bytes": 1173
+    },
+    {
+      "path": "robosimstudio/core/render/base.py",
+      "sha256": "7bb15b0aef5687e5275052d40d5e107c0eefbc2ef7f40bae16bc9c98a3230336",
+      "bytes": 5371
+    },
+    {
+      "path": "robosimstudio/core/render/finish.py",
+      "sha256": "d3ef3a4ac01b4d9da9e86973b1865b229cc78f7086afe1cefa13e5972fa73b08",
+      "bytes": 10597
+    },
+    {
+      "path": "robosimstudio/core/render/live.py",
+      "sha256": "677c051fa699a6d55ecf1668e7521db10e3e03a1c92a4bdfd2b7f1117df35c47",
+      "bytes": 6693
+    },
+    {
+      "path": "robosimstudio/core/render/look.py",
+      "sha256": "0f29dcaa582f7145ce295fe3ea1eafa52a69e578ea121045d38d08cdc3aa89ab",
+      "bytes": 6400
+    },
+    {
+      "path": "robosimstudio/core/render/offline.py",
+      "sha256": "b515635e32ca99b47fe73c46be600cd48d95668cdb6d7de3f6ac858cd15702d2",
+      "bytes": 9074
+    },
+    {
+      "path": "robosimstudio/core/render/palette.py",
+      "sha256": "2755574187a58c02b9c9ec605cfc86eea7eb9621bfa704175f3865d3161a57c7",
+      "bytes": 19482
+    },
+    {
+      "path": "robosimstudio/core/render/room.py",
+      "sha256": "1ce3b6b308bb379746c9a08aa5805990708fac949bc8068a5ecd808b4ff1c183",
+      "bytes": 35297
+    },
+    {
+      "path": "robosimstudio/core/render/scenery.py",
+      "sha256": "95ed11dfbbc90e1ed2c85c0cf5f273ac835d69d7db03551927943d6b6a7290d2",
+      "bytes": 5220
+    },
+    {
+      "path": "robosimstudio/core/render/spec.py",
+      "sha256": "227d6cfb0659337d3c73544dd6f7e130d1aee223928f67598f9fa3acc63a7c21",
+      "bytes": 7083
+    },
+    {
+      "path": "robosimstudio/core/render/uv.py",
+      "sha256": "992f362dc3ecddd0d6e739294fcc2548c22eaf26bdb3c22b261674fdc3dabfb0",
+      "bytes": 2983
+    },
+    {
+      "path": "robosimstudio/core/render/video.py",
+      "sha256": "660f0b99ea2399ef335d886c74015f94d3df97907ebc6ec48fb7b8d9a9d7d744",
+      "bytes": 7250
+    },
+    {
+      "path": "robosimstudio/core/render/visual.py",
+      "sha256": "78df8ff91ca27e632ad588fbd3d06d6a71e288a71d7bb201dc49b1065117d587",
+      "bytes": 20777
+    },
+    {
+      "path": "robosimstudio/core/schedule.py",
+      "sha256": "5774f15cd603c5716583b63cf80e79422eb81c60dbcc31458b640b1d6396e8d6",
+      "bytes": 22776
+    },
+    {
+      "path": "robosimstudio/core/shell.py",
+      "sha256": "7f5b40cf8741e2cc8f2ccdb9f63047bc295cb7dcd1a8004df047e70e07f1afbc",
+      "bytes": 15519
+    },
+    {
+      "path": "robosimstudio/core/streams.py",
+      "sha256": "e976c93bacff7158a12aaa29004110be3d913c6f4f5b121fd4bc7fc83a58b994",
+      "bytes": 3972
+    },
+    {
+      "path": "robosimstudio/core/tuning.py",
+      "sha256": "66dee7719dc44e039005614684a7332596f765b91b95071afe1de17780f52d39",
+      "bytes": 14474
+    },
+    {
+      "path": "robosimstudio/core/worlds.py",
+      "sha256": "5c68e29a86c2fef9c87d13fca37133b50641d68613c152756b75b74b2d5d2841",
+      "bytes": 12532
+    },
+    {
+      "path": "robosimstudio/domains/__init__.py",
+      "sha256": "6387bf29bfb05300c0bcdbb63c3586a6da00c455999e169eae75dbe86a8567f0",
+      "bytes": 3419
+    },
+    {
+      "path": "robosimstudio/domains/articulated/__init__.py",
+      "sha256": "2c00a7ebbb3641480cd8635de4f0f857f44e36a6f7cf30d500965d1260b946c9",
+      "bytes": 868
+    },
+    {
+      "path": "robosimstudio/domains/articulated/measures.py",
+      "sha256": "7890067398baa2799580d03f1f47973e9bf99962dc56ef504123f68bf106c085",
+      "bytes": 1187
+    },
+    {
+      "path": "robosimstudio/domains/capabilities.py",
+      "sha256": "d984a7e64f0732f458faa7dab9f93d6472c84e97f045577cd691f27c487c0831",
+      "bytes": 15033
+    },
+    {
+      "path": "robosimstudio/domains/rigid/__init__.py",
+      "sha256": "4f317f5ae981d0542ea3cbd92e325c9aa91991a457eec1c63d2c791a7d190d49",
+      "bytes": 1545
+    },
+    {
+      "path": "robosimstudio/domains/rigid/declare.py",
+      "sha256": "36c34fd1583409695aab4a8becea2ddfad99a9308c04df734aa1175daa8c2f0a",
+      "bytes": 8705
+    },
+    {
+      "path": "robosimstudio/domains/rigid/entity.py",
+      "sha256": "c8436cdfd97c5a233a454ae618ddc518582e0ab345b1c0661c16f8c3dc753568",
+      "bytes": 57071
+    },
+    {
+      "path": "robosimstudio/domains/rigid/make.py",
+      "sha256": "b24e9fcfec9a7afe6a3088142b6993ded87c830bf320d8031309d2b440589fe5",
+      "bytes": 3554
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/__init__.py",
+      "sha256": "e05d35319fea1b23b6ca1f281964e7d8e06b6043663454a4c1861e80fcf1ea11",
+      "bytes": 932
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/geometry.py",
+      "sha256": "43e1fbc84daaf88912a4c9a821b417eb2dd9b745aa369030f5c221386b230ef6",
+      "bytes": 19208
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/insertion.py",
+      "sha256": "f24be96a6de577da81a01a9d2bad6acd41323ef1089823cd035ed34032e09b8e",
+      "bytes": 7220
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/jaws.py",
+      "sha256": "cc3eedd7ebf65b4281bc76b2af079cd6cef095b59850cfd367fd44923c86c2b6",
+      "bytes": 12991
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/placement.py",
+      "sha256": "93db25309fd1901aea000f0bb688a65304656bc58932bf1bb5da24415aae59ea",
+      "bytes": 13111
+    },
+    {
+      "path": "robosimstudio/domains/rigid/measures/regions.py",
+      "sha256": "8b4f6650dd1fd7611b3c4b6445f58cc16fbbf73878f4840348978ebb2ee8a5b3",
+      "bytes": 1899
+    },
+    {
+      "path": "robosimstudio/domains/selection.py",
+      "sha256": "72e7613370cc4ee66c0b539c1630eacf1390512c2e79bb9b72d6e2977a031a5b",
+      "bytes": 3415
+    },
+    {
+      "path": "robosimstudio/domains/static/__init__.py",
+      "sha256": "5ef593ebe3113c760f1eac405fbb5ceae28c0d36c694390d64891caccdd0af53",
+      "bytes": 1667
+    },
+    {
+      "path": "robosimstudio/domains/static/entity.py",
+      "sha256": "726b2adf932decc0f25e0080a16751a275baeb96dd25c44610fa9365f0974153",
+      "bytes": 26018
+    },
+    {
+      "path": "robosimstudio/domains/static/make.py",
+      "sha256": "5adc485bc50eda28a0246049801c7e1c65738531e64b795fb5efa75f0bb4be4a",
+      "bytes": 3047
+    },
+    {
+      "path": "robosimstudio/domains/static/posts.py",
+      "sha256": "f2155bec258a5de4c87027a2138473b136ddddf6e4cf25e3faa6c15a40c2f190",
+      "bytes": 4619
+    },
+    {
+      "path": "robosimstudio/domains/static/welded.py",
+      "sha256": "355c1bac9cd6f916e8825e096b168ffaacbbeb7e7e3ca25d8e6b95fa71fc394e",
+      "bytes": 8606
+    },
+    {
+      "path": "robosimstudio/engines/__init__.py",
+      "sha256": "7ef07ce719e683c05f23089aaa5ed99e0a7831eb7a8df420cade7154c2b0117f",
+      "bytes": 2960
+    },
+    {
+      "path": "robosimstudio/engines/contract.py",
+      "sha256": "274e7fdd8342f9b4e9568b3d9e5850318f7cdfe915710eb3ff9907c8dc1ad71f",
+      "bytes": 4082
+    },
+    {
+      "path": "robosimstudio/engines/cosim.py",
+      "sha256": "455f40f48f6e1e8ac3f2d3ec6ae5f73cd2822be50f5dbf7ff33a876c230652d6",
+      "bytes": 12105
+    },
+    {
+      "path": "robosimstudio/engines/feedback.py",
+      "sha256": "2d1f84ba5a6a1e5945582bf66d4b632034afde2b139867bc8faf49e209664c6b",
+      "bytes": 7447
+    },
+    {
+      "path": "robosimstudio/engines/genesis/__init__.py",
+      "sha256": "8dc984eff29757c49de141de7ac00053c30b4b94dab07b49a78b06f13c9a7207",
+      "bytes": 1159
+    },
+    {
+      "path": "robosimstudio/engines/genesis/bridge.py",
+      "sha256": "b819efca3b4b19464e6c16c8417398526996a6aaea624ae2ecd2aef9ae371cd7",
+      "bytes": 27111
+    },
+    {
+      "path": "robosimstudio/engines/genesis/runtime.py",
+      "sha256": "2f651492449200f80b8c565080d701aa7ed41dc61737b12cb07fe7935a8bbf8d",
+      "bytes": 5000
+    },
+    {
+      "path": "robosimstudio/engines/genesis/solver.py",
+      "sha256": "63e737c3a3ecd7d7a7caa03b52985a3105c09dedabbde334ed14819b02997b98",
+      "bytes": 4077
+    },
+    {
+      "path": "robosimstudio/engines/geometry.py",
+      "sha256": "bf608c195edb44130bf87b5d4a7768b73b48a63ec40e04a6bffbeddd1bfd1ea0",
+      "bytes": 18376
+    },
+    {
+      "path": "robosimstudio/engines/host.py",
+      "sha256": "20539d7caa6993b23c004055697dc7ac35917332100619d9e8cf51c657d8c603",
+      "bytes": 6287
+    },
+    {
+      "path": "robosimstudio/engines/newton/__init__.py",
+      "sha256": "60f68712037fabec64c4f7db35bca651612747461b7dd4fb96c9f871e808ef67",
+      "bytes": 6200
+    },
+    {
+      "path": "robosimstudio/engines/pose.py",
+      "sha256": "db89806e5808a620176327abeaea0bb1ad437372cb31c744fbee8215478bd9bc",
+      "bytes": 5495
+    },
+    {
+      "path": "robosimstudio/engines/superdex/__init__.py",
+      "sha256": "3c9a1800db088f7b0270eeeb3fecc5369b68a0f8f7415b54c2397755cba9bc05",
+      "bytes": 1003
+    },
+    {
+      "path": "robosimstudio/engines/superdex/bridge.py",
+      "sha256": "b91666ef9a0edf8e592096ce33921abbfd8859113279e4d3e5eb261e632207a2",
+      "bytes": 76922
+    },
+    {
+      "path": "robosimstudio/engines/superdex/mirror.py",
+      "sha256": "ed07c509e3f26e0f50d66b9e68b10f7cf08859c4e434c59bd5659a8dcfccd3e6",
+      "bytes": 12966
+    },
+    {
+      "path": "robosimstudio/engines/superdex/solver.py",
+      "sha256": "a8349b40d1dcf22e57c32946336172e5b0cacea82c9e2c60535bdb744aa19b15",
+      "bytes": 5397
+    },
+    {
+      "path": "robosimstudio/paths.py",
+      "sha256": "c811d6a2e212fa9bb0d31c4603e9f679b5eeb2d87ee2aab9acdeaabb92f37d30",
+      "bytes": 6415
+    },
+    {
+      "path": "robosimstudio/record/__init__.py",
+      "sha256": "d499393b795f3ccda2058cb5748c1486f01ede1718f70acb100f24ffc4a67e0a",
+      "bytes": 501
+    },
+    {
+      "path": "robosimstudio/record/capture.py",
+      "sha256": "15675b704ff0c6786f4b29eaf6c126e8a0ac55f630b1be0c840636ad06af85ab",
+      "bytes": 19578
+    },
+    {
+      "path": "robosimstudio/record/fleet.py",
+      "sha256": "8ffd6e382f17dc73814c7484b2e514db206365f66d9107e4e4b37c6e299f75ed",
+      "bytes": 23224
+    },
+    {
+      "path": "robosimstudio/record/recorder.py",
+      "sha256": "b6722483922235bc65b415cf1c3bef12d4542b189c642c92b0c62a14b9c0da9c",
+      "bytes": 27023
+    },
+    {
+      "path": "robosimstudio/record/store.py",
+      "sha256": "324e32ac57fba7bdfb494367c11baa0c971a5520c508f1dd22fae1c141616ab9",
+      "bytes": 10801
+    },
+    {
+      "path": "robosimstudio/record/trace.py",
+      "sha256": "0ba566e5cf4233a7d57f7ee15cd0fc06f69ec7c49137192dfc4572f95709da80",
+      "bytes": 18132
+    },
+    {
+      "path": "robosimstudio/registry.py",
+      "sha256": "34d22271b1e5708c1643ad722e8df7f8548360e79e6b6afabd0ce406db8e3194",
+      "bytes": 11248
+    },
+    {
+      "path": "robosimstudio/robots/__init__.py",
+      "sha256": "eeeb2d439cb3a9999554eb336fa8679b11a78dfe1a0ff4b02a882717eefe35c5",
+      "bytes": 1205
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/__init__.py",
+      "sha256": "6b23472818da8387258454a2c6d4f661ad838802127a7cea616e3b33992fa077",
+      "bytes": 2547
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/panda.py",
+      "sha256": "89bd5462dbf693e859f79e9740c670f9a3deff7b91613873399e4e1579b65701",
+      "bytes": 10987
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/yam_bimanual.py",
+      "sha256": "dd1920b7acbd8a8f59c43a75f4785c8b01168cd44295a26d359c38c3e2ea66ef",
+      "bytes": 4956
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/yam_i2rt.py",
+      "sha256": "34d79c4f1d9e937e2e396bcc3d00941589d37af2db759901177735173901c98b",
+      "bytes": 10510
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/yam_i2rt_arena.py",
+      "sha256": "0bc660785d11b209714085641a0fe8b493543ac99fc53731bb6807c2f0510039",
+      "bytes": 5526
+    },
+    {
+      "path": "robosimstudio/robots/embodiments/yam_look.py",
+      "sha256": "2039100a5b0c8956fd6606909c23adab3d07139782f98df9b340c07fadf60fc3",
+      "bytes": 6184
+    },
+    {
+      "path": "robosimstudio/robots/entity.py",
+      "sha256": "23b9b69ccbae16ec7c6a3fad5dd6f6a46e8ce3a0332b39fb6f4e9d5f9f81cf19",
+      "bytes": 71503
+    },
+    {
+      "path": "robosimstudio/robots/grippers/__init__.py",
+      "sha256": "472076b55ce7a3a772491031a038326001a1b8abc0f6a925b4c2e13d02c94b66",
+      "bytes": 1010
+    },
+    {
+      "path": "robosimstudio/robots/grippers/franka_hand.py",
+      "sha256": "afeaf5183c9d4ec2980aa6a6e7240097f669a83fd938e282ce930fbbe3eabdfb",
+      "bytes": 5778
+    },
+    {
+      "path": "robosimstudio/robots/grippers/linear_4310.py",
+      "sha256": "c9d2f333df5078d8f0683713624be184bd7292aed3e2ad45fa195fc4f08570d8",
+      "bytes": 7067
+    },
+    {
+      "path": "robosimstudio/robots/grippers/robotiq_2f85_menagerie.py",
+      "sha256": "7df65495ade09d7e7b6f5cbbef711fccae3de132108664aee020bfba01c19c19",
+      "bytes": 9014
+    },
+    {
+      "path": "robosimstudio/robots/grippers/robotiq_2f85_panda.py",
+      "sha256": "3b28e8c22f1213dbe4fbf8892f198f87ba1db3ea85b7387c078eaeffabcd1dc7",
+      "bytes": 6506
+    },
+    {
+      "path": "robosimstudio/robots/grippers/yam_linear_arena.py",
+      "sha256": "bb3aee9c3822ead26e4b42f4e4f7ebdada0ccd386ea467ae32722620ed4b317f",
+      "bytes": 6472
+    },
+    {
+      "path": "robosimstudio/robots/registry.py",
+      "sha256": "311fe4fd873460318fe5911f77de06d6c7f36e549502dcdcbcac71dc96ee51d4",
+      "bytes": 6283
+    },
+    {
+      "path": "robosimstudio/robots/teleop/__init__.py",
+      "sha256": "c022e97d3fb8b67f5e6239f17ac69aef1abe5fdbe7f5a30f6d97c03d1ea8d0f7",
+      "bytes": 948
+    },
+    {
+      "path": "robosimstudio/robots/teleop/follower.py",
+      "sha256": "5efdeb4379e035dc972eed8765b05893062dbd6b45ffcb9df015f68f36d1df5b",
+      "bytes": 11285
+    },
+    {
+      "path": "robosimstudio/robots/teleop/force_feedback.py",
+      "sha256": "cfa92448a8d2aea0a95681c70663519936f7fb9a77dc9fd4230a9b7dbab40ced",
+      "bytes": 87773
+    },
+    {
+      "path": "robosimstudio/robots/teleop/lerobot_controller.py",
+      "sha256": "f96b849680291980a86f8513913d6702b26802219a155525fe5eca1ad05d4689",
+      "bytes": 24155
+    },
+    {
+      "path": "robosimstudio/robots/teleop/simulated.py",
+      "sha256": "5b40a137939dbd44ec02d6b53700534423228769f2e29401759a75950909db75",
+      "bytes": 12274
+    },
+    {
+      "path": "robosimstudio/roots.py",
+      "sha256": "8a9a5f3c17218ae7441ff45254e686ec7b3e4ba9580f208016b55819f242d54b",
+      "bytes": 22169
+    },
+    {
+      "path": "robosimstudio/scene/__init__.py",
+      "sha256": "459a12838ef5db94e8bdfb7efd7466fe1cdf6b7295271b9d369dcb6988841dc3",
+      "bytes": 2518
+    },
+    {
+      "path": "robosimstudio/scene/assets.py",
+      "sha256": "ad759558388183e81a5b8107d356298bf49348d609dd61115032bca832036049",
+      "bytes": 11340
+    },
+    {
+      "path": "robosimstudio/scene/build/__init__.py",
+      "sha256": "b055ecd040c5bda1ff9746b55bbc646226bc11ecf393f95e63ff678e90f322a7",
+      "bytes": 2062
+    },
+    {
+      "path": "robosimstudio/scene/build/bodies.py",
+      "sha256": "b57fca4bfef741a2faddfaea0f40c945e5eb41e1df50e908bfe7feebc40dcbfe",
+      "bytes": 5274
+    },
+    {
+      "path": "robosimstudio/scene/build/colliders.py",
+      "sha256": "2da06a3def719af42508318c6dd4e6e53a525263d18e563d09b28f9523cd246c",
+      "bytes": 14585
+    },
+    {
+      "path": "robosimstudio/scene/build/imports.py",
+      "sha256": "6f131c2f6780007c5a860d0c68ec3e7e0d69677ab074e5b0e67e74bac5115b40",
+      "bytes": 28484
+    },
+    {
+      "path": "robosimstudio/scene/builtin/__init__.py",
+      "sha256": "e87018c1127a25af179b3c93ee2fc2448c139e8cac8dbbf1dd5f5c69df46c6d9",
+      "bytes": 1341
+    },
+    {
+      "path": "robosimstudio/scene/builtin/benches.py",
+      "sha256": "1ac46d9564ac0c69e181ab1c742e1362a378f0f525b7649ff5ede177fcc2ee08",
+      "bytes": 5145
+    },
+    {
+      "path": "robosimstudio/scene/builtin/void.py",
+      "sha256": "83601b74bd01309f9d59004d1c2b93895f52c0eea8e32bba922a1bd0fae239cd",
+      "bytes": 1332
+    },
+    {
+      "path": "robosimstudio/scene/compiler.py",
+      "sha256": "1d53b6c9acf98827e409c1b175a30af31bbcdcda6864f1f6d5ac3ecf02adb39d",
+      "bytes": 65061
+    },
+    {
+      "path": "robosimstudio/scene/entity.py",
+      "sha256": "3bd3ca04ccdd65e5177b800d7f58efc3f658638edbcfb602709a3ae50035ca22",
+      "bytes": 34125
+    },
+    {
+      "path": "robosimstudio/scene/frames.py",
+      "sha256": "079647b270b1299686073d6713bf9a5b4a1a90b527b2ef497922b41a2a9b8e68",
+      "bytes": 3044
+    },
+    {
+      "path": "robosimstudio/scene/handles.py",
+      "sha256": "1d11649a79fce4dcec3d7f956526e4ab5cbe456a1de63d6a0bcbf72f8ffb1f29",
+      "bytes": 25657
+    },
+    {
+      "path": "robosimstudio/scene/ik_model.py",
+      "sha256": "1acb0282c5f0242ce603811db0893326a38b7b368972141a6474cdc8b8901387",
+      "bytes": 11899
+    },
+    {
+      "path": "robosimstudio/scene/parking.py",
+      "sha256": "e7428414528d6b163ddc962aff301844aeaf4c4a507175639baef5b9a276796b",
+      "bytes": 11311
+    },
+    {
+      "path": "robosimstudio/scene/physics/__init__.py",
+      "sha256": "dcf258f37aacb28b45ea236f8cf9ed1b67b8c534f79a15e2ab8cbef8aafd8003",
+      "bytes": 2574
+    },
+    {
+      "path": "robosimstudio/scene/physics/backends.py",
+      "sha256": "b1c9bb102f8062e56f07002fcb3d5fc8f0def06b23db9a4dfbde8c143c3d4b6d",
+      "bytes": 4378
+    },
+    {
+      "path": "robosimstudio/scene/physics/compose.py",
+      "sha256": "4fca0da88a77f6f21472fce465ba925656335b3fddac5d883df3e98ecd26fd55",
+      "bytes": 36406
+    },
+    {
+      "path": "robosimstudio/scene/physics/couplers.py",
+      "sha256": "43460c54677b14267dbae1f58f2314667436faa7767bc2cb07f1f79dcc9ea1b6",
+      "bytes": 18897
+    },
+    {
+      "path": "robosimstudio/scene/physics/errors.py",
+      "sha256": "85522c12c8b00e52288de245d7ef0210ddb9911b7fb11210dc4e9483d363ab82",
+      "bytes": 944
+    },
+    {
+      "path": "robosimstudio/scene/physics/interactions.py",
+      "sha256": "3f86e5d85f8365f493eeb98fe94a952b8ff12908c578c409148d54befb44bb89",
+      "bytes": 12239
+    },
+    {
+      "path": "robosimstudio/scene/physics/islands.py",
+      "sha256": "de79dd54d13df901d9618d812fb6db6431770dd3c24c4411e9533ee5a58424e1",
+      "bytes": 13594
+    },
+    {
+      "path": "robosimstudio/scene/physics/kinematic.py",
+      "sha256": "d5c2cb966a31f999c5706721ec94e4bd12bb8abcc87e586db3304a7623963bdd",
+      "bytes": 3148
+    },
+    {
+      "path": "robosimstudio/scene/physics/routing.py",
+      "sha256": "b07f5b21a13784932f890ee0594ec5e974e436ef8f04e19afb67ad7a30461cf2",
+      "bytes": 11042
+    },
+    {
+      "path": "robosimstudio/scene/physics/world.py",
+      "sha256": "5e905a45bd4c8ba33975518a4b57b093cb84bd6368d74290b3dd0b54b76464d0",
+      "bytes": 2691
+    },
+    {
+      "path": "robosimstudio/scene/ref.py",
+      "sha256": "94fb5d3dae05322ac343152c3aa8bc6561fee882c242e31f3f802b6a2848cc47",
+      "bytes": 8407
+    },
+    {
+      "path": "robosimstudio/scene/registry.py",
+      "sha256": "dfd60e05decab93bf7384c836b397ae2822efadd15dc28bea7f18338a9cc2fad",
+      "bytes": 11770
+    },
+    {
+      "path": "robosimstudio/scene/request.py",
+      "sha256": "fbc59e9be37dde586057006c29ab00d3a8ccf36077e7672905ca83d6a28137dd",
+      "bytes": 9731
+    },
+    {
+      "path": "robosimstudio/scene/snapshot.py",
+      "sha256": "12f1275f96b3a08eba2b69d275daa795fc9ee917e59bd08bd5526085f1a4565d",
+      "bytes": 12381
+    },
+    {
+      "path": "robosimstudio/scene/state.py",
+      "sha256": "e3f58f689f13bde36ea750a6a21639f5355c7aaf59d832935dd4fe1dffdc7fa4",
+      "bytes": 6333
+    },
+    {
+      "path": "robosimstudio/scene/tuning.py",
+      "sha256": "6352d75fd08d6b531de67b34efd608fe885f0d788e8b94d22d10c02fa7c46814",
+      "bytes": 8714
+    },
+    {
+      "path": "robosimstudio/sim/__init__.py",
+      "sha256": "1dc80a7e466bf2e67ee9a2d194745bf6c39b44464a1a7078f24f48c0df0e67df",
+      "bytes": 816
+    },
+    {
+      "path": "robosimstudio/sim/draw.py",
+      "sha256": "d70275689006caa7f0a676ceda0e1c21b8ff5dcecbbc80c6cc284fcb52898a94",
+      "bytes": 15852
+    },
+    {
+      "path": "robosimstudio/sim/scene.py",
+      "sha256": "9f0a88b5a3748a75a5433ddb6e28314fa61098583f2a4ba833ec2266bc3f8fb5",
+      "bytes": 19858
+    },
+    {
+      "path": "robosimstudio/sim/sim.py",
+      "sha256": "25522328112bec60981edcf9b60056ce6166c60fbef19b282f68065d0f970fd1",
+      "bytes": 51306
+    },
+    {
+      "path": "robosimstudio/solvers/__init__.py",
+      "sha256": "2ede3b02cda4dfa48c6f5b696098ce71993baba22c5534b58edba96587998d9a",
+      "bytes": 3411
+    },
+    {
+      "path": "robosimstudio/solvers/control/__init__.py",
+      "sha256": "6bd7a5d4ca72a726827392f4d74d75200d7e385ad7aea91c7d0199df627e8629",
+      "bytes": 420
+    },
+    {
+      "path": "robosimstudio/solvers/control/action.py",
+      "sha256": "a9172653f050f672ce45d94f025d6d6f5fcd0380d9838c94596fec599b24a488",
+      "bytes": 33267
+    },
+    {
+      "path": "robosimstudio/solvers/control/batched.py",
+      "sha256": "fe20a6ba76a8b1edd7fb77882bf7566e8a5cec811523963980726fd833abdf68",
+      "bytes": 24622
+    },
+    {
+      "path": "robosimstudio/solvers/grasp/__init__.py",
+      "sha256": "c0ddc4c567530b1acdea4d02ea5728ffaddef95622c3f0c1a5bace92eb1313fb",
+      "bytes": 443
+    },
+    {
+      "path": "robosimstudio/solvers/grasp/antipodal.py",
+      "sha256": "c670431b7a8113ebd5489cb22c40ea69acbcb32c7e75670159982645973db000",
+      "bytes": 69312
+    },
+    {
+      "path": "robosimstudio/solvers/grasp/obb.py",
+      "sha256": "99690e423e42d91b70c0fe93a0a3618b5e4a38938feda9480dc3395d69b294a3",
+      "bytes": 9678
+    },
+    {
+      "path": "robosimstudio/solvers/ik/__init__.py",
+      "sha256": "3252d62eb8aa81e4350e734809015425d250560eb546edf1a6665afd1f835ea9",
+      "bytes": 454
+    },
+    {
+      "path": "robosimstudio/solvers/ik/arm.py",
+      "sha256": "2231b06c0624fefd18ff1373c6dc1defaff2d8575931621342be49707ba8ae79",
+      "bytes": 6386
+    },
+    {
+      "path": "robosimstudio/solvers/ik/arm_ik.py",
+      "sha256": "e0cf8709274cf10e8b4b53d3103f1ce1b7a5c19e87c0251d2b483d164381cd0f",
+      "bytes": 49314
+    },
+    {
+      "path": "robosimstudio/solvers/ik/batched.py",
+      "sha256": "eaf101cd09b54bafd5de1b4e28da29fe353fe61b69a38ad4f1a3804719a337b1",
+      "bytes": 17063
+    },
+    {
+      "path": "robosimstudio/solvers/ik/dls.py",
+      "sha256": "8859776df7932a6a3c615803134b7f66368608ae69a33646aff9e09f7ef96e4b",
+      "bytes": 4182
+    },
+    {
+      "path": "robosimstudio/solvers/ik/fleet_dls.py",
+      "sha256": "f964bef7417dbb42ecbab712d0e008932038a58716aa7fec3ccc5064abe822f4",
+      "bytes": 23196
+    },
+    {
+      "path": "robosimstudio/solvers/ik/fleet_fk.py",
+      "sha256": "ef611cbdb0e40652c67310cae4b3ef6db3ddbb5026f4ea47b02f567ed6d2d2b2",
+      "bytes": 8204
+    },
+    {
+      "path": "robosimstudio/solvers/ik/pyroki.py",
+      "sha256": "4f5a66555f2996b36c9ca4b2b9c561941fe8e1d3fe7ca2ddeed48c468562fcd1",
+      "bytes": 17589
+    },
+    {
+      "path": "robosimstudio/solvers/ik/solver.py",
+      "sha256": "6fd402550580dbf1a547dc0f3395bfc3c88e7987cb56e02bc52c954fdc76d7a9",
+      "bytes": 9958
+    },
+    {
+      "path": "robosimstudio/solvers/ik/tool_frame.py",
+      "sha256": "434801297bd63c86bae800f567d30a79f252d978b89510a8f490a98171d2e527",
+      "bytes": 3603
+    },
+    {
+      "path": "robosimstudio/solvers/motion/__init__.py",
+      "sha256": "9c7ca0f5cebf91c3ee9be6641598b60f25fb329b340f4df60ee762773c88f718",
+      "bytes": 436
+    },
+    {
+      "path": "robosimstudio/solvers/motion/gripper.py",
+      "sha256": "9e9c4701e5deaae31fc95b27347f052af27599c5b7394f94f6320d5f105c7817",
+      "bytes": 12473
+    },
+    {
+      "path": "robosimstudio/solvers/motion/osc.py",
+      "sha256": "ad9272b5c876797cea8b4c7ee0390abd601ef521d70ef2b04af076e69ec8cd62",
+      "bytes": 27380
+    },
+    {
+      "path": "robosimstudio/solvers/motion/path.py",
+      "sha256": "68d0cf29c3f2044d788d19d55d6b4d398adccdf8106b4d2993d14068ab46112e",
+      "bytes": 2221
+    },
+    {
+      "path": "robosimstudio/solvers/render/__init__.py",
+      "sha256": "fdd099e34d9d1b4f4f4b0cbbfca018d5f2f2178905669e5c67d0c8abb617a27d",
+      "bytes": 10750
+    },
+    {
+      "path": "robosimstudio/solvers/render/rtx.py",
+      "sha256": "e64e0ad8c5909b76c016ce95ebe1af25dbad64e4378e7d3b3f8bb59b607c704f",
+      "bytes": 70196
+    },
+    {
+      "path": "robosimstudio/solvers/render/tiled.py",
+      "sha256": "c4f8644a0833a460b169b6131c146cc2153bd98c4c5f61bacd7ed5169c792e93",
+      "bytes": 20794
+    },
+    {
+      "path": "robosimstudio/specs/__init__.py",
+      "sha256": "01f2b64588afbf45503dadb803082370be152311d92fb1fffbea15ba824fef48",
+      "bytes": 6911
+    },
+    {
+      "path": "robosimstudio/specs/arrangement.py",
+      "sha256": "16e6976b18979ce34c124cc6be53288eaf3bb881a092451eb680d40eb4859552",
+      "bytes": 19971
+    },
+    {
+      "path": "robosimstudio/specs/asset.py",
+      "sha256": "a83c973745dda252adf2ca5c1577476b32a05e582b2ad4530536c66fdc09ca80",
+      "bytes": 33451
+    },
+    {
+      "path": "robosimstudio/specs/base.py",
+      "sha256": "6fac948cb920c551452f4b3aa3b91c43bd8e037245fca31ec2a63848ca88b39c",
+      "bytes": 682
+    },
+    {
+      "path": "robosimstudio/specs/cell.py",
+      "sha256": "bdf5862c51e3d5f01dbc763f6bc05174b74bfd1debd492a57825d3fee876ec47",
+      "bytes": 4116
+    },
+    {
+      "path": "robosimstudio/specs/declare.py",
+      "sha256": "78e81e2e639b5a4f2f8c786ef7963c6e15221499395623183690d8c0b30afb59",
+      "bytes": 7996
+    },
+    {
+      "path": "robosimstudio/specs/manifest.py",
+      "sha256": "225e3e14d6392940e56f6512b99f4b8d70f6d7fe21391b6654b7bbb15111a047",
+      "bytes": 10585
+    },
+    {
+      "path": "robosimstudio/specs/params.py",
+      "sha256": "0528d9a1cdd75c2e0031076dd2a34efe055dd371b00756f00166aea73915d19a",
+      "bytes": 7038
+    },
+    {
+      "path": "robosimstudio/specs/physics.py",
+      "sha256": "5b3800191d21836781b98fd07f49bace4273b098b6e7adec24323f32c93fbe2d",
+      "bytes": 4738
+    },
+    {
+      "path": "robosimstudio/specs/registries.py",
+      "sha256": "03ae1d0337135bb26978d9abdbc3e90a5aad4cbf7f353f3ba9e6f8dc5ddc8e77",
+      "bytes": 31677
+    },
+    {
+      "path": "robosimstudio/specs/robot.py",
+      "sha256": "7d2ceac37562cb7deca704cb5790f494ca9118a09f0b1695b4ea5272a66da227",
+      "bytes": 47720
+    },
+    {
+      "path": "robosimstudio/specs/run.py",
+      "sha256": "5fdd139954495377bca947083cd2d241c6286e098d7520b0486624ae28092589",
+      "bytes": 8951
+    },
+    {
+      "path": "robosimstudio/specs/task.py",
+      "sha256": "311b01fd330dd2786cea4d0c87054aa62406e7d1e932b9237565c06a151ad142",
+      "bytes": 43727
+    },
+    {
+      "path": "robosimstudio_bench/__init__.py",
+      "sha256": "464b48300e6d7fe21c5cd73af0e07c4c09874fed3fd3a4cddb261de8c945b088",
+      "bytes": 3282
+    },
+    {
+      "path": "robosimstudio_bench/envs/__init__.py",
+      "sha256": "f8c977659e006dc3e17f17b155244d0dfb477633a944c32bc2c567ab54e1d3c0",
+      "bytes": 1012
+    },
+    {
+      "path": "robosimstudio_bench/envs/env.py",
+      "sha256": "e7571e3852764e47cc2d945040d429eb2608932c5b4b9d17449cda38d2fe45f6",
+      "bytes": 25824
+    },
+    {
+      "path": "robosimstudio_bench/envs/fleet.py",
+      "sha256": "32443e956ea479464bd109d3afc798b33050f180536b32dc92324096ba087d6e",
+      "bytes": 80190
+    },
+    {
+      "path": "robosimstudio_bench/envs/world_view.py",
+      "sha256": "32c1d63bf146d15b0a8cf3927f9907724df9a0776a39fa9ebca412daad0cb0b5",
+      "bytes": 22004
+    },
+    {
+      "path": "robosimstudio_bench/goals/__init__.py",
+      "sha256": "b3e3b9b3b159024c4e2c58ab3650050da5a9c97d4d487bba29d9d494d9026338",
+      "bytes": 4329
+    },
+    {
+      "path": "robosimstudio_bench/goals/bind.py",
+      "sha256": "440f6b99158d34e0df4af691c57744e8b3a6f8f6096ea15a1a1635c9f9e857ac",
+      "bytes": 44910
+    },
+    {
+      "path": "robosimstudio_bench/goals/catalog.py",
+      "sha256": "7f27daa97417464f30cb95a1f4bc8232486efac6e5a26da060af7fab01e8e149",
+      "bytes": 9559
+    },
+    {
+      "path": "robosimstudio_bench/goals/combinators.py",
+      "sha256": "00cc27ed0cbd248a66166f66650b01b35ed3bab3733bfafd801a53824b1f5035",
+      "bytes": 24060
+    },
+    {
+      "path": "robosimstudio_bench/goals/context.py",
+      "sha256": "22b80c7c75054e3712d66d0aef5e04715daf77961e5903ed1af8ac323e9ed5d4",
+      "bytes": 5338
+    },
+    {
+      "path": "robosimstudio_bench/goals/evaluate.py",
+      "sha256": "2ad6e1aaec26b73fea1a512c8e18b23fce38560ec1f984253e41d2a78889210f",
+      "bytes": 6391
+    },
+    {
+      "path": "robosimstudio_bench/goals/gauntlet.py",
+      "sha256": "df6175c076da3d706f468351f1e212308b44737217b931edef1e20eacf68d472",
+      "bytes": 38763
+    },
+    {
+      "path": "robosimstudio_bench/goals/goal.py",
+      "sha256": "9f233e0f0c226e55fc63c1c63dfd14d14182757d51b9a2e06c4ee1598ba2d1f8",
+      "bytes": 22777
+    },
+    {
+      "path": "robosimstudio_bench/goals/initial.py",
+      "sha256": "ec95837374042b3bed07448fb4a120368f1eaf538a7d21a3b4594adc9f99f8e7",
+      "bytes": 8941
+    },
+    {
+      "path": "robosimstudio_bench/goals/mint.py",
+      "sha256": "ab2a0f174a2043fc2251524f99c86219080254c6a7a0145ebe1aa17ef4966ffd",
+      "bytes": 16125
+    },
+    {
+      "path": "robosimstudio_bench/goals/query.py",
+      "sha256": "db27c61bf62ce5a7d5346acd3e586b1445b6ec0386768837ad6bfa111acb6d8d",
+      "bytes": 9936
+    },
+    {
+      "path": "robosimstudio_bench/goals/reward.py",
+      "sha256": "a7881395d971249eb9fcb3c5ae50d38a50539c335957d5146c5650eb40104c45",
+      "bytes": 18930
+    },
+    {
+      "path": "robosimstudio_bench/goals/simcheck.py",
+      "sha256": "8d704f8370c1d741e281123d793ed19da8872b0484214076cc9a8dcabaebe058",
+      "bytes": 5524
+    },
+    {
+      "path": "robosimstudio_bench/run/__init__.py",
+      "sha256": "08e2d5874dc6223c2a58359f2cd3b420b7b800ca2aafe472b1bbf79839269783",
+      "bytes": 486
+    },
+    {
+      "path": "robosimstudio_bench/run/fleet.py",
+      "sha256": "ae65145d18bb9a45d4330918a1f839a7c9bff63f487754d446609609aced2c28",
+      "bytes": 53614
+    },
+    {
+      "path": "robosimstudio_bench/run/jobs.py",
+      "sha256": "1171938b538c7c728fa78d5058e061e9b6f2db11f32985b3c3db812ad8703b5b",
+      "bytes": 2330
+    },
+    {
+      "path": "robosimstudio_bench/run/pool.py",
+      "sha256": "cd26eecfebd7021f52791115762793aa36fabce417be55a5de78fb72c8ab828b",
+      "bytes": 37876
+    },
+    {
+      "path": "robosimstudio_bench/run/runner.py",
+      "sha256": "ca9b104ed4ff878980611eab663762cb833c8449e5c522babc35def8ff6cff63",
+      "bytes": 13285
+    },
+    {
+      "path": "robosimstudio_bench/run/summary.py",
+      "sha256": "b76fbd6473f515490b3b080ee2483d3927e13a5d1091b5d5a00ce470b4fbdeb4",
+      "bytes": 6887
+    },
+    {
+      "path": "robosimstudio_bench/solutions/__init__.py",
+      "sha256": "70415de5666b79372305cb60383e3c5494225afea32952dfe6a2fd9b36857162",
+      "bytes": 1076
+    },
+    {
+      "path": "robosimstudio_bench/solutions/base.py",
+      "sha256": "92e7de91c3321101d12d4782718cded8f93d0b2239a7e65a98c80d455d984147",
+      "bytes": 7350
+    },
+    {
+      "path": "robosimstudio_bench/solutions/declared.py",
+      "sha256": "dc91d0f4e5f2486c932860390ee4a552cb074e46dac0ed360f1734d4ceed26ac",
+      "bytes": 2535
+    },
+    {
+      "path": "robosimstudio_bench/solutions/fleet.py",
+      "sha256": "ee9b3a6877b9019cdab38589fe0057a1a0d458f5abd10da98887be87e8d3b97a",
+      "bytes": 8010
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/__init__.py",
+      "sha256": "50eee6decfc3650c38923e09dc2a032afe7b6292d279ebafafd6451ea2cce081",
+      "bytes": 4831
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/arrangements.py",
+      "sha256": "cda1a2c5277c4d902fb23b35d589cf3c61de1a3e03a5dadfc96a390e6cc9d713",
+      "bytes": 6079
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/artifacts.py",
+      "sha256": "bc2049c581a96c5b513cf8f526cb7e9ca303fc56305e42268353c26b34bc6c8c",
+      "bytes": 4649
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/contract.py",
+      "sha256": "2f28af9ccb7288dc559fba3b10863b9bb5fcd0ec947d375e76c6cc1028df02af",
+      "bytes": 7230
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/discovery.py",
+      "sha256": "3c7e4097d566c80a95324b766ff0cfbc2b91d8bc4959329cb6d28e12b0a68d49",
+      "bytes": 16230
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/documents.py",
+      "sha256": "f952e0d1a1f581743c12104aeac47610f18d45de1616a107b3f4d37541df0ca2",
+      "bytes": 1768
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/episodes.py",
+      "sha256": "c94d1a2f68cc5cdc5eb7a5b4a1323564392eaebdfa0742b254e4687a4e82ee54",
+      "bytes": 13398
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/lower.py",
+      "sha256": "5507cd782bd8b58afb0a14358eb1a493b95bcd976188bbd2309c050dd485fa2d",
+      "bytes": 31030
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/matrix.py",
+      "sha256": "3d2b946a74ee07279fca84e095b2442b34d31d064dec2c316dcaf735a0d41620",
+      "bytes": 11218
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/place.py",
+      "sha256": "08a096c4b96fe3db49f2f585b86f65d448157d05ce9ed8446f44d5dd6eef5bca",
+      "bytes": 10240
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/registry.py",
+      "sha256": "9fa7a2b87d7075adbfcde4655e0e7aa094964b8c59f0223306497535008d6b76",
+      "bytes": 4498
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/staging.py",
+      "sha256": "9c75cff1283bc50493b749d5c529e774fe794ffd8136f99ff125b64900c089db",
+      "bytes": 21405
+    },
+    {
+      "path": "robosimstudio_bench/taskbuild/text.py",
+      "sha256": "539019219ab6537e3403cc1531e91872ab44c13ec8d5a20dee029747af76c60d",
+      "bytes": 3027
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/__init__.py",
+      "sha256": "08c8509779dacbb256485ba1e65ad29ed91dca7463087382a33d5b058545c260",
+      "bytes": 3078
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/ast.py",
+      "sha256": "0e18911ad6589e8d19e049b0ca0800e8addbe0c587c3edc36c979b22136b3953",
+      "bytes": 9830
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/bindings.py",
+      "sha256": "186d2e031af618f1c6346066cf1a0fa9740c2646fda488d78c132031af8552bd",
+      "bytes": 9427
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/parse.py",
+      "sha256": "b33aedb525e9606814551ad4693d51c7e2d94936998d20c28c5f9c001bbe93de",
+      "bytes": 22120
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/reader.py",
+      "sha256": "f66b7d5d402bc8fd77fd30ff85b5f05ad1e2f24dd090cc817c96862f9473a664",
+      "bytes": 8081
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/sidecar.py",
+      "sha256": "210315b2b5a716f20730d2411489274b450d0cbd7257ea100f5fb11448d2625d",
+      "bytes": 2413
+    },
+    {
+      "path": "robosimstudio_bench/taskdoc/typecheck.py",
+      "sha256": "4d5d2bf839ffeace3de0b8f5b582a8012ce86a8f44e22409186f442da3cae20d",
+      "bytes": 15315
+    },
+    {
+      "path": "robosimstudio_policy_agent/__init__.py",
+      "sha256": "aa712de34929249d38c67eec7743ccc845bd553c6a3c929ee462e609624d169c",
+      "bytes": 3225
+    },
+    {
+      "path": "robosimstudio_policy_agent/connector.py",
+      "sha256": "33bd595139b0efd68cea612176e8335b7e16ccb6f6990eccc8b9b5363f30abac",
+      "bytes": 44114
+    },
+    {
+      "path": "robosimstudio_policy_agent/contract.py",
+      "sha256": "1a65f6cdf3fa15a31dbe07f8dd1c0c0a613ce16ca3c96e761e51739f9a66002b",
+      "bytes": 5625
+    },
+    {
+      "path": "robosimstudio_policy_agent/facade.py",
+      "sha256": "6697ab5b222f7aa92336ae60a945299a4a91f9a933ff63e1193528e9b486942d",
+      "bytes": 27571
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/__init__.py",
+      "sha256": "be28a3fffcd5410fdcd59ca401736c9bbdf94561bbe9d5962aa1564f61f52853",
+      "bytes": 2424
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/barrier.py",
+      "sha256": "3a62e7d7f12f7078ad74f8b40e1ea3c1f0af4183e02e153c29f611059376c0ec",
+      "bytes": 26892
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/ik_backend.py",
+      "sha256": "55759604e293ef433a6b94bb7bf1792cbdfbd1fbbd3060f590a395546ed919f4",
+      "bytes": 24779
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/intents.py",
+      "sha256": "336d84e8b3d70083094c1a0e1a29d07f1cc6ed0f25490ec37ab9e5b8d90774ff",
+      "bytes": 18554
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/obs_format.py",
+      "sha256": "19676436cd8420598a9796a5846a89429d83001d3c920ac5e0a082ed8891048d",
+      "bytes": 11356
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/snapshots.py",
+      "sha256": "34ae38d9564f9b3f921d09f944bde5cd1893e6508cceb9ecc65bcab4ea6dc627",
+      "bytes": 5181
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/solution.py",
+      "sha256": "d28f2b3dd8372ab1f9736383623284a4201cf572b4813ab9ab3a68beeab76e49",
+      "bytes": 39104
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/stepper.py",
+      "sha256": "0c32993b880535f669d1e18da95985c1ba5adaa95f69ed41f2e3d36073f633d7",
+      "bytes": 40482
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/world_bus.py",
+      "sha256": "1da3a3d53631d4c3764db4071d77da3840d740c6f20bab352f44d40ecdb8fa0a",
+      "bytes": 18061
+    },
+    {
+      "path": "robosimstudio_policy_agent/fleet/world_facade.py",
+      "sha256": "9a8cd087172db789193a1cf3f6e02127168b9d727355c24b61eea0cc33f76b18",
+      "bytes": 18728
+    },
+    {
+      "path": "robosimstudio_policy_agent/geometry_tools.py",
+      "sha256": "87a37e1086f1ca0b468d27defb8add7868cfda370cf9df4b805d4da1210d04d7",
+      "bytes": 11966
+    },
+    {
+      "path": "robosimstudio_policy_agent/graph_solution.py",
+      "sha256": "e533a7e739806c5d1d1bd43223eed1236db60c7a2cb65c8ec1d2f9760a553f99",
+      "bytes": 32401
+    },
+    {
+      "path": "robosimstudio_policy_agent/graphs.py",
+      "sha256": "0eeb25075d7e88d1bb596a0cec3441dfbd79bd195f3fdc2fa631527b70aad4c3",
+      "bytes": 18231
+    },
+    {
+      "path": "robosimstudio_policy_agent/grasp_tools.py",
+      "sha256": "7a2711a52cb7e6c3f45b2e15745f4bc89fff1b23ee4cf42cec6048dcd6344e4d",
+      "bytes": 13066
+    },
+    {
+      "path": "robosimstudio_policy_agent/ik.py",
+      "sha256": "79d06313ef4ae34e98014873dfdc9b4aacc53c6c4223a77062b261c83d5b524a",
+      "bytes": 30091
+    },
+    {
+      "path": "robosimstudio_policy_agent/motion_tools.py",
+      "sha256": "ccc3b4fda69b9b3014b0a44432fd98ef1852723861c68dcbad8d032c4cf4b00c",
+      "bytes": 30801
+    },
+    {
+      "path": "robosimstudio_policy_agent/nodes/route_perception.py",
+      "sha256": "257f1adff43085dc431179f85460c488c6c0b1338ca5db871d23255399673761",
+      "bytes": 1392
+    },
+    {
+      "path": "robosimstudio_policy_agent/perception_tools.py",
+      "sha256": "fc758752d90f3f048163873066313bb23eb577d1d1d8bd12ec57a30fb06e47c4",
+      "bytes": 22358
+    },
+    {
+      "path": "robosimstudio_policy_agent/planners/__init__.py",
+      "sha256": "df916b77da8be9cbf7c17527098db4bdd3dc3ec6c859dfd9ac21a4484f0963aa",
+      "bytes": 144
+    },
+    {
+      "path": "robosimstudio_policy_agent/planners/curobo.py",
+      "sha256": "e32a653f0f01d83883ed60833464df2b2ee306c1f7f7271f386d62a7900b57d5",
+      "bytes": 106466
+    },
+    {
+      "path": "robosimstudio_policy_agent/refusal.py",
+      "sha256": "93b3c21e568f3da9fd8bc346671778249373f25a30445de8b9062cbb5b02ea15",
+      "bytes": 1589
+    },
+    {
+      "path": "robosimstudio_policy_agent/robot_tools.py",
+      "sha256": "08702adc00f34812e79cda97f44696c89e6c920250bc472a049ca74217e9d234",
+      "bytes": 37544
+    },
+    {
+      "path": "robosimstudio_policy_agent/servo.py",
+      "sha256": "77fa4c8bd43fabae3af03ed5288a449df214f293b134b153b9a0b4515efd4283",
+      "bytes": 42653
+    },
+    {
+      "path": "robosimstudio_policy_agent/sim_tools.py",
+      "sha256": "caeb312f78729e3672efbdf853274054d57fcb22a87a1b51066f477eba152ad4",
+      "bytes": 65028
+    },
+    {
+      "path": "robosimstudio_policy_agent/skills.py",
+      "sha256": "b7777c59f09694c9dba014bccb6ef132ba47b734484c4150262d625ef8032958",
+      "bytes": 13343
+    },
+    {
+      "path": "robosimstudio_policy_agent/types.py",
+      "sha256": "95ba00126e95db2c51af8b41cd8b49358d145334cd0bc9049159a6075ed15419",
+      "bytes": 1857
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/__init__.py",
+      "sha256": "9f9e2b8d4dc9eae6ef07da201074e30656c161e8061b9bfeff335d2ad5690bf8",
+      "bytes": 2201
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/__main__.py",
+      "sha256": "5e7966cd6a156b1274e2131b2b18e0cad616c441273758490c3f28c155535dc3",
+      "bytes": 219
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/checks.py",
+      "sha256": "1f37bc234caef12ccb56adbd6b97a103531fdc9a9cf5d2867b64f065e7b18070",
+      "bytes": 27279
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/compare.py",
+      "sha256": "2055b8978d0df121fb60e0eb797a79745f6a20945d2e0dd89eb97c9cbbdce808",
+      "bytes": 18003
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/ctl.py",
+      "sha256": "0641fe0d6a21a4b59ad89bc47a3e37326900b081100caee061dce3174b379602",
+      "bytes": 23988
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/frames.py",
+      "sha256": "d76708c8dd9b4227193694bae1c7c27a837bf3677af2aef5b424a65c8771be8c",
+      "bytes": 7395
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/page.py",
+      "sha256": "3611f715124081a4fbd0961eb89c6ad7bfbeca391956763ae48bf4e2de1491fb",
+      "bytes": 5036
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/scenefile.py",
+      "sha256": "306936be6754b477484b0fffaddfd8ac44daade5850fc9807c852c4f6b7b574b",
+      "bytes": 4116
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/serve.py",
+      "sha256": "7cab88c8dfc6927bf20cdfb423a98061930ffab3bc10d8ba25cfbf392425348d",
+      "bytes": 3259
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/server.py",
+      "sha256": "49ba228900ba32bd334e532dff5b22d114ef586e64149cbf19faae08c64b4282",
+      "bytes": 46917
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/stills.py",
+      "sha256": "d1a907cae7c60b413ac85fdb76da01e5f3862ccb4a6cc1164b8befeb0a73ce41",
+      "bytes": 5985
+    },
+    {
+      "path": "robosimstudio_real2sim_agent/wire.py",
+      "sha256": "5baf3202ded4a580c9a9dec0ee7acc124a1e0282030d4b4caa90b05d52157c32",
+      "bytes": 9396
+    },
+    {
+      "path": "robosimstudio_studio/__init__.py",
+      "sha256": "546dcae0028b692006e16b442caf5576221a8a9ccf094c4f4fd19d2969e640c1",
+      "bytes": 3074
+    },
+    {
+      "path": "robosimstudio_studio/bench_panels.py",
+      "sha256": "e96d79d16e7cd36b47e986440ece0f3075cb7234a8d88a06e9bcd220b53b6b1a",
+      "bytes": 39741
+    },
+    {
+      "path": "robosimstudio_studio/bench_session.py",
+      "sha256": "a048db247d9553e568b17a58902e4b261c3e35e733712f84baa67f8eb2759a74",
+      "bytes": 22928
+    },
+    {
+      "path": "robosimstudio_studio/cameras.py",
+      "sha256": "f68bba59a34a860ac6069d5fb32fb4a1cd2ae7f6ad721b9850cc1f206896eaae",
+      "bytes": 38282
+    },
+    {
+      "path": "robosimstudio_studio/controls.py",
+      "sha256": "c6025af5cb166e6215522b9186a7592f3cab897cdb08ae5841b041ef3c68484a",
+      "bytes": 20940
+    },
+    {
+      "path": "robosimstudio_studio/finish_gltf.py",
+      "sha256": "987b2b275bfff219903e4b45f26fbaeaf2f07c0838798bd1b89c849a8af54c47",
+      "bytes": 17256
+    },
+    {
+      "path": "robosimstudio_studio/fleet_session.py",
+      "sha256": "dc18876c03130c3b106428d6532e5bae1ae317b7900be15cfd65f75da76c672e",
+      "bytes": 16423
+    },
+    {
+      "path": "robosimstudio_studio/fleet_view.py",
+      "sha256": "32e8cdd75b52b235ab65c7ac1c34b28f1e8e4597a6f3c5e979f294354a4667dc",
+      "bytes": 21283
+    },
+    {
+      "path": "robosimstudio_studio/garments.py",
+      "sha256": "c69c5af82693aa8d516aba7f3c69465413061f2da9a74829b87b3531fb642d06",
+      "bytes": 61276
+    },
+    {
+      "path": "robosimstudio_studio/goal_panel.py",
+      "sha256": "5c3bdefc0d5fc7697e43700f699c50ca4f85fc75053f35a19940b1f323f574f0",
+      "bytes": 19897
+    },
+    {
+      "path": "robosimstudio_studio/handles.py",
+      "sha256": "7dc6d579c12b68972de1298973e70c50c144605017a7c6cf3e3063d87fba9a64",
+      "bytes": 15719
+    },
+    {
+      "path": "robosimstudio_studio/inspector.py",
+      "sha256": "83db14c10d7a4adde50b13d6bc51b694266af913cd1ed602d20d5ade44d3b14b",
+      "bytes": 13712
+    },
+    {
+      "path": "robosimstudio_studio/leader_arm.py",
+      "sha256": "b8d3d553ccafb56925bd8f11bfe66ee244358fc59099b9aad91421e1979230de",
+      "bytes": 10019
+    },
+    {
+      "path": "robosimstudio_studio/lighting.py",
+      "sha256": "375479ee5c89c03d97c5d43eca10b8bc84af4353ae31378ff1ccc600f6b08141",
+      "bytes": 19042
+    },
+    {
+      "path": "robosimstudio_studio/overlay.py",
+      "sha256": "402555620e04b5d7a6f1f722f12a7eb33d3a4b666c447d962c3aa1124dc818ab",
+      "bytes": 20100
+    },
+    {
+      "path": "robosimstudio_studio/panels.py",
+      "sha256": "5e94b36bd76a28b570ee04932291e93557f9df533089a26c866cd01879b4ea0a",
+      "bytes": 65809
+    },
+    {
+      "path": "robosimstudio_studio/pick.py",
+      "sha256": "770d507bd2f68968a10388a5f25be459f22b315d017c7e0cd798ab278da5251a",
+      "bytes": 10454
+    },
+    {
+      "path": "robosimstudio_studio/regions.py",
+      "sha256": "303a170d375efa532315170378dba45b6789c20dbbc64da10dd6265f37289465",
+      "bytes": 9641
+    },
+    {
+      "path": "robosimstudio_studio/render_view.py",
+      "sha256": "56e817bc39bdf1b11d7575bd9abae19d789338715b60041f2a903504b785d704",
+      "bytes": 29235
+    },
+    {
+      "path": "robosimstudio_studio/routine.py",
+      "sha256": "f9fdb18038b9cf45fa5e7fdffe017e40ccb75fd3f82de8a8adf95fbdb6330ecb",
+      "bytes": 8910
+    },
+    {
+      "path": "robosimstudio_studio/scene_panel.py",
+      "sha256": "3542d7863ed40e53715b127c1d9f9404857824da9e68eff9dcfe3ed4076f6cea",
+      "bytes": 2763
+    },
+    {
+      "path": "robosimstudio_studio/scenery.py",
+      "sha256": "36b6958e7f72b338e64eca365fab9d9f3c5867cff42163b054b5d439fbc1d9a2",
+      "bytes": 4881
+    },
+    {
+      "path": "robosimstudio_studio/seams.py",
+      "sha256": "cf01d300dc4eba5be8f575679e6eafe8165dad5477ac29d4c2ce68f3523d5f7c",
+      "bytes": 6169
+    },
+    {
+      "path": "robosimstudio_studio/selection.py",
+      "sha256": "2eb5dd94323b1033eb976efe89bfc34fb8c01ac3c1068652e16c28f72de1c9a0",
+      "bytes": 13186
+    },
+    {
+      "path": "robosimstudio_studio/session.py",
+      "sha256": "946750c8648b4b071e6fcd7122896d2ba98bc823c87efa43958c6feefdce991b",
+      "bytes": 108477
+    },
+    {
+      "path": "robosimstudio_studio/tuning/__init__.py",
+      "sha256": "7a381bc8b55185ad807ef686c332702c10a3959cda42c7f35f9af1b9a6f571be",
+      "bytes": 2131
+    },
+    {
+      "path": "robosimstudio_studio/tuning/apply.py",
+      "sha256": "7415420abd5f48c51556cd60de7895f84d31d025c95730981ce24749b9d2c96f",
+      "bytes": 3922
+    },
+    {
+      "path": "robosimstudio_studio/tuning/arrangement.py",
+      "sha256": "05a28b70e1119213ee41c5a61088557e47b5bab3cba712dd25f3e08ecb995863",
+      "bytes": 9447
+    },
+    {
+      "path": "robosimstudio_studio/tuning/binder.py",
+      "sha256": "97c781758efce6e7d16ee37533bc41d32a795f6947ce2e05181519247faa264f",
+      "bytes": 10292
+    },
+    {
+      "path": "robosimstudio_studio/tuning/metrics.py",
+      "sha256": "8cc469bdfc7f8b285f537dd4eaf00fa28cbc4865263fd53e75d6bc3e4e490551",
+      "bytes": 11954
+    },
+    {
+      "path": "robosimstudio_studio/tuning/panels.py",
+      "sha256": "170b34c036519f7ab9c9d0d1f070a86906679d479f1e345c85e6e5a3b8b4e30b",
+      "bytes": 19212
+    },
+    {
+      "path": "robosimstudio_studio/tuning/tuner.py",
+      "sha256": "2405e9f12919bce99dbdab5d5287a56c703c35aa6d19ddf10df12fa967743433",
+      "bytes": 7497
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "da6050ef9fcb83573916611eec89017842f3ae6cc38a4289f9a99839561843e4",
+      "bytes": 2702
+    },
+    {
+      "path": "scripts/analyze_leader_trace.py",
+      "sha256": "0db8cac4551798e9045da90b0b664f3a2e43aaa54ac5c9f89e678863bfc28735",
+      "bytes": 9481
+    },
+    {
+      "path": "scripts/bench_run.py",
+      "sha256": "9c58c1935f7b77bf77b6b62721636fe05f95607cfee6db98ef1765a613281931",
+      "bytes": 37592
+    },
+    {
+      "path": "scripts/calibrate_leader_arms.py",
+      "sha256": "435cb26efdcaf4804e5de2b67f84c9b7b63318fd28873faccda262e6c4788dc3",
+      "bytes": 44927
+    },
+    {
+      "path": "scripts/calibration/yam_leader.json",
+      "sha256": "2d3e6451e7a6fa3043d77caa1d2a2bb403956bacd71314de40dcf9b5a592f932",
+      "bytes": 3296
+    },
+    {
+      "path": "scripts/check_leader_signs.py",
+      "sha256": "f251e69885d5b983ab970c8be6fba62ff37102c36048f28d752b44f9d2b66255",
+      "bytes": 4541
+    },
+    {
+      "path": "scripts/example_readmes.py",
+      "sha256": "a1cf38829d6d4992b884389796fe5fbc2fe330bce1810fe6b8164302d568cf97",
+      "bytes": 7866
+    },
+    {
+      "path": "scripts/live.py",
+      "sha256": "f8ffbcc7740013c314c0b0833c979297b6c4fed9774d77cf645443b016d23437",
+      "bytes": 735
+    },
+    {
+      "path": "scripts/record_examples.py",
+      "sha256": "013517ba8bdbbf1f440fc9f7a7270ffd0a1e686c29fb2b7cd25fdc54a792b233",
+      "bytes": 13118
+    },
+    {
+      "path": "scripts/recording/__init__.py",
+      "sha256": "d743e88d709a0ed8584460d0489746b1ec614dd8dafe90a8df39fdcf66fa7e59",
+      "bytes": 420
+    },
+    {
+      "path": "scripts/recording/beats.py",
+      "sha256": "1655c938038a19243dd96283503e7426a571462d1112cc9dd162312abcc24b28",
+      "bytes": 21009
+    },
+    {
+      "path": "scripts/recording/encode.py",
+      "sha256": "17d919983fc07b0b60a20c7ed78806cd2b239e93f80dd08819d304eab0199434",
+      "bytes": 4140
+    },
+    {
+      "path": "scripts/recording/lockstep.py",
+      "sha256": "881b5905cc96f11f8423a0e3b5e83976fda6d1e6a75ce01a20506bfd085415bf",
+      "bytes": 24450
+    },
+    {
+      "path": "scripts/recording/page.js",
+      "sha256": "921f5ba5e2f43de06e18ace3442920cc7e89506203eb07549b32fb8621d4d05b",
+      "bytes": 12078
+    },
+    {
+      "path": "scripts/recording/page.py",
+      "sha256": "cf0b53ee50603779321f552738211b76adda662122190c59699cce1a99c65d2c",
+      "bytes": 21483
+    },
+    {
+      "path": "scripts/recording/pickgpu.c",
+      "sha256": "d893e86869985b33313003d19c4ec1ea09dd90954ac2efc9aa4849adf4bf34e2",
+      "bytes": 8542
+    },
+    {
+      "path": "scripts/recording/takes.py",
+      "sha256": "7edad5f356d2a883a1126a5b7badec8d0b2b451935d88f31575f1c84aaca0052",
+      "bytes": 30268
+    },
+    {
+      "path": "scripts/testrun.py",
+      "sha256": "b99d274b87ab6b6293544ddfded9896e5a62ce1435b2e76409ff490ee0f9a5bc",
+      "bytes": 5075
+    },
+    {
+      "path": "scripts/udev/99-ch340-serial.rules",
+      "sha256": "54d1ccfb8d9e1e2f993c694d3988aa26dc36d796f352f8c1597f1c8a8b087d09",
+      "bytes": 1016
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "105f84e709d1581921504daecfcb0e9896a4462d3b0f639b0fa189dee6115663",
+      "bytes": 1497
+    },
+    {
+      "path": "tests/assetlib/__init__.py",
+      "sha256": "4f1aecb0bd93c2dcb76d46658cff022ed10c0e911ef9f8bfe640c0ae4b45e1e0",
+      "bytes": 597
+    },
+    {
+      "path": "tests/assetlib/test_atom_taxonomy.py",
+      "sha256": "1bddbc19622d77526e1db0bb390bd1552c5f2c93f11ffc71a0a99fa39df38991",
+      "bytes": 9054
+    },
+    {
+      "path": "tests/assetlib/test_contracts.py",
+      "sha256": "23c7402861cdbfee25a4e299ed15280cf003e1bdcf4db512ccf37121329df3a5",
+      "bytes": 12130
+    },
+    {
+      "path": "tests/assetlib/test_declarations.py",
+      "sha256": "bac05708c82cc49a388180b68d0fd916c4e538e5fa550cf4ffdaee992992d6c2",
+      "bytes": 16796
+    },
+    {
+      "path": "tests/assetlib/test_interface.py",
+      "sha256": "c7fbc98777da8e5325a052333205e82550cbd2ac91dfc36345a93a16d7ad3058",
+      "bytes": 11817
+    },
+    {
+      "path": "tests/assetlib/test_placement.py",
+      "sha256": "5f43623eb2aea780a021139fa38b4433322528dc24dc2b7f63b430bcef254141",
+      "bytes": 9716
+    },
+    {
+      "path": "tests/assetlib/test_published_states.py",
+      "sha256": "e446283282c5631f2a62994e28d8bb7a74d23b376f16d9af722e2a5d1538c760",
+      "bytes": 4733
+    },
+    {
+      "path": "tests/assetlib/test_snapshot.py",
+      "sha256": "b710d3bdd38b3062737400783381da323e157108530af81bad24c161a0b1be37",
+      "bytes": 2754
+    },
+    {
+      "path": "tests/compile/__init__.py",
+      "sha256": "ef50354045988b86ac0d124c927f39eb203b001ed87260dd8ab8b35f4b27ad64",
+      "bytes": 118
+    },
+    {
+      "path": "tests/compile/test_bddl_arrangements.py",
+      "sha256": "9180a92afb72978eae4a66bf2fbb84eaa0673b5dd85fa4d05dffca3cd579beef",
+      "bytes": 7231
+    },
+    {
+      "path": "tests/fixtures/__init__.py",
+      "sha256": "f5405fd1d016e19303018aa3169e4bb38c0d63bb7351fa83921fdaa957f806b9",
+      "bytes": 1445
+    },
+    {
+      "path": "tests/fixtures/content.py",
+      "sha256": "762e8e857cf41992bec4d48abacbb82112de959f3d036110e2f4ebffbeee245c",
+      "bytes": 1579
+    },
+    {
+      "path": "tests/fixtures/examples.py",
+      "sha256": "d202132d0a5892d031046d74eb93cc4ac7d191fbc6cd6295ecbba5a2d2ee107c",
+      "bytes": 4852
+    },
+    {
+      "path": "tests/fixtures/grasp.py",
+      "sha256": "16da151edd3f79fecb32ba1c900105dd36ce33d82948e086753dc42ab095871a",
+      "bytes": 6078
+    },
+    {
+      "path": "tests/fixtures/grids.py",
+      "sha256": "1cd2d35b7f124565bfc647453c7d6ecf11e5b100649718758fa3fbee49496123",
+      "bytes": 5553
+    },
+    {
+      "path": "tests/fixtures/leader_feedback.py",
+      "sha256": "1ad04f25dd2c3fd077b42d16a1d73897c73667367141db8437f86ff539698bfd",
+      "bytes": 4148
+    },
+    {
+      "path": "tests/fixtures/leader_session.py",
+      "sha256": "99d37d18dbfbbc31f932b1c264e929dcecb70e77c247d078e18109346f6a4e13",
+      "bytes": 2766
+    },
+    {
+      "path": "tests/fixtures/packs.py",
+      "sha256": "f821c482d69515bd44904835607c558c936c32238626b53d9f1545dd7ede8ffe",
+      "bytes": 1451
+    },
+    {
+      "path": "tests/fixtures/snapshots.py",
+      "sha256": "d27235716fb2b80477bf184dc1beee1196e7e2d091901af7d075ea1b58aa5243",
+      "bytes": 5883
+    },
+    {
+      "path": "tests/fixtures/teleport.py",
+      "sha256": "2adb30374e963142d1ae642aed9cdfb50e0bc8b9bb9ac8143a4cf54af4a040c4",
+      "bytes": 4865
+    },
+    {
+      "path": "tests/fixtures/viser_stubs.py",
+      "sha256": "f5ce8aa29f01e83b35ea19f307b861eacc1bbff56e70b4d977ef5979623c37bc",
+      "bytes": 10472
+    },
+    {
+      "path": "tests/semantics/__init__.py",
+      "sha256": "5a0b67e53cb9ff833aab4cffc4f9b1f1b9501a8bbc6505744ffcc91329fdab4b",
+      "bytes": 1040
+    },
+    {
+      "path": "tests/semantics/test_combinators.py",
+      "sha256": "8fb9b13d518dd77c7dcf7511d10e084c0d400c622d2792cfb5c33f6f2b5379cf",
+      "bytes": 18475
+    },
+    {
+      "path": "tests/semantics/test_declarations.py",
+      "sha256": "4393091b4b9b55fc46ea76121fb306c213825f85eaf157a2e38f1c2ae79ff672",
+      "bytes": 13090
+    },
+    {
+      "path": "tests/test_agent.py",
+      "sha256": "51e700126fe9fcff7970e769230188a0f30852a0e939e7a4f40c434805946eb3",
+      "bytes": 26579
+    },
+    {
+      "path": "tests/test_agent_checks.py",
+      "sha256": "51a8d21ac4729acde27d3b194022ca8775ae049bf273c6c63ce64527620176da",
+      "bytes": 16885
+    },
+    {
+      "path": "tests/test_agent_server.py",
+      "sha256": "13314034bb1fd7911cafb3fba11cc191d2cc196ce5accc61c15cc09b59dd94d2",
+      "bytes": 8764
+    },
+    {
+      "path": "tests/test_arm_joint_scan.py",
+      "sha256": "3824805ff4e5e5fb010d18ef5e6228d705f3df5866e033bde354b84277ebf8ca",
+      "bytes": 3493
+    },
+    {
+      "path": "tests/test_asset_mjcf.py",
+      "sha256": "7ecb3977c7753aa90aad248b30010e2c73e88f6db781264d8515d7ce1f9c8fab",
+      "bytes": 3144
+    },
+    {
+      "path": "tests/test_assetlib_split_line.py",
+      "sha256": "512a6dbb3ceb0030b283b18596761b3a6a4791242532f0e65d611f86ae537fe9",
+      "bytes": 5261
+    },
+    {
+      "path": "tests/test_bare_scenes.py",
+      "sha256": "7691ac5555b518cd04ddcee4a5aed36032c43120178ed9d19ef9303dbf3ea72e",
+      "bytes": 18551
+    },
+    {
+      "path": "tests/test_bench_documents_and_runs.py",
+      "sha256": "042d1fa575ae936d0ce6646b0204a3ec5a43bcdba619dc80d523445d80db5bf0",
+      "bytes": 10027
+    },
+    {
+      "path": "tests/test_builder.py",
+      "sha256": "50f6e39cfa4edab7a7d90b71003235b890ec08d772b5b129f895484166fd7fa7",
+      "bytes": 2722
+    },
+    {
+      "path": "tests/test_bus_closed.py",
+      "sha256": "84def0ccad78b53a5b9b42a8dd599f2215774b397c785b39285407cd54993d29",
+      "bytes": 3169
+    },
+    {
+      "path": "tests/test_cable_surfaces.py",
+      "sha256": "11806b3262109d21503eeabfb788b99ec48748d253e97eab54b25fdd514f53fe",
+      "bytes": 6219
+    },
+    {
+      "path": "tests/test_calibrate_leader_arms.py",
+      "sha256": "bf8007777347b526745d0d94a39b651efab889f3477ba0c8226270b105faa4cb",
+      "bytes": 13858
+    },
+    {
+      "path": "tests/test_capabilities.py",
+      "sha256": "3aaa5d7ec23e401d5ac233e6a71a856739b835ffbe5ff80e7958aade20ad8f73",
+      "bytes": 12346
+    },
+    {
+      "path": "tests/test_capture_manifest_chains.py",
+      "sha256": "6f979849df14d9879906c4c2315b04aaf9d87937687209f3637d8fe22e0d88a1",
+      "bytes": 3121
+    },
+    {
+      "path": "tests/test_check_grasp_refusal.py",
+      "sha256": "3e2cdccae9882fedea4e95df3ba17a0b99b02a5ea8dcec834f5ac5a7491db3fa",
+      "bytes": 1904
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "31a5447fed950051a384fe09a39d5e636bfc827722cdd260d2c85843db552b0d",
+      "bytes": 32845
+    },
+    {
+      "path": "tests/test_core_fixes.py",
+      "sha256": "9dad9add3610932ddbbdce6ed02016d45fd71094a143cc5aebce0e8a1067cfba",
+      "bytes": 10594
+    },
+    {
+      "path": "tests/test_cosim_contract.py",
+      "sha256": "fe5c11ecd2815ed849c9fb6b43837220ad56141b07360ad52d67f8337c18b6f0",
+      "bytes": 6642
+    },
+    {
+      "path": "tests/test_cosim_feedback.py",
+      "sha256": "8f1b343c7fcddc40038cc70288d21730ae10118c7e1848dd85d61cb7f2b708b2",
+      "bytes": 9278
+    },
+    {
+      "path": "tests/test_cosim_geometry.py",
+      "sha256": "c0446e6626a0d06cc380b2c662205bfe5ae9cd3c391cafb66c9127c71df8d9a2",
+      "bytes": 13833
+    },
+    {
+      "path": "tests/test_cosim_rig.py",
+      "sha256": "a971e76cb4b08e0575481a580f32fcfe55379a97c4b1fc9c0a4e0a1d1e5846c6",
+      "bytes": 8442
+    },
+    {
+      "path": "tests/test_coverage_footprint.py",
+      "sha256": "3b0eb93237307c597862e2563de874d846c806d066245e4ee4f96e5f8cbb5af1",
+      "bytes": 4036
+    },
+    {
+      "path": "tests/test_declare.py",
+      "sha256": "f1bb032d9634129602f4890f553ed06366c52df064e040b4cf4d11aa4a1f0025",
+      "bytes": 4386
+    },
+    {
+      "path": "tests/test_demo_fold_the_towel.py",
+      "sha256": "8de3a22d820e1402fee277a418e9bf3033ecbc661ed6b96e45f8c3f85040f91e",
+      "bytes": 11879
+    },
+    {
+      "path": "tests/test_demo_route_the_cable.py",
+      "sha256": "fffad0b81c35156765a13cb7885dc693b675b89185da1ff24c5c67d141df361e",
+      "bytes": 9405
+    },
+    {
+      "path": "tests/test_demo_wipe_the_bar.py",
+      "sha256": "5b54fcbf8e70e14474bac584038411b1a5e01a773edc6178a26d82e548785f24",
+      "bytes": 9613
+    },
+    {
+      "path": "tests/test_doc_snippets_run.py",
+      "sha256": "afaf493955570a34272fb4822da9339cfeb229a161f367c46acb7f39d3aa3914",
+      "bytes": 11169
+    },
+    {
+      "path": "tests/test_domain_packs.py",
+      "sha256": "72737eeaf9db52ecb88f476a28fba998e3c9a0f517e4d95af50a025b8598f08b",
+      "bytes": 27426
+    },
+    {
+      "path": "tests/test_embodiments_are_optional.py",
+      "sha256": "423c6aea543fba23f7e650feddb4ab3219d9d35ffe6a2942d2d06ce078b07f27",
+      "bytes": 4873
+    },
+    {
+      "path": "tests/test_engine_roots.py",
+      "sha256": "2c583303584f5340159163ac204ac4e47e20d6ac72ad150c10f31a1e00d8e46c",
+      "bytes": 11485
+    },
+    {
+      "path": "tests/test_entity_engine_axis.py",
+      "sha256": "f80ba015659a3438e498fdd14329814aed732dabab11c7f532395ff35998b239",
+      "bytes": 18788
+    },
+    {
+      "path": "tests/test_entity_identity.py",
+      "sha256": "b758c0803b8e4c04f7d0e508a05af4285d8ce2972bf9600459d420e7d2ed4dcb",
+      "bytes": 5712
+    },
+    {
+      "path": "tests/test_episode_recorder_timing.py",
+      "sha256": "9d2ed0143a1c66a55fe39b06a276585e8db499843a286de68950c49385b43ad2",
+      "bytes": 2853
+    },
+    {
+      "path": "tests/test_example_grasps.py",
+      "sha256": "ae4413b1b93ad894c5b3820f4ae609be13d8a0d45eabab988e4f17d1412dca84",
+      "bytes": 3096
+    },
+    {
+      "path": "tests/test_example_grasps_cloth.py",
+      "sha256": "a9a5a94eabe4275a3d340046b81319b22882dd95fd18aae90f2645f6ca122cf4",
+      "bytes": 7685
+    },
+    {
+      "path": "tests/test_example_grasps_rigid.py",
+      "sha256": "a59acfa0fb30acb48c211ba3f347ea155d8584374d29a69863b0fa681cb4c4af",
+      "bytes": 8887
+    },
+    {
+      "path": "tests/test_example_grasps_rope.py",
+      "sha256": "e80fe8d69d2844e3ef313df9d048ae125e9f990291d0157113a57441e6884224",
+      "bytes": 4467
+    },
+    {
+      "path": "tests/test_example_grasps_soft.py",
+      "sha256": "460a681e9741e6a77e7ab39814d3e974f876892e25999522f89ba06ea99d52a0",
+      "bytes": 3980
+    },
+    {
+      "path": "tests/test_example_readmes.py",
+      "sha256": "fdfccc4bdd3390906ee2483f1a065f3e055ac1c5e8449a332701e9e3e64fb644",
+      "bytes": 2762
+    },
+    {
+      "path": "tests/test_examples.py",
+      "sha256": "d7e5d0ae1a0babb5d006ef64575e673cc450dc00c7cef4d1c0c8e934ce45151a",
+      "bytes": 25810
+    },
+    {
+      "path": "tests/test_extension_surface.py",
+      "sha256": "7cc2608de272a709e8b35ddbee2a9aeacb3846702508a01210c4f3a47b3e98aa",
+      "bytes": 9419
+    },
+    {
+      "path": "tests/test_finish.py",
+      "sha256": "e2f2266735cc9fd595ea10e33a78074f6ad8e7e829cfeb8de02abe685d965b58",
+      "bytes": 8928
+    },
+    {
+      "path": "tests/test_finish_gltf.py",
+      "sha256": "03e8264d429656df7ef092457a79c40b53dfc5f154c83f8d9b4090f62cfd4fc0",
+      "bytes": 10582
+    },
+    {
+      "path": "tests/test_fix_bench_fleet_settled.py",
+      "sha256": "2e30436d63c07335438a4dba8fe71909effeb7b79f65e16b63bb0fcc9fb3f7b6",
+      "bytes": 1587
+    },
+    {
+      "path": "tests/test_fix_bench_goals_and_views.py",
+      "sha256": "e2d647128e1860891c932d456e397962bad19335312fb2d12ba5a827ae5987a2",
+      "bytes": 4551
+    },
+    {
+      "path": "tests/test_fix_bench_pool.py",
+      "sha256": "90a55aaddaf1beb7beb56ffdef56ee632aebf013192eabede6c579870746a29d",
+      "bytes": 7773
+    },
+    {
+      "path": "tests/test_fix_bench_query_and_spellings.py",
+      "sha256": "d82a4a177f203971caa89145178af5badf1ffee68ce286032eb0df7452e9d3af",
+      "bytes": 7337
+    },
+    {
+      "path": "tests/test_fix_bench_reward_and_gauntlet.py",
+      "sha256": "532b549b3478d61f49ca15bc02715c198e8bba91c33bd3e4037ea4aae72d1169",
+      "bytes": 6050
+    },
+    {
+      "path": "tests/test_fix_bench_runner_guards.py",
+      "sha256": "5e7a61cba196806a0f3222ed7b0c75ac7281d4110dd8f56d220a8e9598224854",
+      "bytes": 4058
+    },
+    {
+      "path": "tests/test_fix_bench_taskdoc_and_matrix.py",
+      "sha256": "1006e56debd1d20ee491bbffea885b79ac752d0d56ccdec3e2e92e319eec76c2",
+      "bytes": 8535
+    },
+    {
+      "path": "tests/test_fix_core_action_and_pairing.py",
+      "sha256": "cd4d84d307135a2704fd50220ca120f0c99d30f4590a5a0ec63e677be3922c42",
+      "bytes": 6082
+    },
+    {
+      "path": "tests/test_fix_core_probes_cameras.py",
+      "sha256": "b52ce564b39d167c98bbb092fb869bd491781633b0c9d3d95b47102a03f1dbc3",
+      "bytes": 4757
+    },
+    {
+      "path": "tests/test_fix_core_record_handles.py",
+      "sha256": "ce4c9184956e82506ab445dc7a7b7f7ba74b4f9e618c4a2860dc4f4487baf9ca",
+      "bytes": 5396
+    },
+    {
+      "path": "tests/test_fix_core_scene_sim.py",
+      "sha256": "e6357953e6492df2f0eb851c28fe75ad35535603db2e13a576d61b0175392e28",
+      "bytes": 4544
+    },
+    {
+      "path": "tests/test_fix_core_tuning_reset_capture.py",
+      "sha256": "95bc237c069ea86777c8b6203ed55da350fc69d974b3ede83240595db38f12e6",
+      "bytes": 8014
+    },
+    {
+      "path": "tests/test_fix_examples_chain_cable_anchor.py",
+      "sha256": "4c44fc856c9f74d9ecf6b0d3b674c0fece6b4ebf902a7502a1c90fb6670c9e70",
+      "bytes": 4567
+    },
+    {
+      "path": "tests/test_fix_examples_cloth.py",
+      "sha256": "e486196900178e98b639925e4deb86178664feed2585c2aec86e6966bc229b89",
+      "bytes": 5248
+    },
+    {
+      "path": "tests/test_fix_examples_rod_spawn_measures.py",
+      "sha256": "a0b4ae7628e3872ce16cec6d8e2486ec0c0cc5de4920158e54e3068cc7becd8b",
+      "bytes": 6886
+    },
+    {
+      "path": "tests/test_fix_examples_rod_superdex_states.py",
+      "sha256": "cefd2e3f6445e709d1c2f1f88fcf65219c85c685d2c2b1f9676e05824c18434e",
+      "bytes": 3828
+    },
+    {
+      "path": "tests/test_fix_examples_soft_cloth.py",
+      "sha256": "e4ab6243daa1abe77d8bf846b2ebc685894ad06608238fe27cb37dac1f811885",
+      "bytes": 2656
+    },
+    {
+      "path": "tests/test_fix_examples_soft_fast.py",
+      "sha256": "dbc9ddb39bb28859b19dd7356bc1d1e48f36650e00bf47749c286dc3664513dd",
+      "bytes": 3196
+    },
+    {
+      "path": "tests/test_fix_followup_fleet_base_pairing.py",
+      "sha256": "21a038657eff3e24787ec896ec23ee067d7365ff81a410bcfb953c35bb5d15c3",
+      "bytes": 2606
+    },
+    {
+      "path": "tests/test_fix_followup_fleet_session_settled.py",
+      "sha256": "64c9576575a728c38cef2b27b9d90c09d16ee8e1c61cd40ab608d6e2e124fa7a",
+      "bytes": 1979
+    },
+    {
+      "path": "tests/test_fix_followup_penetration.py",
+      "sha256": "e16dcdbe46995dbf2fe23ba46489668db18244c92215ee4159ffa63d900ccb81",
+      "bytes": 1892
+    },
+    {
+      "path": "tests/test_fix_followup_settle.py",
+      "sha256": "57a42a80b325b563caa26c02f962bfdf55e4ae7f79d6da7d48b4ba10194d794e",
+      "bytes": 3306
+    },
+    {
+      "path": "tests/test_fix_followup_settle_tutorials.py",
+      "sha256": "27232adb4923b5aeae7204c53c28d329886ef93fe5b8bbc88e44ebd86298ea03",
+      "bytes": 1615
+    },
+    {
+      "path": "tests/test_fix_followup_studio_pairing.py",
+      "sha256": "732fd3b68ab4e9d3407ae5f1a1c85fa04aad49f33bec934dfbf451f3930316fd",
+      "bytes": 4809
+    },
+    {
+      "path": "tests/test_fix_policy_boundaries.py",
+      "sha256": "5a8ad6732002d36923db1475f9ed20c8ffffa008282b9533cd6dffdbde4e53a5",
+      "bytes": 11525
+    },
+    {
+      "path": "tests/test_fix_policy_bus_and_cleanup.py",
+      "sha256": "351dc9c3652b9b45d9dcf60c59f270f4488e8d67b82099b4b63f8598104aa4d9",
+      "bytes": 8831
+    },
+    {
+      "path": "tests/test_fix_policy_curobo_world.py",
+      "sha256": "47980f3ddd045eac7bdeaad6a98f467a9aa40154fa45d9abb033c61b778e7ded",
+      "bytes": 5649
+    },
+    {
+      "path": "tests/test_fix_policy_fleet_solution.py",
+      "sha256": "1c52ea6fe312dc94991c66f40c2d42f41768b590f52fe354753873f3e7b2565a",
+      "bytes": 4619
+    },
+    {
+      "path": "tests/test_fix_policy_planner_reports.py",
+      "sha256": "ba266615126985e0895430ff1cf43368ef6fd24e495b67d7a78a81bf9172ce8c",
+      "bytes": 2498
+    },
+    {
+      "path": "tests/test_fix_policy_robot_tools_home.py",
+      "sha256": "707304516286f101931df0f80fb230c56079188b4e79aef7357545241865b8f0",
+      "bytes": 3318
+    },
+    {
+      "path": "tests/test_fix_policy_staging_and_lines.py",
+      "sha256": "6efa037746d00f739993995318d644513018d549c919b4383564fadee029cf5e",
+      "bytes": 7104
+    },
+    {
+      "path": "tests/test_fix_policy_stale_caches.py",
+      "sha256": "34cba35f70ddec5352512519494dace2bbfa83d296221a32e5d5796b5b3642f1",
+      "bytes": 4479
+    },
+    {
+      "path": "tests/test_fix_real2sim_checks.py",
+      "sha256": "9298c7093a53c2ad1196b7583933e7457abcdda67a5fba225c7f0a684a7bfd9a",
+      "bytes": 5944
+    },
+    {
+      "path": "tests/test_fix_real2sim_frames_reset.py",
+      "sha256": "6c6e88e555c2432f8ee43b36412fe7bce5cdb2e999e7b8bb9442c40c1daa3686",
+      "bytes": 4908
+    },
+    {
+      "path": "tests/test_fix_real2sim_server_lifecycle.py",
+      "sha256": "96639261417dfc653bd07fe5073d6487377ca7d6a5496388bfb89937d3e5b93f",
+      "bytes": 4532
+    },
+    {
+      "path": "tests/test_fix_real2sim_server_scripts.py",
+      "sha256": "005bb6894ac19349b5de78d1af997da496bd1119e42e531973fdfaebbcf4eec1",
+      "bytes": 4847
+    },
+    {
+      "path": "tests/test_fix_real2sim_timeline.py",
+      "sha256": "fa812c5bafd851babea2d02e9fcdebee7fe155a185b53ebd4c1f5f0fbb9969dd",
+      "bytes": 2673
+    },
+    {
+      "path": "tests/test_fix_real2sim_wire_stills.py",
+      "sha256": "94417d745f860817dc4bb4e101c2605e713aa8df642533e3c454693a921e0030",
+      "bytes": 5715
+    },
+    {
+      "path": "tests/test_fix_studio_bench_panels.py",
+      "sha256": "8d48cc1c8cba5341ffb4b398053a3d60f01a4d1322aae5a87f98191dbdaaf996",
+      "bytes": 12344
+    },
+    {
+      "path": "tests/test_fix_studio_binders.py",
+      "sha256": "02e38944ca5dbda9795cccc80e2048ca41599d7a0def4de4853af11b81a66d43",
+      "bytes": 4374
+    },
+    {
+      "path": "tests/test_fix_studio_fleet_view_and_capture.py",
+      "sha256": "69b690d8577698f2868614436c14fab0b9f467e0776c459052cd9a69582b1b63",
+      "bytes": 6804
+    },
+    {
+      "path": "tests/test_fix_studio_panels_regions_view.py",
+      "sha256": "09fdfa0ceefca17d4e85663d22e075f7da5d662814e75c6e5240f675c05bf0b3",
+      "bytes": 9369
+    },
+    {
+      "path": "tests/test_fix_studio_quats_cache_reset.py",
+      "sha256": "350c23d6616661be5eb848108eae95b3bd8198e6ad4f6f727b441b2692ac3988",
+      "bytes": 5115
+    },
+    {
+      "path": "tests/test_fix_studio_scenery_pick.py",
+      "sha256": "dfadadf5d261f86b80969d5d8f2843973ba4456943483f938ea2890ef8ec7816",
+      "bytes": 1205
+    },
+    {
+      "path": "tests/test_fix_studio_tuning_panels.py",
+      "sha256": "b3f35f6c5097233f37b5515224bff51d0afb362d0774a90a538bb206ef8197c1",
+      "bytes": 5719
+    },
+    {
+      "path": "tests/test_fleet.py",
+      "sha256": "d6c2ab3799c461262c5e3d12afefcc84b7ff97ece700f87e7a6a222a3f58b493",
+      "bytes": 25564
+    },
+    {
+      "path": "tests/test_fleet_ik_math.py",
+      "sha256": "8878744c3c7710def0fe67e6e4ad672fcfa35ac01e07f4a0229bb1a9817652d7",
+      "bytes": 4164
+    },
+    {
+      "path": "tests/test_fleet_intents.py",
+      "sha256": "a71ef36007cac780e297f53d0bef4f6273499f87af7595ef15d6f573f3d401a3",
+      "bytes": 15380
+    },
+    {
+      "path": "tests/test_fleet_observation.py",
+      "sha256": "d9f0682a2c5555e795fb7b6f1250a6e5a946f62beabfbc634d9b97af2b4a24c7",
+      "bytes": 6981
+    },
+    {
+      "path": "tests/test_fleet_proprioception.py",
+      "sha256": "6851682d7c174f84b8191d0e74648a9dfa033a54ba9fc7d724ede342132c0cd3",
+      "bytes": 3202
+    },
+    {
+      "path": "tests/test_fleet_rendezvous.py",
+      "sha256": "a247c85094b2415691c3ca9d29b3d8a7dd7bbb3f926de8f6ddf143047c1ac1aa",
+      "bytes": 17525
+    },
+    {
+      "path": "tests/test_fleet_servo_contract.py",
+      "sha256": "ce1a125a4933c56b41790a9566caa525fc9ab782fd97ea921955f7cc86894059",
+      "bytes": 7222
+    },
+    {
+      "path": "tests/test_fleet_threads.py",
+      "sha256": "a1d97fdeb919fc7cd99f1a3624b7c4e06e9414f0a704f4fbf2d0b88ab2fe464d",
+      "bytes": 10590
+    },
+    {
+      "path": "tests/test_fleet_waits.py",
+      "sha256": "80508970a7f492534e8eaa6caea2df7faaf93a6e80024a2a983ce6340799c9ad",
+      "bytes": 5171
+    },
+    {
+      "path": "tests/test_fold_measures.py",
+      "sha256": "d93fb88aae40ca117b7a7c646838edbae8ed537460d8c04b450e281ee57d81f1",
+      "bytes": 11162
+    },
+    {
+      "path": "tests/test_generic_arrangement.py",
+      "sha256": "a17fa41cfd12ac708605cb08e171d5bde268c1ea0164c390e5e22871b88eaea8",
+      "bytes": 5061
+    },
+    {
+      "path": "tests/test_genesis.py",
+      "sha256": "45a0017b113ded8c3d8897caeb41f31b2d005d562143eced6d83a98b6c0f25be",
+      "bytes": 7665
+    },
+    {
+      "path": "tests/test_genesis_absent.py",
+      "sha256": "e9fbab1575d3309c1027f8d98e42dffac022728a9a31a74e0c684ad78d16fe4d",
+      "bytes": 8016
+    },
+    {
+      "path": "tests/test_geometry_import.py",
+      "sha256": "f362b59cb513378dd10ccef9bf85fde52ff8a0ac7c400da4144c219033bb384b",
+      "bytes": 8271
+    },
+    {
+      "path": "tests/test_graph_observation_refresh.py",
+      "sha256": "7481813be632c2bfc789645c14f60471c4fee5343e82d315faef029e4e160c89",
+      "bytes": 4497
+    },
+    {
+      "path": "tests/test_grasp_clearance.py",
+      "sha256": "40a9a74e19884b6bc4ef62eb92011c7775149ca090da07508e98872dc67fdbb4",
+      "bytes": 11523
+    },
+    {
+      "path": "tests/test_grasp_heading.py",
+      "sha256": "594499d31205a6a0d2f9aecbe510cb29d0c94ebad33e6daebd0ab8f6c6c61da6",
+      "bytes": 1400
+    },
+    {
+      "path": "tests/test_handles.py",
+      "sha256": "11e1b2e14542fdf65da9444faed9baf1fecb8f321e9b7385bae720ba59812720",
+      "bytes": 12077
+    },
+    {
+      "path": "tests/test_handles_lookup.py",
+      "sha256": "b3300995a52a9fdc402f6037c9b708911d54e4d6fdab573d256f2fbbca7fd5f4",
+      "bytes": 3324
+    },
+    {
+      "path": "tests/test_held_cloth.py",
+      "sha256": "7a7adcf69d4dc8b7286da58bb89362beb7a281a22937c8966351fc614df889d1",
+      "bytes": 2552
+    },
+    {
+      "path": "tests/test_hold_per_storage.py",
+      "sha256": "45a497e18e24b7c91abcd4ae10a9b23b2c86d5e000773554a9d4b59a59706de3",
+      "bytes": 7312
+    },
+    {
+      "path": "tests/test_hook_lifetime.py",
+      "sha256": "593d53b78b5e3af02dff6e14ff2e7dfaf07ddb9eeeadc9a76c1baee56d13405d",
+      "bytes": 5823
+    },
+    {
+      "path": "tests/test_ik_backend.py",
+      "sha256": "25abcaaf5f7940d4cf0125f909053e48d4476704567bf0b68250e9fa23f11a89",
+      "bytes": 8163
+    },
+    {
+      "path": "tests/test_jaw_stall.py",
+      "sha256": "d69912a4f815f36aa4712a3fed9a48f3270835f9803150b694aa76ea41840323",
+      "bytes": 3819
+    },
+    {
+      "path": "tests/test_latch.py",
+      "sha256": "d2d2291057dc691e9258bfb107c70b6ff605cac0bbecd131d72c4f49a9351d74",
+      "bytes": 7116
+    },
+    {
+      "path": "tests/test_leader_arm_panel.py",
+      "sha256": "804964ffe09daf124fb245efd2aafdd7865eeb2893e3e991ca2150ceabc2837e",
+      "bytes": 11187
+    },
+    {
+      "path": "tests/test_leader_feedback_loop.py",
+      "sha256": "3a28a7c001b321236dd3dbce6f11fa22fa617b3869e91edb79e6e3acf91d2986",
+      "bytes": 25504
+    },
+    {
+      "path": "tests/test_leader_force_feedback.py",
+      "sha256": "cdc054cbb689980c1ef473dc8668238c5a4423c3119f2ea1497203e0c0bad06d",
+      "bytes": 16686
+    },
+    {
+      "path": "tests/test_leader_force_feedback_servos.py",
+      "sha256": "b5be9806867d1e27beb1c40cad07b930dfd36a76394e8a9fb14c8ab6dd40624c",
+      "bytes": 20833
+    },
+    {
+      "path": "tests/test_leader_force_feedback_session.py",
+      "sha256": "b9d199801b4359f49203d7654d7809e74ea723f386dc9446cd318a5859036452",
+      "bytes": 19584
+    },
+    {
+      "path": "tests/test_lerobot_controller.py",
+      "sha256": "d19bc6c595230c2a11f0fc5231d4e9836c9e42ce9026ac0f09899795fed63a23",
+      "bytes": 13833
+    },
+    {
+      "path": "tests/test_lifecycle.py",
+      "sha256": "1023d3ca75113b73c0809807997a9d8c17cfcde94221e98df4a9318c224c5855",
+      "bytes": 4562
+    },
+    {
+      "path": "tests/test_load_asset.py",
+      "sha256": "3b8892b27ddb127cce12c21e10ea054aa3956c4d3a3f544af7e4da6df430c113",
+      "bytes": 8121
+    },
+    {
+      "path": "tests/test_material_loss_is_loud.py",
+      "sha256": "e45cb483f2ebf421f279a6390fb9c3ad2774d1405b3402bc0744f0adac624cb7",
+      "bytes": 5585
+    },
+    {
+      "path": "tests/test_motion_refusal_reason.py",
+      "sha256": "52797a1fa3540a1469c15b1edd440c8784a71cc091b013782e3aefd2ffa7c1ad",
+      "bytes": 5830
+    },
+    {
+      "path": "tests/test_new_examples.py",
+      "sha256": "1f14ad4af8c56b5c5a705e06c92774ce8d2e39f3a321dd36c57dffb99bf9fff9",
+      "bytes": 12096
+    },
+    {
+      "path": "tests/test_no_domain_is_special.py",
+      "sha256": "22afc3906f8dcfc407f9585c85af3b400e14cf790e7af558a32e668672b74de1",
+      "bytes": 6270
+    },
+    {
+      "path": "tests/test_oracle_box_and_give_up.py",
+      "sha256": "b8de2e50646a7259bc74ffc60e93722d3d6dc8052957d5889b77fda464844aa6",
+      "bytes": 4917
+    },
+    {
+      "path": "tests/test_page_title.py",
+      "sha256": "665e607fc3d6c811c07ccdf5fca53400bc15381f0477d41a4ea229a8261af272",
+      "bytes": 832
+    },
+    {
+      "path": "tests/test_panda_vendored.py",
+      "sha256": "751ffc600cf802bf7d0e26a49b51538f04c469ce586df558fe898fd2353de6d9",
+      "bytes": 5309
+    },
+    {
+      "path": "tests/test_paths.py",
+      "sha256": "a754acf3f021f701b0927415310aee10916cc6ef22343212b60a4f381eb18e9c",
+      "bytes": 3354
+    },
+    {
+      "path": "tests/test_perception_live.py",
+      "sha256": "4bef4358fb53c6434e728c263ada681c8d6b5dee5725640219d4c92e52380215",
+      "bytes": 4102
+    },
+    {
+      "path": "tests/test_physics_compose.py",
+      "sha256": "e85e581739d23d163b7c2f8d91aa953b33c735673e87a658ebec9da74e842b94",
+      "bytes": 25162
+    },
+    {
+      "path": "tests/test_plan_linear_accuracy.py",
+      "sha256": "e1e4d9fb38da04b85ec88bd20fc6025fe49dfafb8c9f24b4ae146b381bf319cb",
+      "bytes": 2583
+    },
+    {
+      "path": "tests/test_policies.py",
+      "sha256": "ce65d3bb8e276bba8f484f6e6fc885fcb149baf93c8c104aa0f7c91c443776a8",
+      "bytes": 7253
+    },
+    {
+      "path": "tests/test_policy_tool_contracts.py",
+      "sha256": "ebe4f513a6ad3b8e694ccf084265b61753225a4c188df603dcb0dc4b1263dba1",
+      "bytes": 8425
+    },
+    {
+      "path": "tests/test_pose_batched.py",
+      "sha256": "a442ea95e328c86ef563927507354d157b8e7c79a34ee2b856ab06323bb3051a",
+      "bytes": 11246
+    },
+    {
+      "path": "tests/test_reachable.py",
+      "sha256": "9eaf50440ce3500b9dc3c205b849ed76fbc13d60009b9f2454ef1d372441bf52",
+      "bytes": 2668
+    },
+    {
+      "path": "tests/test_record_capture.py",
+      "sha256": "7a2fa4d005242b56c37444d608b1bb592a7469840148cb5862c759c6a97a69df",
+      "bytes": 7143
+    },
+    {
+      "path": "tests/test_record_rows.py",
+      "sha256": "02c96a37a06dac9fd97dca60cce82041a6766a8d984451ae2a2ae41da26afbfb",
+      "bytes": 3513
+    },
+    {
+      "path": "tests/test_record_takes.py",
+      "sha256": "2a892d93aec05395db61f68e80cb292f3b8492dee742e684ba10033eafa87a89",
+      "bytes": 4912
+    },
+    {
+      "path": "tests/test_registry_discovery.py",
+      "sha256": "cdd82dc3816c7f35ffda8c71704d132a07a9a0cf7935059c525c25f284495abc",
+      "bytes": 9367
+    },
+    {
+      "path": "tests/test_render.py",
+      "sha256": "217882a9ee2a8e70805233a095705e5d8a3ed23f3d9a7d2844e22a318a5143d8",
+      "bytes": 21764
+    },
+    {
+      "path": "tests/test_render_view.py",
+      "sha256": "8a2ca347834ae3c8fbba48d14e3400d3fb7d62d79b1719f24f46c6b364be643d",
+      "bytes": 15733
+    },
+    {
+      "path": "tests/test_robot_drag.py",
+      "sha256": "ec7f6dc990d9a0216021e7bd82aab0462a8a395fa864766a00c9e92d2fe12395",
+      "bytes": 13691
+    },
+    {
+      "path": "tests/test_robot_placement.py",
+      "sha256": "480e71a7e84e634a2609cb565c9426806fbf9af13f1adaa47c5605e9248f4367",
+      "bytes": 4052
+    },
+    {
+      "path": "tests/test_rod_is_a_pack.py",
+      "sha256": "669ac39104fa089606fa4a478bff6bc684aa3e17e8216571d4125b8ae269578d",
+      "bytes": 22057
+    },
+    {
+      "path": "tests/test_scene_request.py",
+      "sha256": "e8de3c86923dcbd5d1834b089b49ec932199aed400cff2e1f12e5e9897d58390",
+      "bytes": 5956
+    },
+    {
+      "path": "tests/test_scenes_without_the_rod.py",
+      "sha256": "634bd22fba22dd4364ee7add201579bec7913aee661f943f8cc03865b64b3966",
+      "bytes": 6646
+    },
+    {
+      "path": "tests/test_schedule.py",
+      "sha256": "c4e5382faa5cb1b49c8a085bc727bcb9207a6fcf947d2fbbda96d15175df2ecb",
+      "bytes": 17308
+    },
+    {
+      "path": "tests/test_segmentation_backend_request.py",
+      "sha256": "bb5d3b794265b973f47fee7d439e9363618cbef00ef9cb519a02b9ea96e90be1",
+      "bytes": 3409
+    },
+    {
+      "path": "tests/test_selection.py",
+      "sha256": "58ce8ad700bcfb8e4452f582db4d91901940b0c72389c49800198dfbd1559f74",
+      "bytes": 10647
+    },
+    {
+      "path": "tests/test_servo_cadence.py",
+      "sha256": "d7a24d3913630728126568cdad72fe67818200cef8dfa2c99fd23ac576e13772",
+      "bytes": 13290
+    },
+    {
+      "path": "tests/test_sim_attach.py",
+      "sha256": "f28750cc923bc3bddd1c0deddb2ec4550a0a5e63315e4756db868a0cd007bde9",
+      "bytes": 6170
+    },
+    {
+      "path": "tests/test_simulated_leader.py",
+      "sha256": "1ed96e5e7aa03c9cdd1824ffefaf330a47bdc7ea90f4f8c623a95f6071ece1fd",
+      "bytes": 5792
+    },
+    {
+      "path": "tests/test_soft_domain.py",
+      "sha256": "1029278d96744b051a836642e6e6b082bc6c094cd39baeec517814c0eed923f8",
+      "bytes": 15910
+    },
+    {
+      "path": "tests/test_solvers.py",
+      "sha256": "71806ea63b7e241607b87a1762a78b74213f0d2f171586458414fc7317129fa2",
+      "bytes": 19300
+    },
+    {
+      "path": "tests/test_specs_facade.py",
+      "sha256": "d8ce424a0fd0d58c84f210d297e7c8220f3e73e2e20f5caeff7a82614b3b5cf4",
+      "bytes": 10628
+    },
+    {
+      "path": "tests/test_state_only_recording.py",
+      "sha256": "8906e10d635d953c78d82d8f2d0aa51f0c4e8ce69053783441dd7747ce9699d9",
+      "bytes": 3336
+    },
+    {
+      "path": "tests/test_streams.py",
+      "sha256": "0a3a26e11a61be7475e9a0969b5499ec611369a1a1185d17ae83956ed3feb130",
+      "bytes": 3731
+    },
+    {
+      "path": "tests/test_studio_cable_grab.py",
+      "sha256": "4bf25083a4459584d7450559600ec49241689edb9ea8d7b14d66ee65693e2e77",
+      "bytes": 5602
+    },
+    {
+      "path": "tests/test_studio_draws_a_centerline.py",
+      "sha256": "6fd89fa87b36671265fdb6ae5e502ed42415a03a85e1e83adf5d119fedb5941a",
+      "bytes": 5402
+    },
+    {
+      "path": "tests/test_studio_grip_and_handles.py",
+      "sha256": "f7fcc46f0eaef4949d01d98a7a6c1c35ba7be08dee348d796f3dff0755231d77",
+      "bytes": 11074
+    },
+    {
+      "path": "tests/test_studio_over_a_soft_body.py",
+      "sha256": "c2e4a14b3af6fd6aca7db822aadcf26ef734531fbe937f68557985e00fd64541",
+      "bytes": 9755
+    },
+    {
+      "path": "tests/test_studio_overlay.py",
+      "sha256": "335d473a786be18e6dcf98263b5b633951135007dd61863332983f9269feeb1e",
+      "bytes": 12478
+    },
+    {
+      "path": "tests/test_studio_panels.py",
+      "sha256": "5bd82ee8047fe21667142dfd5f48c6fc438387f1389e2199359a96428f9cff7f",
+      "bytes": 19771
+    },
+    {
+      "path": "tests/test_studio_routine.py",
+      "sha256": "412df99fd0b4ea39169f7e07ddd5262996f1e5350a3823bf4278e9a9cc7defde",
+      "bytes": 3970
+    },
+    {
+      "path": "tests/test_style.py",
+      "sha256": "0b51b825af9eac16e6014c04c2412839aed64b942a789ab0d8e5ec90836a1861",
+      "bytes": 1883
+    },
+    {
+      "path": "tests/test_superdex_contact.py",
+      "sha256": "b509328f27a148463706f6c7cf06f22a15a9ba5b7d644015e16d1f3d0804aea1",
+      "bytes": 25822
+    },
+    {
+      "path": "tests/test_superdex_mirror_padding.py",
+      "sha256": "a2bcb93890273852042f3407fb5425d475b1f132deaa56db0bd0ef03ebc7e3be",
+      "bytes": 6492
+    },
+    {
+      "path": "tests/test_superdex_pin_rides.py",
+      "sha256": "1f45518af9817fc86ca3e3ccc7017c7642540678d1ecf1101aecf8ce2f3f362c",
+      "bytes": 5921
+    },
+    {
+      "path": "tests/test_superdex_teleport.py",
+      "sha256": "1eccfb6cf01c112763651f6d9800dc394292c0fc9cd5859ac9342593048d7e2a",
+      "bytes": 14514
+    },
+    {
+      "path": "tests/test_task_examples.py",
+      "sha256": "d67fe23ea348ffa01ec23366df5e9b2c5b745460151b00b052fa0c125a53e68b",
+      "bytes": 6912
+    },
+    {
+      "path": "tests/test_task_from_text.py",
+      "sha256": "fedc29a4b28ee7084b9c262b5343b2a55d4e6f556b1ca2ff1c75ac6ee784f520",
+      "bytes": 9933
+    },
+    {
+      "path": "tests/test_task_spec_views.py",
+      "sha256": "44235aaf78ba88a871ab0be8abaa2716a259802b230a7edf149491f1547396a4",
+      "bytes": 3863
+    },
+    {
+      "path": "tests/test_teleop_examples.py",
+      "sha256": "8c091bdf68d59c5127fccbe6a244adc9c1df8324c68184a2e29950b13486bc41",
+      "bytes": 19759
+    },
+    {
+      "path": "tests/test_unregistered_robot.py",
+      "sha256": "96b398cc9dc7dedf73bf43a1b0fcd43f0940042e25fd118ec1e63dfbd9f60a7c",
+      "bytes": 3424
+    },
+    {
+      "path": "tests/toolkit/__init__.py",
+      "sha256": "32839999e01da230b29691c9289ae4d6676aa5dc8f1569ced5d02f8d471cd028",
+      "bytes": 119
+    },
+    {
+      "path": "tests/toolkit/test_entity_range_after_build.py",
+      "sha256": "70a67fd72c1eff81f2d0966db3f87b36d8839ec55b8fea04f37e1752b19fcc2d",
+      "bytes": 3680
+    },
+    {
+      "path": "tests/toolkit/test_snapshot.py",
+      "sha256": "18af7683997f6d809dc7fa10b347cf0d18d88aa68a4b20cb854ad3f5f571d910",
+      "bytes": 6296
+    },
+    {
+      "path": "tests/toolkit/test_textured_import.py",
+      "sha256": "e7a2a8abc258c01e3b212202b48ca803bd2523f841ef7abe4fcc7cef636caf80",
+      "bytes": 6686
+    },
+    {
+      "path": "tests/toolkit/test_textured_primitives.py",
+      "sha256": "040fd7d3e8855cf2480e0bae51cb646300d26b951fa5ad5af03f5bb657dcc488",
+      "bytes": 4630
+    },
+    {
+      "path": "tests/toolkit/test_trace.py",
+      "sha256": "1811d5e37c8dda5fe55ec57712172a920cacecabbbe11f36de55e4b186ab66e9",
+      "bytes": 10101
+    },
+    {
+      "path": "tests/toolkit/test_tuning.py",
+      "sha256": "8dfb01e153427d9282b058484d3bdc3f4b58cef473c0e52c5f4f8b9a5a1b812a",
+      "bytes": 13166
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "9ff8a9e2f9666064d587076336e71b21d2f259557f3613b17a189253ccbe6732",
+      "bytes": 1069855
+    }
+  ]
+}

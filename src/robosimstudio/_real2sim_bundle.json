@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "project": "RoboSimStudio",
+  "upstream_url": "https://github.com/robosimstudio/robosimstudio",
+  "upstream_revision": "73739abe212f963e8a9f5862b27bca370df091a7",
+  "original_source_digest": "cb5e2e291d484392bda5923a00b75158450e6f18feff166f49511f16eed5d2f7",
+  "integration": "real2sim embedded runtime",
+  "slim_profile": "real2sim-runtime"
+}

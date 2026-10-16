@@ -1,0 +1,9 @@
+# Optional path-traced renderer over the same CPython 3.12 Studio profile.
+# From the repository root:
+# uv pip install -e . -r requirements/studio-rtx.txt --override requirements/studio-overrides.txt
+--extra-index-url https://pypi.nvidia.com
+-r studio.txt
+ovrtx==0.4.0.346409
+ovstage==0.1.1.355824
+usd-core==26.8
+pyglet==2.1.19

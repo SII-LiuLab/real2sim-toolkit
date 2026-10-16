@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use RoboSimStudio in your research, please cite it."
+title: "RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Kaiyuan
+  - family-names: Xie
+    given-names: Shuangyu
+  - family-names: Yoo
+    given-names: Uksang
+  - family-names: Zhu
+    given-names: Xinyue
+  - family-names: Magner
+    given-names: Cael
+  - family-names: Zhu
+    given-names: Alvin
+  - family-names: Kim
+    given-names: Daehwa
+  - family-names: Heiden
+    given-names: Eric
+  - family-names: Coumans
+    given-names: Erwin
+  - family-names: Macklin
+    given-names: Miles
+  - family-names: Huang
+    given-names: Spencer
+  - family-names: Goldberg
+    given-names: Ken
+license: Apache-2.0
+version: 0.1.0
+repository-code: "https://github.com/robosimstudio/robosimstudio"
+url: "https://robosimstudio.github.io/"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2610.18835"
+    description: "Tech report on arXiv"
+  - type: doi
+    value: "10.48550/arXiv.2610.18835"
+    description: "arXiv DOI"
+preferred-citation:
+  type: article
+  title: "RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks"
+  authors:
+    - family-names: Chen
+      given-names: Kaiyuan
+    - family-names: Xie
+      given-names: Shuangyu
+    - family-names: Yoo
+      given-names: Uksang
+    - family-names: Zhu
+      given-names: Xinyue
+    - family-names: Magner
+      given-names: Cael
+    - family-names: Zhu
+      given-names: Alvin
+    - family-names: Kim
+      given-names: Daehwa
+    - family-names: Heiden
+      given-names: Eric
+    - family-names: Coumans
+      given-names: Erwin
+    - family-names: Macklin
+      given-names: Miles
+    - family-names: Huang
+      given-names: Spencer
+    - family-names: Goldberg
+      given-names: Ken
+  year: 2026
+  url: "https://arxiv.org/abs/2610.18835"
+  doi: "10.48550/arXiv.2610.18835"

@@ -7,7 +7,7 @@ Paths in a request JSON resolve relative to that JSON. Keep captures/datasets ou
 | Field | Contract |
 |---|---|
 | `id`, `category` | Nonempty identifier and semantic category |
-| `behavior` | Intended `static`, `rigid`, `articulated`, `conveyor`; checked when candidates declare behavior |
+| `behavior` | Intended `static`, `rigid`, `articulated`, `conveyor`, `deformable`; flexible requests require verified flexible candidates |
 | `joint_types` | Movable `hinge`/`slide`/`ball`; fixed joints/free base are not mechanism joints |
 | `captures` | Array of `path`, explicit `state`, optional `part` and `mask` |
 | `geometry.size_m` | Native fixture dimensions `[width, depth, height]` in metres |
@@ -51,3 +51,5 @@ Each indexed folder has `asset.json` with `id`, `category`, relative `model` and
 For belt physics, request-level `conveyor.speed_m_s` is required. `conveyor.direction_local` defaults to `[1,0,0]`. Each belt part has one collision surface. Visual and collision frames must agree. Texture baking and optical material recovery are not implemented; configured colors/textures are appearance approximations.
 
 All parts export in metres with Z up. Hidden joints, masses and friction are not inferred. Supply authored contact/material properties through an existing USD for experiments needing calibrated friction.
+
+For `deformable` requests, use the separate [Newton flexible contract](deformable.md). Flexible simulation geometry is not exported through `build-usd` or Isaac's rigid MJCF importer.

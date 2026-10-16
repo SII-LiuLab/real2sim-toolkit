@@ -97,6 +97,9 @@ def select_assets(request, candidates):
             reasons.append("joint_topology_mismatch")
         if request.get("behavior") and candidate.get("behavior") not in (None, request["behavior"]):
             reasons.append("behavior_mismatch")
+        if (request.get("behavior") == "deformable" or request.get("deformable")) and candidate.get("behavior") != "deformable":
+            if "behavior_mismatch" not in reasons:
+                reasons.append("behavior_mismatch")
         panel = geometry.get("panel_type")
         if panel and candidate.get("panel_type") not in (panel, None):
             reasons.append("panel_shape_mismatch")

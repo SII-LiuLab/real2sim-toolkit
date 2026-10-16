@@ -37,6 +37,9 @@ def read_request(path):
         if not reference_path.is_absolute():
             reference_path = Path(path).resolve().parent / reference_path
         reference["path"] = str(reference_path.resolve())
+    deformable = request.get("deformable", {})
+    if deformable.get("mesh"):
+        deformable["mesh"] = str((Path(path).resolve().parent / deformable["mesh"]).resolve())
     for part in request.get("geometry", {}).get("parts", []):
         for key in ("mesh",):
             if part.get(key):
