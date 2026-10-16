@@ -1,4 +1,5 @@
 include README.md AGENTS.md THIRD_PARTY_NOTICES.md
+include 使用指南.md
 recursive-include requirements *.txt
 graft skills/real2sim
 graft third_party/robosimstudio
