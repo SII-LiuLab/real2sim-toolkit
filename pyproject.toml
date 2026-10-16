@@ -29,7 +29,7 @@ tetra = ["tetgen>=0.6", "trimesh"]
 real2sim = "robocasa_real2sim.cli:main"
 
 [project.urls]
-Repository = "https://github.com/pig27777/real2sim-toolkit"
+Repository = "https://github.com/SII-LiuLab/real2sim-toolkit"
 
 [tool.setuptools.packages.find]
 where = ["src"]
