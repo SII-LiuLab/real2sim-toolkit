@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Real2sim 柔性重建流程、五个原生柔性资产、实际 Newton 仿真展示视频。">
+<title>Real2sim 柔性重建与示例资产报告</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#20242b;font:16px/1.75 system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif}
+main{max-width:1100px;margin:auto;padding:30px 24px 64px}header{border-bottom:2px solid #25344a;padding-bottom:22px}h1{font-size:30px;line-height:1.35;margin:6px 0 16px}h2{font-size:24px;margin:38px 0 12px}h3{font-size:19px;margin:24px 0 8px}p{margin:10px 0}a{color:#1755a0;overflow-wrap:anywhere}nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0}.small,figcaption,footer{font-size:14px;color:#566171}.label{font-size:13px;letter-spacing:.06em;color:#566171}
+.notice{padding:12px 16px;background:#f4f6f8;border-left:4px solid #546577}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.actions a{display:inline-block;border:1px solid #adb7c4;padding:9px 15px;border-radius:3px;text-decoration:none}.actions a.primary{background:#24466d;color:white;border-color:#24466d}
+video,img{max-width:100%;height:auto;display:block}video{width:100%;background:#20242b}figure{margin:16px 0}figcaption{margin-top:8px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;margin:14px 0}th,td{padding:12px 10px;border-bottom:1px solid #dce1e7;vertical-align:top}th{font-size:14px;background:#f4f6f8}td{font-size:14px}code{font:13px/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}pre{padding:16px;background:#f4f6f8;white-space:pre-wrap;overflow-wrap:anywhere}ol,ul{padding-left:24px}li{margin:6px 0}details{margin:12px 0}summary{cursor:pointer}footer{border-top:1px solid #dce1e7;margin-top:40px;padding-top:18px}
+@media(max-width:600px){main{padding:20px 14px 40px}h1{font-size:25px}h2{font-size:21px}th,td{padding:9px 7px}.actions a{padding:10px 12px}}
+@media print{nav,.actions{display:none}main{max-width:none}video{display:none}section{break-inside:avoid}}
+</style></head><body><main>
+<header><div class="label">REAL2SIM · 技术整理与资产交付 · 2026-10-17</div>
+<h1>柔性重建与示例资产报告</h1>
+<p>整理当前 Real2sim 工程的柔性建模与重建路径，并交付同一场景中的针织布、毛巾、海绵、橡胶圈和绳索。</p>
+<p class="notice"><strong>本次成果：</strong>程序化示例资产生成、原生场景编译、Newton VBD 运行及展示视频。没有输入实拍参考，因此不将这些示例表述为真实物体重建完成或材料已标定。</p>
+<nav aria-label="报告目录"><a href="#video">展示视频</a><a href="#assets">资产清单</a><a href="#workflow">柔性重建流程</a><a href="#validation">验证结果</a><a href="#reuse">复现与文件</a></nav>
+<div class="actions"><a href="downloads/real2sim-flexible-report.html" download>下载单文件 HTML（内含视频）</a><a href="media/showcase.mp4" download>下载展示视频</a></div>
+</header>
+<section id="video"><h2>1. 物体生成后的展示视频</h2>
+<p>实际运行初始场景：两块布落在各自支柱上，海绵和橡胶圈落到台面，绳索两端固定并在重力下下垂。视频来自逐帧 RTX 渲染的 Newton 状态。</p>
+<figure><video controls playsinline preload="metadata" poster="media/overview.png" aria-label="五个柔性资产同场景仿真视频"><source src="media/showcase.mp4" type="video/mp4">当前浏览器不支持视频，请下载 MP4 查看。</video>
+<figcaption>360 个控制步；仿真 6.00 秒；91 帧；15 fps；1280 × 900。以记录时间戳为准，视频为恒定帧率编码。</figcaption></figure>
+<details><summary>查看稳定状态总览图</summary><figure><img src="media/overview.png" alt="同一张灰色台面上的蓝色针织布、红色毛巾、黄色海绵、绿色橡胶圈和两端夹固的紫色绳索"><figcaption>本次独立录制在 6 秒时的最终帧，来自实际 RTX 渲染。</figcaption></figure></details>
+</section>
+<section id="assets"><h2>2. 五个柔性资产</h2>
+<p>每个资产包含 <code>geometry.npz</code>、初始参考网格 <code>rest.obj</code>、展示网格 <code>displayed.obj</code> 和 <code>metadata.json</code>。总包保留完整原生场景、材料参数及许可证。</p>
+<div class="table-wrap"><table><thead><tr><th>物体</th><th>模型与尺寸</th><th>导出顶点</th><th>表面三角形</th><th>四面体</th></tr></thead><tbody><tr><td><strong>蓝色针织布</strong><br><code>jersey_cloth</code></td>
+    <td>单层三角膜<br><span class="small">0.28 × 0.28 m；22 × 22 网格；SHIRT_JERSEY</span></td>
+    <td>529</td><td>968</td><td>0</td>
+    </tr><tr><td><strong>红色毛巾</strong><br><code>terry_towel</code></td>
+    <td>双面厚壳 + 四面体内芯<br><span class="small">0.28 × 0.28 m；TERRY_TOWELLING；厚 5 mm</span></td>
+    <td>1,058</td><td>2,112</td><td>2,904</td>
+    </tr><tr><td><strong>黄色海绵</strong><br><code>foam_sponge</code></td>
+    <td>四面体体积软体<br><span class="small">0.20 × 0.14 × 0.075 m；10 × 7 × 4 单元</span></td>
+    <td>440</td><td>552</td><td>1,400</td>
+    </tr><tr><td><strong>绿色橡胶圈</strong><br><code>rubber_ring</code></td>
+    <td>闭环四面体软体<br><span class="small">主半径 75 mm；方截面半宽 15 mm；40 段</span></td>
+    <td>160</td><td>320</td><td>200</td>
+    </tr><tr><td><strong>紫色绳索</strong><br><code>flexible_cable</code></td>
+    <td>胶囊链 + cable joints<br><span class="small">长 0.56 m；半径 8 mm；24 段；两端夹固</span></td>
+    <td>302</td><td>600</td><td>0</td>
+    </tr></tbody></table></div>
+<p class="small">针织布为三角膜。毛巾的原生 <code>slab</code> 模型有上下表皮及体积内芯，不能按单层膜理解。绳索采用 25 个中心线节点对应 24 个胶囊段；表中的 302 顶点 / 600 三角形仅为导出显示管面。所有几何均为米制、Z 向上、世界坐标。</p>
+<h3>材料与边界条件</h3>
+<ul><li>针织布：上游 <code>SHIRT_JERSEY</code> 预设；毛巾：<code>TERRY_TOWELLING</code> 预设。预设不能替代目标织物测量。</li>
+<li>海绵：Young 模量 20 kPa、Poisson 比 0.25、密度 60 kg/m³。橡胶圈：80 kPa、0.35、600 kg/m³，属于本次演示假设。</li>
+<li>绳索：原生胶囊链与 cable joints；两端在世界坐标夹固。布、海绵与橡胶圈不设永久夹固。</li>
+<li>台面尺寸 1.32 × 0.96 m，台面高度 0.75 m；控制频率 60 Hz，每控制步 24 个物理子步。</li></ul>
+</section>
+<section id="workflow"><h2>3. Real2sim 柔性重建部分整理</h2>
+<p><strong>组件关系：</strong>Real2sim 管理输入、会话、运行与证据；外部编码代理检查参考并编写资产；内部兼容模块 <code>robosimstudio*</code> 负责编译场景、原生交互 UI 和渲染；柔性动力学由 Newton VBD 提供。CLI 的 <code>agent</code> 是 UI 入口，不是自动从任意视频推断几何和接触的内置大模型。</p>
+<h3>3.1 先选物理表示</h3>
+<div class="table-wrap"><table><thead><tr><th>对象</th><th>必要几何</th><th>原生入口</th><th>需要明确的量</th></tr></thead><tbody>
+<tr><td>薄布、膜、袋</td><td>有一致拓扑的三角中面</td><td><code>rss.sheet</code> / ClothSpec</td><td>面密度、厚度、拉伸/弯曲、接触半径、静止角、固定点</td></tr>
+<tr><td>厚布、泡棉、橡胶</td><td>四面体体积；厚布可采用原生 slab</td><td><code>rss.sponge</code> / SoftSpec；ClothSpec slab</td><td>体密度、Young/Poisson、阻尼、静止体积、材料与约束</td></tr>
+<tr><td>绳索、线缆、软管</td><td>有顺序的中心线及截面半径</td><td><code>rss.rod</code> / RodSpec</td><td>长度、半径、弯曲/拉伸、分段、端部夹固</td></tr></tbody></table></div>
+<h3>3.2 从真实输入到可编辑资产</h3>
+<ol><li><strong>保存输入。</strong>登记照片、视频、扫描或现成几何，保留来源、许可、原始文件与哈希。视频选择接触前、操作中、释放后及最终状态。</li>
+<li><strong>确定尺度与静止形状。</strong>统一米制和 Z-up，说明参考是卸载形状还是已经下垂的受力形状。后者可能含预应变，不能直接当作无应力参考。</li>
+<li><strong>准备模拟拓扑。</strong>布料提取三角中面；体积软体提供四面体；绳索提供中心线。闭合扫描表皮不等于布料中面。复杂空腔应提供经检查的体网格。</li>
+<li><strong>显式设定力学与接触。</strong>记录每个材料参数为 measured / retrieved / assumed / fitted，设置支撑、重力、碰撞半径和已知载荷。操作引导或固定点需要标为作者施加的约束。</li>
+<li><strong>创建原生会话。</strong>用 <code>session-init</code> 初始化，编辑 <code>scene.py</code>，绑定顶层 <code>scene</code>，将资产依赖放在会话目录。使用原生拖拽和控制面板检查。</li>
+<li><strong>运行并保留证据。</strong>使用 <code>scene-run</code> 记录轨迹、时间戳、视频与运行报告。仅修改外观时，通过 <code>scene-render</code> 重绘相同轨迹，不必重新执行物理。</li>
+<li><strong>按请求验证和交付。</strong>分别判断几何、外观、执行、接触和动力学；存在真实测量时再拟合并在独立条件下验证，最终保留可编辑源文件及可移植依赖。</li></ol>
+<h3>3.3 两条使用路径</h3>
+<p><strong>原生交互路径：</strong><code>session-init → scene.py → agent / session-serve → session-ctl → scene-run / scene-render</code>。适合资产查看、拖拽、完整场景和展示视频，本次采用这条路径。</p>
+<p><strong>独立柔性 bundle：</strong><code>build-deformable → validate-deformable → fit-deformable</code>。直接 Newton 路径支持 triangle cloth 和 tetrahedral soft；绳索仍走原生场景。输出 manifest、geometry.npz、surface.obj 和验证轨迹，准备完成与动力学通过是不同阶段。</p>
+<details><summary>独立 bundle 的最小请求示例：四面体软体</summary><pre><code>{
+  "id": "sample_soft", "category": "soft_object",
+  "simulator": "newton", "behavior": "deformable",
+  "deformable": {
+    "kind": "soft", "mesh": "soft_mesh.npz",
+    "scale_m_per_unit": 1.0, "scale_source": "assumed",
+    "aligned_z_up": true,
+    "rest_state": "unloaded_reference", "rest_source": "assumed",
+    "material": {
+      "young_pa": 20000, "poisson_ratio": 0.25,
+      "density_kg_m3": 60, "damping_s": 0.005, "friction": 0.5
+    },
+    "simulation": {"timestep_s": 0.001, "iterations": 10,
+                   "gravity_m_s2": [0, 0, -9.81], "ground_z_m": 0.0}
+  }
+}</code></pre><p class="small">接口结构按本地文档整理，示意请求未在本次任务中另行执行。soft_mesh.npz 需提供有限 vertices 与有效 tets，且与本例地面配置不穿插。</p></details>
+</section>
+<section id="validation"><h2>4. 本次运行与证据边界</h2>
+<div class="table-wrap"><table><tbody>
+<tr><th>执行环境</th><td>Newton 1.6.1 · Warp 1.18.0 · CUDA:0 / NVIDIA GeForce RTX 5090 · RTX</td></tr>
+<tr><th>本次视频运行</th><td>完成 360 / 360 步，仿真时长 6.00 秒，运行状态 completed</td></tr>
+<tr><th>状态检查</th><td>所有记录状态有限；每个控制步检查，不代表已检查所有接触与每个物理子步。</td></tr>
+<tr><th>网格应变诊断</th><td>9,148 条网格边；最大拉伸 9.90%；最大压缩 31.92%。这是全场景实际三角形/四面体边长变化的诊断，不表示与真实材料匹配。</td></tr>
+<tr><th>可复现性</th><td>完整原生场景、五个导出资产、原始橡胶圈网格、材料 spec、依赖版本和 SHA-256 文件清单。</td></tr>
+<tr><th>未完成的真实重建验证</th><td>无实拍参考、无几何/外观对齐评分、无已知载荷标定、无独立测量轨迹；不宣称模型已完成真实物理校准。</td></tr></tbody></table></div>
+<p>独立 <code>validate-deformable</code> 可检查真实边应变、固定点漂移、四面体反转、三角形塌陷，以及剔除最佳刚体变换后的非刚性位移。本次原生视频运行记录了有限值检查及实际网格边应变，尚未对接触、四面体反转或真实材料匹配建立通过结论。</p>
+<p>若后续提供米制顶点轨迹和已知实验条件，可用 <code>fit-deformable</code> 比较 Young 模量候选，再以独立录制和误差阈值验证；拟合不会自动恢复密度、摩擦、厚度或未知载荷。</p>
+<p><a href="evidence/run-summary.json">运行摘要 JSON</a> · <a href="evidence/asset-manifest.json">资产材料与拓扑清单 JSON</a></p>
+</section>
+<section id="reuse"><h2>5. 其他人能否直接使用这些资产？</h2>
+<p><strong>可以在兼容环境中直接使用。</strong>拿到完整资产包并安装本项目 Real2sim 原生运行时后，可直接加载其中的 <code>native-session/scene.py</code>，重现五个物体的柔性场景。物体数据和橡胶圈网格使用包内相对路径，不依赖本机绝对路径、机器人库或原始扫描文件。</p>
+<p>OBJ 可导入支持该格式的三维软件查看几何；完整材料、质量、约束和接触行为保存在原生场景与 metadata 中。在其他物理引擎中使用，需要重新映射这些设置并验证。本报告不提供资产下载入口，资产包单独交付。</p>
+<h3>资产包结构与复现</h3>
+<pre><code>real2sim-flexible-assets.zip
+├── assets/                    # 五个物体的 NPZ / OBJ / metadata
+├── native-session/            # 完整同场景的 scene.py 及相对路径依赖
+├── references/                # 柔性重建与会话文档、运行依赖版本
+├── licenses/                  # 上游来源、许可证和 NOTICE
+├── asset-manifest.json
+├── run-summary.json
+├── SHA256SUMS.json
+└── README.txt</code></pre>
+<p>在已经安装本项目 Real2sim 原生运行时的环境中，解压资产包后执行：</p>
+<pre><code>real2sim agent --session native-session --device cuda:0 --renderer rtx --panels all --resume
+
+real2sim scene-run --session native-session --device cuda:0 --renderer rtx   --steps 360 --camera overview --capture-every 4 --record --compact</code></pre>
+<p>几何导出不自动保留另一模拟器中的等价柔性行为。OBJ 适合几何检查；完整力学与接触使用原生 <code>scene.py</code>。<code>displayed.obj</code> 是已受力的展示形状，不应重新解释为应力自由的静止网格。</p>
+<p>单文件 HTML 内嵌视频和总览图，直接打开即可查看；公开页面使用相对路径媒体。资产包单独提供，不随本页面公开下载。</p>
+<h3>内容依据</h3><ul>
+<li>本地 <code>real2sim-toolkit/skills/real2sim/references/deformable.md</code>、<code>sessions.md</code>、<code>agent.md</code>，副本已随 ZIP 提供。</li>
+<li>本地原生实现 <code>_domain_packs/cloth.py</code>、<code>soft.py</code>、<code>rod/</code>；导出数值来自实际编译后的模型。</li>
+<li>橡胶圈生成算法源于 <a href="https://github.com/robosimstudio/robosimstudio/blob/73739abe212f963e8a9f5862b27bca370df091a7/examples/02_soft/01_tet_mesh.py">RoboSimStudio 的四面体示例</a>，Apache-2.0；本包另记录尺寸修改与正体积朝向修正。</li>
+</ul></section>
+<footer>报告日期：2026-10-17（Asia/Shanghai）。本报告以工作区实际代码和运行记录为依据。公开包仅含本次生成的示例资产与必要来源说明。</footer>
+</main></body></html>

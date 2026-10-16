@@ -2,6 +2,8 @@
 
 中文使用教程见 [使用指南](使用指南.md)。
 
+柔性重建与五个示例资产：[在线报告（含实际仿真视频）](https://sii-liulab.github.io/real2sim-toolkit/flexible-reconstruction/) · [报告源文件](docs/flexible-reconstruction/index.html) · [资产 ZIP](artifacts/flexible-gallery/real2sim-flexible-assets.zip)。示例为程序化生成的针织布、毛巾、海绵、橡胶圈和绳索，采用 Newton VBD；重建流程、复现条件和验证范围见报告。
+
 A small, model-independent execution harness for an AI that can read files and run commands. The caller AI inspects language, photos, videos, geometry or robot episodes, authors an asset request, and repairs it using simulator evidence. The harness builds MJCF/USD, executes configured checks, and retains revisions and reports.
 
 ## 项目示例 / Showcase

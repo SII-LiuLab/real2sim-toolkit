@@ -1,0 +1,387 @@
+[
+  {
+    "name": "jersey_cloth",
+    "units": "m, kg, s",
+    "frame": "world, Z up",
+    "vertices": 529,
+    "triangles": 968,
+    "tetrahedra": 0,
+    "rest_state": "native generated initial reference; not the settled display mesh",
+    "snapshot_time_s": 5.999999999999984,
+    "material_provenance": "shipped preset or authored assumption; no real-data fitting",
+    "spec": {
+      "sim": null,
+      "entity": "cloth",
+      "name": "jersey_cloth",
+      "mesh": "grid",
+      "size": [
+        0.28,
+        0.28
+      ],
+      "cells": [
+        22,
+        22
+      ],
+      "asset": null,
+      "pose": [
+        -0.53,
+        0.06,
+        0.91
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "material": {
+        "tri_ke": 10.0,
+        "tri_ka": 10.0,
+        "tri_kd": 1.5e-05,
+        "edge_ke": 5e-05,
+        "edge_kd": 5e-06,
+        "areal_density": 0.2,
+        "particle_radius": 0.008,
+        "zero_rest_angle": true,
+        "friction": 0.25,
+        "contact_ke": 10.0,
+        "contact_kd": 0.01,
+        "shell": "membrane",
+        "thickness": 0.0005,
+        "core_shear_modulus": 100000.0,
+        "core_lame_lambda": 0.0,
+        "core_damping": 0.01,
+        "shell_young": null,
+        "shell_poisson": null
+      },
+      "particle_sets": [],
+      "simplify_faces": 0,
+      "settle_frames": 0,
+      "settle_substeps": 10,
+      "color": [
+        0.18,
+        0.58,
+        0.89
+      ],
+      "opacity": 1.0,
+      "finish": null,
+      "decor": ""
+    },
+    "notes": "OBJ is visual geometry only. Use the packaged native scene for complete material/contact behavior.",
+    "snapshot_source": "recorded trajectory final state"
+  },
+  {
+    "name": "terry_towel",
+    "units": "m, kg, s",
+    "frame": "world, Z up",
+    "vertices": 1058,
+    "triangles": 2112,
+    "tetrahedra": 2904,
+    "rest_state": "native generated initial reference; not the settled display mesh",
+    "snapshot_time_s": 5.999999999999984,
+    "material_provenance": "shipped preset or authored assumption; no real-data fitting",
+    "spec": {
+      "sim": null,
+      "entity": "cloth",
+      "name": "terry_towel",
+      "mesh": "grid",
+      "size": [
+        0.28,
+        0.28
+      ],
+      "cells": [
+        22,
+        22
+      ],
+      "asset": null,
+      "pose": [
+        -0.14,
+        0.06,
+        0.91
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "material": {
+        "tri_ke": 10000.0,
+        "tri_ka": 10000.0,
+        "tri_kd": 0.015,
+        "edge_ke": 0.0001,
+        "edge_kd": 0.0001,
+        "areal_density": 0.5,
+        "particle_radius": 0.00125,
+        "zero_rest_angle": true,
+        "friction": 0.25,
+        "contact_ke": 10000.0,
+        "contact_kd": 10.0,
+        "shell": "slab",
+        "thickness": 0.005,
+        "core_shear_modulus": 100000.0,
+        "core_lame_lambda": 0.0,
+        "core_damping": 0.01,
+        "shell_young": null,
+        "shell_poisson": null
+      },
+      "particle_sets": [],
+      "simplify_faces": 0,
+      "settle_frames": 0,
+      "settle_substeps": 10,
+      "color": [
+        0.86,
+        0.32,
+        0.24
+      ],
+      "opacity": 1.0,
+      "finish": null,
+      "decor": ""
+    },
+    "notes": "OBJ is visual geometry only. Use the packaged native scene for complete material/contact behavior.",
+    "snapshot_source": "recorded trajectory final state"
+  },
+  {
+    "name": "foam_sponge",
+    "units": "m, kg, s",
+    "frame": "world, Z up",
+    "vertices": 440,
+    "triangles": 552,
+    "tetrahedra": 1400,
+    "rest_state": "native generated initial reference; not the settled display mesh",
+    "snapshot_time_s": 5.999999999999984,
+    "material_provenance": "shipped preset or authored assumption; no real-data fitting",
+    "spec": {
+      "sim": null,
+      "entity": "soft",
+      "name": "foam_sponge",
+      "size": [
+        0.2,
+        0.14,
+        0.075
+      ],
+      "cells": [
+        10,
+        7,
+        4
+      ],
+      "pose": [
+        0.38,
+        0.2,
+        0.8
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "asset": null,
+      "material": {
+        "young": 20000.0,
+        "poisson": 0.25,
+        "density": 60.0,
+        "mass_damping": 0.0,
+        "stiffness_damping": 0.005,
+        "friction": 0.9,
+        "contact_penalty": 80000000.0,
+        "contact_padding": 0.002,
+        "particle_radius": 0.002,
+        "collider": "auto",
+        "contact_threshold": null,
+        "contact_smoothing": null,
+        "friction_falloff": null,
+        "boundary_samples": null,
+        "sdf_resolution": null
+      },
+      "particle_sets": [],
+      "anchored": null,
+      "rigid": null,
+      "settle_frames": 0,
+      "settle_substeps": 0,
+      "color": [
+        0.96,
+        0.77,
+        0.18
+      ],
+      "opacity": 1.0,
+      "finish": null
+    },
+    "notes": "OBJ is visual geometry only. Use the packaged native scene for complete material/contact behavior.",
+    "snapshot_source": "recorded trajectory final state"
+  },
+  {
+    "name": "rubber_ring",
+    "units": "m, kg, s",
+    "frame": "world, Z up",
+    "vertices": 160,
+    "triangles": 320,
+    "tetrahedra": 200,
+    "rest_state": "native generated initial reference; not the settled display mesh",
+    "snapshot_time_s": 5.999999999999984,
+    "material_provenance": "shipped preset or authored assumption; no real-data fitting",
+    "spec": {
+      "sim": null,
+      "entity": "soft",
+      "name": "rubber_ring",
+      "size": [
+        0.1,
+        0.07,
+        0.035
+      ],
+      "cells": [
+        10,
+        7,
+        4
+      ],
+      "pose": [
+        -0.37,
+        -0.22,
+        0.82
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "asset": {
+        "path": "native-session/assets/o_ring.npz",
+        "collision_path": null,
+        "collision_paths": [],
+        "scale": 1.0,
+        "approximate": null,
+        "keep_visual": true,
+        "skip_mesh_approximation": false,
+        "texture": "",
+        "material_colors": false
+      },
+      "material": {
+        "young": 80000.0,
+        "poisson": 0.35,
+        "density": 600.0,
+        "mass_damping": 0.0,
+        "stiffness_damping": 0.005,
+        "friction": 0.9,
+        "contact_penalty": 80000000.0,
+        "contact_padding": 0.002,
+        "particle_radius": 0.003,
+        "collider": "auto",
+        "contact_threshold": null,
+        "contact_smoothing": null,
+        "friction_falloff": null,
+        "boundary_samples": null,
+        "sdf_resolution": null
+      },
+      "particle_sets": [],
+      "anchored": null,
+      "rigid": null,
+      "settle_frames": 0,
+      "settle_substeps": 0,
+      "color": [
+        0.24,
+        0.74,
+        0.45
+      ],
+      "opacity": 1.0,
+      "finish": null
+    },
+    "notes": "OBJ is visual geometry only. Use the packaged native scene for complete material/contact behavior.",
+    "snapshot_source": "recorded trajectory final state",
+    "asset_path_resolution": "relative to the asset ZIP root"
+  },
+  {
+    "name": "flexible_cable",
+    "units": "m, kg, s",
+    "frame": "world, Z up",
+    "vertices": 302,
+    "triangles": 600,
+    "tetrahedra": 0,
+    "centerline_nodes": 25,
+    "rigid_segments": 24,
+    "representation": "capsule chain on Newton VBD cable joints; OBJ is a display tube",
+    "rest_state": "straight centerline",
+    "snapshot_time_s": 5.999999999999984,
+    "material_provenance": "authored defaults, not calibrated",
+    "spec": {
+      "name": "flexible_cable",
+      "entity": "rod",
+      "start": [
+        -0.08,
+        -0.22,
+        0.89
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length": 0.56,
+      "radius": 0.008,
+      "segments": 24,
+      "density": 350.0,
+      "stretch_ke": 200000.0,
+      "stretch_kd": 1.0,
+      "bend_ke": 0.04,
+      "bend_kd": 0.06,
+      "contact_ke": 10000.0,
+      "contact_kd": 0.1,
+      "contact_gap": 0.01,
+      "mu_base": 2.0,
+      "mu_cable": 60.0,
+      "mu_gripper": 60.0,
+      "mu_surface": 0.02,
+      "surface_labels": [
+        "table"
+      ],
+      "color": [
+        0.55,
+        0.32,
+        0.8
+      ],
+      "finish": null,
+      "anchor_grasp": null,
+      "anchor_arm": "",
+      "anchor_grip": 0.01,
+      "scene_friction": false,
+      "allow_grasp_latch": true,
+      "filter_fingertip_scenery": true,
+      "anchors": [
+        "start",
+        "end"
+      ],
+      "bow_range": [
+        0.0,
+        0.0
+      ],
+      "shift_range": [
+        0.0,
+        0.0
+      ],
+      "wave_range": [
+        0.0,
+        0.0
+      ],
+      "yaw_range": [
+        0.0,
+        0.0
+      ],
+      "nodes": null,
+      "young_modulus": 5000000.0,
+      "poisson_ratio": 0.45,
+      "stiffness_damping": 0.001,
+      "axial_stiffness": null,
+      "contact_penalty": 80000000.0,
+      "contact_threshold": null,
+      "contact_smoothing": null,
+      "friction_falloff": null,
+      "skin": true,
+      "skin_segments": 8,
+      "skin_samples": null,
+      "stress_free": null,
+      "joins": [],
+      "sim": null
+    },
+    "snapshot_source": "recorded trajectory final state"
+  }
+]
